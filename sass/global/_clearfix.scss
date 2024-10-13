@@ -1,0 +1,52 @@
+/**
+ * sass/global/clearfix.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2024.10.13)
+ * @copyright 2024 (2024.10.13)
+**/
+
+// SETTINGS
+// STYLES
+    .clear {
+        // GLOBAL
+            clear: both;
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.CLEAR
+
+    .clearfix {
+        // GLOBAL
+            zoom: 1;
+
+            &:before, &:after {
+                content: "";
+                display: table;
+            } //:BEFORE, &:AFTER
+
+            &:after {
+                clear: both;
+            } //:AFTER
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.CLEARFIX

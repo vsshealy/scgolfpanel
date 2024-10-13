@@ -1,0 +1,64 @@
+/**
+ * sass/global/shadows.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2024.10.13)
+ * @copyright 2024 (2024.10.13)
+**/
+
+// SETTINGS
+    $shadow-main: 0.00rem 0.00rem 0.50rem rgba($color-grayscale-dark-9, 0.10);
+    $shadow-text: 0.00rem 0.00rem 0.50rem rgba($color-grayscale-dark-9, 0.90);
+
+// STYLES
+    .shadow {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        &-main {
+            // GLOBAL
+                @extend .shadow;
+                box-shadow: $shadow-main;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.SHADOW-MAIN
+
+        &-text {
+            // GLOBAL
+                @extend .shadow;
+                text-shadow: $shadow-text;
+                
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.SHADOW-TEXT
+
+    } //.SHADOW

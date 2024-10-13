@@ -1,0 +1,225 @@
+/**
+ * sass/variables/colors.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2024.10.13)
+ * @copyright 2024 (2024.10.13)
+**/
+
+// SCGOLFPANEL BRAND COLLECTION
+    $color-scgolfpanel-green: #00672f;
+    $color-scgolfpanel-brown: #948056;
+    $color-scgolfpanel-beige: #ccc999;
+    $color-scgolfpanel-gray: #444544;
+    $color-scgolfpanel-blue: #0072bb;
+
+// ADJUSTMENT VARIABLES
+    $color-adjustment: calc(100.00% / 12);
+    $color-adjustment-light: #ffffff;
+    $color-adjustment-dark: #000000;
+
+// GRAYSCALE COLLECTION
+    $color-grayscale: #808080;
+
+    // -LIGHT
+        $color-grayscale-light-12: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 12);
+        $color-grayscale-light-11: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 11);
+        $color-grayscale-light-10: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 10);
+        $color-grayscale-light-9: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 9);
+        $color-grayscale-light-8: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 8);
+        $color-grayscale-light-7: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 7);
+        $color-grayscale-light-6: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 6);
+        $color-grayscale-light-5: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 5);
+        $color-grayscale-light-4: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 4);
+        $color-grayscale-light-3: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 3);
+        $color-grayscale-light-2: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 2);
+        $color-grayscale-light-1: mix($color-adjustment-light, $color-grayscale, $color-adjustment * 1);
+
+    // -BASE
+        $color-grayscale-0: $color-grayscale;
+
+    // -DARK
+        $color-grayscale-dark-1: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 1);
+        $color-grayscale-dark-2: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 2);
+        $color-grayscale-dark-3: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 3);
+        $color-grayscale-dark-4: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 4);
+        $color-grayscale-dark-5: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 5);
+        $color-grayscale-dark-6: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 6);
+        $color-grayscale-dark-7: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 7);
+        $color-grayscale-dark-8: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 8);
+        $color-grayscale-dark-9: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 9);
+        $color-grayscale-dark-10: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 10);
+        $color-grayscale-dark-11: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 11);
+        $color-grayscale-dark-12: mix($color-adjustment-dark, $color-grayscale, $color-adjustment * 12);
+
+// BLACK COLLECTION
+    $color-black-rgb: #000000;
+    $color-black-rich: #231f20;
+    $color-black-neutralrich: #000104;
+    $color-black-pantone: #2e2a25;
+    $color-black-registration: #000000;
+    $color-black-designer: #000000;
+    $color-black-photoshop: #000000;
+    $color-black-cool: #001423;
+    $color-black-warm: #220000;
+    $color-black-golden: #1e1b00;
+
+// COLOR-SCGOLFPANEL-GREEN COLLECTION
+    // -LIGHT
+        $color-scgolfpanel-green-light-12: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 12);
+        $color-scgolfpanel-green-light-11: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 11);
+        $color-scgolfpanel-green-light-10: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 10);
+        $color-scgolfpanel-green-light-9: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 9);
+        $color-scgolfpanel-green-light-8: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 8);
+        $color-scgolfpanel-green-light-7: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 7);
+        $color-scgolfpanel-green-light-6: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 6);
+        $color-scgolfpanel-green-light-5: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 5);
+        $color-scgolfpanel-green-light-4: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 4);
+        $color-scgolfpanel-green-light-3: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 3);
+        $color-scgolfpanel-green-light-2: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 2);
+        $color-scgolfpanel-green-light-1: mix($color-adjustment-light, $color-scgolfpanel-green, $color-adjustment * 1);
+
+    // -BASE
+        $color-scgolfpanel-green-0: $color-scgolfpanel-green;
+
+    // -DARK
+        $color-scgolfpanel-green-dark-1: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 1);
+        $color-scgolfpanel-green-dark-2: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 2);
+        $color-scgolfpanel-green-dark-3: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 3);
+        $color-scgolfpanel-green-dark-4: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 4);
+        $color-scgolfpanel-green-dark-5: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 5);
+        $color-scgolfpanel-green-dark-6: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 6);
+        $color-scgolfpanel-green-dark-7: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 7);
+        $color-scgolfpanel-green-dark-8: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 8);
+        $color-scgolfpanel-green-dark-9: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 9);
+        $color-scgolfpanel-green-dark-10: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 10);
+        $color-scgolfpanel-green-dark-11: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 11);
+        $color-scgolfpanel-green-dark-12: mix($color-adjustment-dark, $color-scgolfpanel-green, $color-adjustment * 12);
+
+// COLOR-SCGOLFPANEL-BROWN COLLECTION
+    // -LIGHT
+        $color-scgolfpanel-brown-light-12: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 12);
+        $color-scgolfpanel-brown-light-11: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 11);
+        $color-scgolfpanel-brown-light-10: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 10);
+        $color-scgolfpanel-brown-light-9: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 9);
+        $color-scgolfpanel-brown-light-8: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 8);
+        $color-scgolfpanel-brown-light-7: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 7);
+        $color-scgolfpanel-brown-light-6: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 6);
+        $color-scgolfpanel-brown-light-5: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 5);
+        $color-scgolfpanel-brown-light-4: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 4);
+        $color-scgolfpanel-brown-light-3: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 3);
+        $color-scgolfpanel-brown-light-2: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 2);
+        $color-scgolfpanel-brown-light-1: mix($color-adjustment-light, $color-scgolfpanel-brown, $color-adjustment * 1);
+
+    // -BASE
+        $color-scgolfpanel-brown-0: $color-scgolfpanel-brown;
+
+    // -DARK
+        $color-scgolfpanel-brown-dark-1: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 1);
+        $color-scgolfpanel-brown-dark-2: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 2);
+        $color-scgolfpanel-brown-dark-3: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 3);
+        $color-scgolfpanel-brown-dark-4: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 4);
+        $color-scgolfpanel-brown-dark-5: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 5);
+        $color-scgolfpanel-brown-dark-6: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 6);
+        $color-scgolfpanel-brown-dark-7: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 7);
+        $color-scgolfpanel-brown-dark-8: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 8);
+        $color-scgolfpanel-brown-dark-9: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 9);
+        $color-scgolfpanel-brown-dark-10: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 10);
+        $color-scgolfpanel-brown-dark-11: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 11);
+        $color-scgolfpanel-brown-dark-12: mix($color-adjustment-dark, $color-scgolfpanel-brown, $color-adjustment * 12);
+
+// COLOR-SCGOLFPANEL-BEIGE COLLECTION
+    // -LIGHT
+        $color-scgolfpanel-beige-light-12: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 12);
+        $color-scgolfpanel-beige-light-11: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 11);
+        $color-scgolfpanel-beige-light-10: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 10);
+        $color-scgolfpanel-beige-light-9: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 9);
+        $color-scgolfpanel-beige-light-8: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 8);
+        $color-scgolfpanel-beige-light-7: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 7);
+        $color-scgolfpanel-beige-light-6: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 6);
+        $color-scgolfpanel-beige-light-5: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 5);
+        $color-scgolfpanel-beige-light-4: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 4);
+        $color-scgolfpanel-beige-light-3: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 3);
+        $color-scgolfpanel-beige-light-2: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 2);
+        $color-scgolfpanel-beige-light-1: mix($color-adjustment-light, $color-scgolfpanel-beige, $color-adjustment * 1);
+
+    // -BASE
+        $color-scgolfpanel-beige-0: $color-scgolfpanel-beige;
+
+    // -DARK
+        $color-scgolfpanel-beige-dark-1: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 1);
+        $color-scgolfpanel-beige-dark-2: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 2);
+        $color-scgolfpanel-beige-dark-3: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 3);
+        $color-scgolfpanel-beige-dark-4: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 4);
+        $color-scgolfpanel-beige-dark-5: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 5);
+        $color-scgolfpanel-beige-dark-6: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 6);
+        $color-scgolfpanel-beige-dark-7: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 7);
+        $color-scgolfpanel-beige-dark-8: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 8);
+        $color-scgolfpanel-beige-dark-9: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 9);
+        $color-scgolfpanel-beige-dark-10: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 10);
+        $color-scgolfpanel-beige-dark-11: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 11);
+        $color-scgolfpanel-beige-dark-12: mix($color-adjustment-dark, $color-scgolfpanel-beige, $color-adjustment * 12);
+
+// COLOR-SCGOLFPANEL-GRAY COLLECTION
+    // -LIGHT
+        $color-scgolfpanel-gray-light-12: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 12);
+        $color-scgolfpanel-gray-light-11: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 11);
+        $color-scgolfpanel-gray-light-10: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 10);
+        $color-scgolfpanel-gray-light-9: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 9);
+        $color-scgolfpanel-gray-light-8: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 8);
+        $color-scgolfpanel-gray-light-7: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 7);
+        $color-scgolfpanel-gray-light-6: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 6);
+        $color-scgolfpanel-gray-light-5: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 5);
+        $color-scgolfpanel-gray-light-4: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 4);
+        $color-scgolfpanel-gray-light-3: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 3);
+        $color-scgolfpanel-gray-light-2: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 2);
+        $color-scgolfpanel-gray-light-1: mix($color-adjustment-light, $color-scgolfpanel-gray, $color-adjustment * 1);
+
+    // -BASE
+        $color-scgolfpanel-gray-0: $color-scgolfpanel-gray;
+
+    // -DARK
+        $color-scgolfpanel-gray-dark-1: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 1);
+        $color-scgolfpanel-gray-dark-2: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 2);
+        $color-scgolfpanel-gray-dark-3: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 3);
+        $color-scgolfpanel-gray-dark-4: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 4);
+        $color-scgolfpanel-gray-dark-5: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 5);
+        $color-scgolfpanel-gray-dark-6: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 6);
+        $color-scgolfpanel-gray-dark-7: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 7);
+        $color-scgolfpanel-gray-dark-8: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 8);
+        $color-scgolfpanel-gray-dark-9: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 9);
+        $color-scgolfpanel-gray-dark-10: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 10);
+        $color-scgolfpanel-gray-dark-11: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 11);
+        $color-scgolfpanel-gray-dark-12: mix($color-adjustment-dark, $color-scgolfpanel-gray, $color-adjustment * 12);
+
+// COLOR-SCGOLFPANEL-BLUE COLLECTION
+    // -LIGHT
+        $color-scgolfpanel-blue-light-12: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 12);
+        $color-scgolfpanel-blue-light-11: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 11);
+        $color-scgolfpanel-blue-light-10: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 10);
+        $color-scgolfpanel-blue-light-9: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 9);
+        $color-scgolfpanel-blue-light-8: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 8);
+        $color-scgolfpanel-blue-light-7: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 7);
+        $color-scgolfpanel-blue-light-6: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 6);
+        $color-scgolfpanel-blue-light-5: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 5);
+        $color-scgolfpanel-blue-light-4: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 4);
+        $color-scgolfpanel-blue-light-3: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 3);
+        $color-scgolfpanel-blue-light-2: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 2);
+        $color-scgolfpanel-blue-light-1: mix($color-adjustment-light, $color-scgolfpanel-blue, $color-adjustment * 1);
+
+    // -BASE
+        $color-scgolfpanel-blue-0: $color-scgolfpanel-blue;
+
+    // -DARK
+        $color-scgolfpanel-blue-dark-1: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 1);
+        $color-scgolfpanel-blue-dark-2: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 2);
+        $color-scgolfpanel-blue-dark-3: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 3);
+        $color-scgolfpanel-blue-dark-4: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 4);
+        $color-scgolfpanel-blue-dark-5: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 5);
+        $color-scgolfpanel-blue-dark-6: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 6);
+        $color-scgolfpanel-blue-dark-7: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 7);
+        $color-scgolfpanel-blue-dark-8: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 8);
+        $color-scgolfpanel-blue-dark-9: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 9);
+        $color-scgolfpanel-blue-dark-10: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 10);
+        $color-scgolfpanel-blue-dark-11: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 11);
+        $color-scgolfpanel-blue-dark-12: mix($color-adjustment-dark, $color-scgolfpanel-blue, $color-adjustment * 12);

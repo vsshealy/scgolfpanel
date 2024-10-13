@@ -1,0 +1,32 @@
+/**
+ * sass/global/borders.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2024.10.13)
+ * @copyright 2024 (2024.10.13)
+**/
+
+// SETTINGS
+    $border-width: 0.20rem;
+    $border-radius: 0.00rem;
+    $border-outline-weight: 1px;
+    $border-color: $color-grayscale-light-12;
+    $border-color-alt: $color-scgolfpanel-brown-0;
+    $border-outline: $border-outline-weight solid $border-color;
+    $border-section: $border-width solid $border-color;
+
+// STYLES
+    .border {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //.BORDER
