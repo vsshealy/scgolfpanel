@@ -16,8 +16,8 @@
     $button-border-weight: $border-outline-weight;
     $button-margin-vertical: $margin-md;
     $button-margin-horizontal: $margin-none;
-    $button-padding-vertical: $padding-xs;
-    $button-padding-horizontal: $padding-md;
+    $button-padding-vertical: $padding-sm;
+    $button-padding-horizontal: $padding-lg;
 
     // BUTTON-SOLID
         $button-solid-color: $button-color;
@@ -70,18 +70,29 @@
                 } //:HOVER
 
             // MOBILE
-                @media #{$media-xs} {} //.COL-XS
-                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-xs} {
+                    font-size: $button-text-size * 1.00;
+                } //.COL-XS
+                @media #{$media-sm} {
+                    font-size: $button-text-size * 1.00;
+                } //.COL-SM
                 @media #{$media-md} {
                     width: auto;
+                    font-size: $button-text-size * 1.00;
                 } //.COL-MD
                 @media #{$device-mobile} {} //.MOBILE
 
             // DESKTOP
                 @media #{$device-desktop} {} //.DESKTOP
-                @media #{$media-lg} {} //.COL-LG
-                @media #{$media-xl} {} //.COL-XL
-                @media #{$media-xxl} {} //.COL-XXL
+                @media #{$media-lg} {
+                    font-size: $button-text-size * 1.00;
+                } //.COL-LG
+                @media #{$media-xl} {
+                    font-size: $button-text-size * 1.10;
+                } //.COL-XL
+                @media #{$media-xxl} {
+                    font-size: $button-text-size * 1.20;
+                } //.COL-XXL
 
             i {
                 // GLOBAL
@@ -125,6 +136,23 @@
                 @media #{$media-lg} {} //.COL-LG
                 @media #{$media-xl} {} //.COL-XL
                 @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-solid-text-color;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //TEXT-ALL
         } //.BUTTON-SOLID
 
     // BUTTON-ALT
@@ -151,6 +179,23 @@
                 @media #{$media-lg} {} //.COL-LG
                 @media #{$media-xl} {} //.COL-XL
                 @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-alt-text-color;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } // TEXT-ALL
         } //.BUTTON-ALT
 
     // BUTTON-GHOST
@@ -177,6 +222,23 @@
                 @media #{$media-lg} {} //.COL-LG
                 @media #{$media-xl} {} //.COL-XL
                 @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-ghost-text-color;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } // TEXT-ALL
         } //.BUTTON-GHOST
 
     // BUTTON-MOBILE
@@ -199,4 +261,21 @@
                 @media #{$media-lg} {} //.COL-LG
                 @media #{$media-xl} {} //.COL-XL
                 @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-mobile-text-color;
+                    
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } // TEXT-ALL
         } //.BUTTON-MOBILE

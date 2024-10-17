@@ -35,6 +35,15 @@
     @import "global/devices";
     @import "global/flexbox";
     @import "global/grids";
+    @import "global/wrappers";
+
+// EXTERNAL
+    @import "external/bootstrap";
+
+// PARTS
+    @import "parts/sections";
+    @import "parts/heroes";
+    @import "parts/banners";
 
 // TEMPLATES
     // GLOBAL
