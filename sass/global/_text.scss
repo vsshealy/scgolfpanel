@@ -1,0 +1,771 @@
+/**
+ * sass/global/text.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2024.12.04)
+ * @copyright 2024 (2024.12.04)
+**/
+
+// SETTINGS
+    // FONT STACKS
+        $font-sans: Roboto, Helvetica, Arial, sans-serif;
+        $font-serif: Merriweather, Georgia, serif;
+
+    // FONT SIZES
+        $font-size-base: 1.00rem;
+        $font-size-xs: 14px;
+        $font-size-sm: 14px;
+        $font-size-md: 14px;
+        $font-size-lg: 16px;
+        $font-size-xl: 16px;
+        $font-size-xxl: 16px;
+
+    // COLORS
+        $text-color-normal: $color-grayscale-dark-6;
+        $text-color-alt: $color-scgolfpanel-brown-0;
+        $text-color-white: $color-grayscale-light-12;
+        $text-color-light: $color-grayscale-light-9;
+        $text-color-medium: $color-grayscale-0;
+        $text-color-dark: $color-grayscale-dark-9;
+        $text-color-black: $color-grayscale-dark-12;
+
+    // LINE-HEIGHTS
+        $line-height-overlap: 0.90;
+        $line-height-single: 1.00;
+        $line-height-condensed: 1.25;
+        $line-height-normal: 1.50;
+        $line-height-expanded: 1.75;
+        $line-height-double: 2.00;
+
+    // LETTER SPACING
+        $letter-spacing-condensed: -1px;
+        $letter-spacing-normal: 0px;
+        $letter-spacing-expanded: 1px;
+
+    // BODY TEXT
+        $body-text: $font-sans;
+        $body-text-size: $font-size-base;
+        $body-text-color: $text-color-normal;
+        $body-text-height: $line-height-normal;
+        $body-text-spacing: $letter-spacing-normal;
+        $body-text-margin: $margin-sm;
+
+    // HEADING TEXT
+        $heading-text: $font-serif;
+        $heading-text-color: $text-color-dark;
+        $heading-text-size-h1: 2.50rem;
+        $heading-text-size-h2: 2.00rem;
+        $heading-text-size-h3: 1.75rem;
+        $heading-text-size-h4: 1.50rem;
+        $heading-text-size-h5: 1.25rem;
+        $heading-text-size-h6: 1.00rem;
+        $heading-text-style: none;
+        $heading-text-height: $line-height-condensed;
+        $heading-text-spacing: $letter-spacing-normal;
+        $heading-text-margin: $margin-md;
+        $heading-primary-text: $heading-text;
+        $heading-primary-text-color: $heading-text-color;
+        $heading-secondary-text: $body-text;
+        $heading-secondary-text-color: $body-text-color;
+
+    // LINKS
+        $link-text-color: $link-color;
+        $link-hover-text-color: $link-hover-color;
+
+    // ICONS
+        $icon-font: normal normal normal $font-size-base FontAwesome;
+        $icon-margin: $margin-xs;
+
+    // SHADOWS
+        $text-shadow: $shadow-text;
+
+// LISTS
+    // HEADINGS
+        $text-headings-h1: "h1, .h1";
+        $text-headings-h2: "h2, .h2";
+        $text-headings-h3: "h3, .h3";
+        $text-headings-h4: "h4, .h4";
+        $text-headings-h5: "h5, .h5";
+        $text-headings-h6: "h6, .h6";
+        $text-headings-primary: "#{$text-headings-h1}, #{$text-headings-h2}, #{$text-headings-h3}, #{$text-headings-h4}";
+        $text-headings-secondary: "#{$text-headings-h5}, #{$text-headings-h6}";
+        $text-headings-all: "#{$text-headings-h1}, #{$text-headings-h2}, #{$text-headings-h3}, #{$text-headings-h4}, #{$text-headings-h5}, #{$text-headings-h6}";
+
+    // BODY
+        $text-body-p: "p, .p";
+        $text-body-lists: "ol, .ol, ul, .ul";
+        $text-body-li: "li, .li";
+        $text-body-span: "span, .span";
+        $text-body-all: "#{$text-body-p}, #{$text-body-lists}, #{$text-body-li}, #{$text-body-span}";
+
+    // LINKS
+        $text-links: "a, .a";
+        $text-links-all: "#{$text-links}";
+
+    // TEXT-ALL
+        $text-all: "#{$text-headings-all}, #{$text-body-all}, #{$text-links-all}";
+
+// STYLES
+    // BODY TEXT
+        #{$text-body-all} {
+            // GLOBAL
+                font-family: $body-text;
+                // font-size: $body-text-size;
+                line-height: $body-text-height;
+                letter-spacing: $body-text-spacing;
+                color: $body-text-color;
+
+            // MOBILE
+                @media #{$media-xs} {
+                    font-size: $body-text-size * 1.00;
+                } //.COL-XS
+                @media #{$media-sm} {
+                    font-size: $body-text-size * 1.00;
+                } //.COL-SM
+                @media #{$media-md} {
+                    font-size: $body-text-size * 1.00;
+                } //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {
+                    font-size: $body-text-size * 1.00;
+                } //.COL-LG
+                @media #{$media-xl} {
+                    font-size: $body-text-size * 1.10;
+                } //.COL-XL
+                @media #{$media-xxl} {
+                    font-size: $body-text-size * 1.20;
+                } //.COL-XXL
+        } //TEXT-BODY-ALL
+
+        #{$text-body-p} {
+            // GLOBAL
+                margin: $body-text-margin $margin-none;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-BODY-P
+
+        #{$text-body-lists} {
+            // GLOBAL
+                padding-left: 1.50rem;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-BODY-LISTS
+
+        #{$text-body-li} {
+            // GLOBAL
+                margin: ($body-text-margin * 0.50) $margin-none;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-BODY-LI
+
+        #{$text-body-span} {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-BODY-SPAN
+
+    // HEADING TEXT
+        #{$text-headings-all} {
+            // GLOBAL
+                line-height: $heading-text-height;
+                letter-spacing: $heading-text-spacing;
+                text-transform: $heading-text-style;
+                margin: $heading-text-margin $margin-none ($heading-text-margin * 0.50) $margin-none;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-HEADINGS-ALL
+
+        #{$text-headings-primary} {
+            // GLOBAL
+                font-family: $heading-primary-text;
+                font-weight: 300;
+                color: $heading-primary-text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-HEADINGS-PRIMARY
+
+        #{$text-headings-secondary} {
+            // GLOBAL
+                font-family: $heading-secondary-text;
+                font-weight: 700;
+                color: $heading-secondary-text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-HEADINGS-SECONDARY
+
+        #{$text-headings-h1} {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {
+                    font-size: $heading-text-size-h1 * 0.70;
+                } //.COL-XS
+                @media #{$media-sm} {
+                    font-size: $heading-text-size-h1 * 0.80;
+                } //.COL-SM
+                @media #{$media-md} {
+                    font-size: $heading-text-size-h1 * 0.90;
+                } //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {
+                    font-size: $heading-text-size-h1 * 1.00;
+                } //.COL-LG
+                @media #{$media-xl} {
+                    font-size: $heading-text-size-h1 * 1.10;
+                } //.COL-XL
+                @media #{$media-xxl} {
+                    font-size: $heading-text-size-h1 * 1.20;
+                } //.COL-XXL
+        } //TEXT-HEADINGS-H1
+
+        #{$text-headings-h2} {
+            // GLOBAL
+            // MOBILE
+            @media #{$media-xs} {
+                font-size: $heading-text-size-h2 * 0.70;
+            } //.COL-XS
+            @media #{$media-sm} {
+                font-size: $heading-text-size-h2 * 0.80;
+            } //.COL-SM
+            @media #{$media-md} {
+                font-size: $heading-text-size-h2 * 0.90;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {
+                font-size: $heading-text-size-h2 * 1.00;
+            } //.COL-LG
+            @media #{$media-xl} {
+                font-size: $heading-text-size-h2 * 1.10;
+            } //.COL-XL
+            @media #{$media-xxl} {
+                font-size: $heading-text-size-h2 * 1.20;
+            } //.COL-XXL
+        } //TEXT-HEADINGS-H2
+
+        #{$text-headings-h3} {
+            // GLOBAL
+            // MOBILE
+            @media #{$media-xs} {
+                font-size: $heading-text-size-h3 * 0.70;
+            } //.COL-XS
+            @media #{$media-sm} {
+                font-size: $heading-text-size-h3 * 0.80;
+            } //.COL-SM
+            @media #{$media-md} {
+                font-size: $heading-text-size-h3 * 0.90;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {
+                font-size: $heading-text-size-h3 * 1.00;
+            } //.COL-LG
+            @media #{$media-xl} {
+                font-size: $heading-text-size-h3 * 1.10;
+            } //.COL-XL
+            @media #{$media-xxl} {
+                font-size: $heading-text-size-h3 * 1.20;
+            } //.COL-XXL
+        } //TEXT-HEADINGS-H3
+
+        #{$text-headings-h4} {
+            // GLOBAL
+            // MOBILE
+            @media #{$media-xs} {
+                font-size: $heading-text-size-h4 * 0.70;
+            } //.COL-XS
+            @media #{$media-sm} {
+                font-size: $heading-text-size-h4 * 0.80;
+            } //.COL-SM
+            @media #{$media-md} {
+                font-size: $heading-text-size-h4 * 0.90;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {
+                font-size: $heading-text-size-h4 * 1.00;
+            } //.COL-LG
+            @media #{$media-xl} {
+                font-size: $heading-text-size-h4 * 1.10;
+            } //.COL-XL
+            @media #{$media-xxl} {
+                font-size: $heading-text-size-h4 * 1.20;
+            } //.COL-XXL
+        } //TEXT-HEADINGS-H4
+
+        #{$text-headings-h5} {
+            // GLOBAL
+            // MOBILE
+            @media #{$media-xs} {
+                font-size: $heading-text-size-h5 * 1.00;
+            } //.COL-XS
+            @media #{$media-sm} {
+                font-size: $heading-text-size-h5 * 1.00;
+            } //.COL-SM
+            @media #{$media-md} {
+                font-size: $heading-text-size-h5 * 1.00;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {
+                font-size: $heading-text-size-h5 * 1.00;
+            } //.COL-LG
+            @media #{$media-xl} {
+                font-size: $heading-text-size-h5 * 1.10;
+            } //.COL-XL
+            @media #{$media-xxl} {
+                font-size: $heading-text-size-h5 * 1.20;
+            } //.COL-XXL
+        } //TEXT-HEADINGS-H5
+
+        #{$text-headings-h6} {
+            // GLOBAL
+            // MOBILE
+            @media #{$media-xs} {
+                font-size: $heading-text-size-h6 * 1.00;
+            } //.COL-XS
+            @media #{$media-sm} {
+                font-size: $heading-text-size-h6 * 1.00;
+            } //.COL-SM
+            @media #{$media-md} {
+                font-size: $heading-text-size-h6 * 1.00;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {
+                font-size: $heading-text-size-h6 * 1.00;
+            } //.COL-LG
+            @media #{$media-xl} {
+                font-size: $heading-text-size-h6 * 1.10;
+            } //.COL-XL
+            @media #{$media-xxl} {
+                font-size: $heading-text-size-h6 * 1.20;
+            } //.COL-XXL
+        } //TEXT-HEADINGS-H6
+
+    // LINKS
+        #{$text-links-all} {
+            // GLOBAL
+                color: $link-text-color;
+                text-decoration: none;
+
+                &:hover {
+                    color: $link-hover-text-color;
+                    text-decoration: none;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-LINKS-ALL
+
+        #{$text-links} {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-LINKS
+
+    // ICONS
+        i {
+            // GLOBAL
+                margin-right: $icon-margin;
+                
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //I
+
+    // SHADOWS
+        .text-shadow {
+            // GLOBAL
+                text-shadow: $shadow-text;
+                
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.TEXT-SHADOW
+
+    // GLOBAL STYLES
+        .text {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            &-align {
+                // GLOBAL
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                &-left {
+                    // GLOBAL
+                        text-align: left;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.TEXT-ALIGN-LEFT
+
+                &-center {
+                    // GLOBAL
+                        text-align: center;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.TEXT-ALIGN-CENTER
+
+                &-right {
+                    // GLOBAL
+                        text-align: right;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.TEXT-ALIGN-RIGHT
+
+                &-justify {
+                    // GLOBAL
+                        text-align: justify;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.TEXT-ALIGN-JUSTIFY
+            } //.TEXT-ALIGN
+
+            &-italic {
+                // GLOBAL
+                    font-style: italic;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.TEXT-ITALIC
+
+            &-weight {
+                // GLOBAL
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                &-light {
+                    // GLOBAL
+                        font-weight: 300;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.TEXT-WEIGHT-LIGHT
+
+                &-normal {
+                    // GLOBAL
+                        font-weight: 400;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.TEXT-WEIGHT-NORMAL
+
+                &-bold {
+                    // GLOBAL
+                        font-weight: 700;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.TEXT-WEIGHT-BOLD
+            } //.TEXT-WEIGHT
+
+            &-lowercase {
+                // GLOBAL
+                    text-transform: lowercase;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.TEXT-LOWERCASE
+
+            &-uppercase {
+                // GLOBAL
+                    text-transform: uppercase;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.TEXT-UPPERCASE
+
+            &-capitalize {
+                // GLOBAL
+                    text-transform: capitalize;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.TEXT-CAPITALIZE
+
+            &-underline {
+                // GLOBAL
+                    text-decoration: underline;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.TEXT-UNDERLINE
+
+            &-shadow {
+                // GLOBAL
+                    text-shadow: $text-shadow;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.TEXT-SHADOW
+            
+        } //.TEXT

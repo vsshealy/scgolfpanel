@@ -1,0 +1,54 @@
+/**
+ * sass/external/bootstrap.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2024.12.04)
+ * @copyright 2024 (2024.12.04)
+**/
+
+// SETTINGS
+    $bootstrap-row-margin: $gutter-body;
+    $bootstrap-columns-margin: $margin-none;
+    $bootstrap-columns-padding: $gutter-columns;
+
+// STYLES
+    .row {
+        // GLOBAL
+            flex-direction: row;
+            flex-wrap: wrap;
+            margin-left: $margin-none;
+            margin-right: $margin-none;
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        .columns {
+            // GLOBAL
+                margin-top: $bootstrap-columns-margin;
+                margin-bottom: $bootstrap-columns-margin;
+                padding-left: $bootstrap-columns-padding;
+                padding-right: $bootstrap-columns-padding;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.COLUMNS
+
+    } //.ROW
