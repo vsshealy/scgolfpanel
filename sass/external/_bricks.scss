@@ -1,0 +1,52 @@
+/**
+ * sass/external/bricks.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2024.12.31)
+ * @copyright 2024 (2024.12.31)
+**/
+
+// SETTINGS
+    $bricks-component-margin: $margin-md;
+
+// STYLES
+    .brxe {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        &-text {
+            // GLOBAL
+                margin-top: $bricks-component-margin;
+                margin-bottom: $bricks-component-margin;
+
+                &:first-child {
+                    margin-top: $margin-none;
+                } //:FIRST-CHILD
+
+                &:last-child {
+                    margin-bottom: $margin-none;
+                } //:LAST-CHILD
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BRXE-TEXT
+    } //.BRXE
