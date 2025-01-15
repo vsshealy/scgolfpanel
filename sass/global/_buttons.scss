@@ -1,0 +1,281 @@
+/**
+ * sass/global/buttons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.01.15)
+ * @copyright 2025 (2025.01.15)
+**/
+
+// SETTINGS
+    $button-text: $body-text;
+    $button-text-size: $body-text-size;
+    $button-text-style: none;
+    $button-font-weight: 400;
+    $button-color: $link-color;
+    $button-border-radius: 0.25rem;
+    $button-border-weight: $border-outline-weight;
+    $button-margin-vertical: $margin-md;
+    $button-margin-horizontal: $margin-none;
+    $button-padding-vertical: $padding-xs;
+    $button-padding-horizontal: $padding-md;
+
+    // BUTTON-SOLID
+        $button-solid-color: $button-color;
+        $button-solid-text-color: $text-color-white;
+        $button-solid-hover-color: mix($link-hover-adjustment-color, $button-solid-color, $color-adjustment * $link-hover-adjustment);
+        $button-solid-hover-text-color: $text-color-white;
+
+    // BUTTON-ALT
+        $button-alt-color: $color-grayscale-light-12;
+        $button-alt-text-color: $button-color;
+        $button-alt-hover-color: $button-alt-text-color;
+        $button-alt-hover-text-color: $text-color-white;
+
+    // BUTTON-GHOST
+        $button-ghost-color: transparent;
+        $button-ghost-text-color: $button-color;
+        $button-ghost-hover-color: $button-ghost-text-color;
+        $button-ghost-hover-text-color: $text-color-white;
+
+    // BUTTON-MOBILE
+        $button-mobile-color: $button-solid-color;
+        $button-mobile-text-color: $button-solid-text-color;
+
+// LISTS
+    $button-solid: ".button, .button-solid, .frm_button_submit";
+    $button-alt: ".button-alt";
+    $button-ghost: ".button-ghost";
+    $button-mobile: ".button-mobile";
+    $button-all: "#{$button-solid}, #{$button-alt}, #{$button-ghost}, #{$button-mobile}, .bricks-button";
+
+// STYLES
+    // BUTTON-ALL
+        #{$button-all} {
+            // GLOBAL
+                width: 100.00%;
+                display: inline-block;
+                margin: $button-margin-vertical $button-margin-horizontal;
+                padding: $button-padding-vertical $button-padding-horizontal;
+                border-radius: $button-border-radius;
+                font-family: $button-text;
+                font-size: $button-text-size;
+                font-weight: $button-font-weight;
+                text-align: center;
+                text-transform: $button-text-style;
+                line-height: $line-height-condensed;
+                letter-spacing: $letter-spacing-normal;
+
+                &:hover {
+                    cursor: pointer;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {
+                    font-size: $button-text-size * 1.00;
+                } //.COL-XS
+                @media #{$media-sm} {
+                    font-size: $button-text-size * 1.00;
+                } //.COL-SM
+                @media #{$media-md} {
+                    width: auto;
+                    font-size: $button-text-size * 1.00;
+                } //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {
+                    font-size: $button-text-size * 1.00;
+                } //.COL-LG
+                @media #{$media-xl} {
+                    font-size: $button-text-size * 1.10;
+                } //.COL-XL
+                @media #{$media-xxl} {
+                    font-size: $button-text-size * 1.20;
+                } //.COL-XXL
+
+            i {
+                // GLOBAL
+                    margin-right: $icon-margin;
+                    
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //I
+        } //.BUTTON-ALL
+
+    // BUTTON-SOLID
+        #{$button-solid} {
+            // GLOBAL
+                background-color: $button-solid-color;
+                border: $button-border-weight solid $button-solid-text-color;
+                color: $button-solid-text-color;
+
+                &:hover {
+                    background-color: $button-solid-hover-color;
+                    border: $button-border-weight solid $button-solid-hover-text-color;
+                    color: $button-solid-hover-text-color;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-solid-text-color;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //TEXT-ALL
+        } //.BUTTON-SOLID
+
+    // BUTTON-ALT
+        #{$button-alt} {
+            // GLOBAL
+                background-color: $button-alt-color;
+                border: $button-border-weight solid $button-alt-text-color;
+                color: $button-alt-text-color;
+
+                &:hover {
+                    background-color: $button-alt-hover-color;
+                    border: $button-border-weight solid $button-alt-hover-text-color;
+                    color: $button-alt-hover-text-color;
+                } //:HOVER
+                
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-alt-text-color;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } // TEXT-ALL
+        } //.BUTTON-ALT
+
+    // BUTTON-GHOST
+        #{$button-ghost} {
+            // GLOBAL
+                background-color: $button-ghost-color;
+                border: $button-border-weight solid $button-ghost-text-color;
+                color: $button-ghost-text-color;
+
+                &:hover {
+                    background-color: $button-ghost-hover-color;
+                    border: $button-border-weight solid $button-ghost-hover-text-color;
+                    color: $button-ghost-hover-text-color;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-ghost-text-color;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } // TEXT-ALL
+        } //.BUTTON-GHOST
+
+    // BUTTON-MOBILE
+        #{$button-mobile} {
+            // GLOBAL
+                width: 100.00%;
+                display: block;
+                margin: $button-margin-vertical auto !important;
+                border: $button-border-weight solid $button-mobile-text-color;
+                color: $button-mobile-text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            #{$text-all} {
+                // GLOBAL
+                    color: $button-mobile-text-color;
+                    
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } // TEXT-ALL
+        } //.BUTTON-MOBILE

@@ -1,0 +1,154 @@
+/**
+ * sass/global/tables.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.01.15)
+ * @copyright 2025 (2025.01.15)
+**/
+
+// SETTINGS
+    $table-header-background: $color-scgolfpanel-brown-0;
+    $table-subheader-background: $color-scgolfpanel-beige-0;
+    $table-row-odd-background: $color-grayscale-light-11;
+    $table-row-even-background: $color-grayscale-light-9;
+    $table-border: $table-header-background;
+    $table-cell-padding: $padding-xxs;
+
+// STYLES
+    table {
+        // GLOBAL
+            margin-bottom: $margin-none;
+            border: $border-outline-weight solid $table-border;
+            font-size: $body-text-size;
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        thead {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            tr {
+                // GLOBAL
+                    background-color: $table-header-background;
+                    color: $color-grayscale-light-12;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                th, td {
+                    // GLOBAL
+                        padding: $table-cell-padding;
+                        border: none;
+                        font-weight: 400;
+                        text-align: center;
+
+                        &:first-child {
+                            text-align: left;
+                        } //:FIRST-CHILD
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //TH, TD
+            } //TR
+        } //THEAD
+
+        tbody {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            tr {
+                // GLOBAL
+                    &:nth-child(odd) {
+                        background-color: $table-row-odd-background;
+                    } //:NTH-CHILD(ODD)
+
+                    &:nth-child(even) {
+                        background-color: $table-row-even-background;
+                    } //:NTH-CHILD(EVEN)
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                td {
+                    // GLOBAL
+                        padding: $table-cell-padding;
+                        border: none;
+                        text-align: center;
+
+                        &:first-child {
+                            text-align: left;
+                        } //:FIRST-CHILD
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //TD
+            } //TR
+        } //TBODY
+        
+    } //TABLE

@@ -1,0 +1,88 @@
+/**
+ * sass/global/site.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.01.15)
+ * @copyright 2025 (2025.01.15)
+**/
+
+// SETTINGS
+    $body-background-color: $color-grayscale-light-12;
+
+    // GUTTERS
+        $gutter-body: $padding-md;
+        $gutter-rows: $padding-md;
+        $gutter-columns: $padding-sm;
+    
+// STYLES
+    * {
+        // GLOBAL
+            box-sizing: border-box;
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //*
+
+    html {
+        // GLOBAL
+            overflow-x: hidden;
+
+        // MOBILE
+            @media #{$media-xs} {
+                font-size: $font-size-xs;
+            } //.COL-XS
+            @media #{$media-sm} {
+                font-size: $font-size-sm;
+            } //.COL-SM
+            @media #{$media-md} {
+                font-size: $font-size-md;
+            } //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {
+                font-size: $font-size-lg;
+            } //.COL-LG
+            @media #{$media-xl} {
+                font-size: $font-size-xl;
+            } //.COL-XL
+            @media #{$media-xxl} {
+                font-size: $font-size-xxl;
+            } //.COL-XXL
+    } //HTML
+
+    body {
+        // GLOBAL
+            height: 100.00%;
+            margin: $margin-none;
+            padding: $padding-none;
+            background-color: $body-background-color;
+            font-family: $body-text;
+            color: $body-text-color;
+            letter-spacing: $letter-spacing-normal;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //BODY
