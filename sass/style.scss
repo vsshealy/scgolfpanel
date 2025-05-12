@@ -10,3 +10,29 @@
  * License: GNU General Public License v3 or Later
  * License URI: http://www.gnu.org/license/gpl-3.0.html
 **/
+
+// THEME PATH
+    $theme-path: "/wp-content/themes/scgolfpanel";
+
+// LOAD PARTIALS
+    @use "theme/index" as *;
+    @use "variables/index" as *;
+    @use "layouts/index" as *;
+    @use "components/index" as *;
+    @use "vendors/index" as *;
+    @use "sections/index" as *;
+    @use "pages/index" as *;
+
+// TEMPLATES
+    // GLOBAL
+    // MOBILE
+        @media #{$media-xs} {} //.COL-XS
+        @media #{$media-sm} {} //.COL-SM
+        @media #{$media-md} {} //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$media-lg} {} //.COL-LG
+        @media #{$media-xl} {} //.COL-XL
+        @media #{$media-xxl} {} //.COL-XXL

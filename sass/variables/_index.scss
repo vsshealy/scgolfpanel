@@ -1,0 +1,16 @@
+/**
+ * sass/variables/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.05.04)
+ * @copyright 2025 (2025.05.04)
+**/
+
+// LOAD PARTIALS
+// FORWARD PARTIALS
+    @forward "colors";
+    @forward "units";
+    @forward "media";
+    @forward "lists";
+    @forward "functions";
+    @forward "mixins";

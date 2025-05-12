@@ -1,0 +1,46 @@
+/**
+ * sass/theme/backgrounds.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.05.06)
+ * @copyright 2025 (2025.05.06)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "text" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+
+// BACKGROUND-1
+    $background-1-color: $color-scgolfpanel-brown-0;
+    $background-1-text-color: $color-scgolfpanel-brown-light-12;
+
+// BACKGROUND-2
+    $background-2-color: $color-scgolfpanel-beige-0;
+    $background-2-text-color: $color-scgolfpanel-beige-dark-6;
+
+// BACKGROUND-3
+    $background-3-color: $color-scgolfpanel-indigo-0;
+    $background-3-text-color: $color-scgolfpanel-indigo-light-12;
+
+// BACKGROUND-4
+    $background-4-color: $color-scgolfpanel-green-0;
+    $background-4-text-color: $color-scgolfpanel-green-light-12;
+
+// BACKGROUND-5
+    $background-5-color: $color-scgolfpanel-gold-0;
+    $background-5-text-color: $color-scgolfpanel-gold-light-12;
+
+// BACKGROUND-6
+    $background-6-color: $color-grayscale-light-12;
+    $background-6-text-color: $text-color-alt;
+
+// BACKGROUND-7
+    $background-7-color: $color-grayscale-light-12;
+    $background-7-text-color: $text-color-dark;
+
+// BACKGROUND-8
+    $background-8-color: $color-grayscale-dark-12;
+    $background-8-text-color: $color-grayscale-light-12;
