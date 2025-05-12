@@ -8,6 +8,7 @@
 
 // LOAD PARTIALS
 // FORWARD PARTIALS
+    @forward "meta";
     @forward "colors";
     @forward "global";
     @forward "media";
