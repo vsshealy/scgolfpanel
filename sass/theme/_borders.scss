@@ -1,0 +1,28 @@
+/**
+ * sass/theme/borders.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.06.10)
+ * @copyright 2025 (2025.06.10)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+
+// BORDER WIDTHS
+    $border-width: 0.20rem;
+    $border-outline-width: 1px;
+
+// BORDER RADIUS
+    $border-radius: 0.00rem;
+
+// BORDER COLORS
+    $border-color: $color-grayscale-light-12;
+    $border-color-alt: $color-scgolfpanel-brown-0;
+
+// BORDER SETTINGS
+    $border-section: $border-width solid $border-color;
+    $border-outline: $border-outline-width solid $border-color;

@@ -1,0 +1,46 @@
+/**
+ * sass/theme/gradients.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.06.10)
+ * @copyright 2025 (2025.06.10)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "text" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+
+// GRADIENT-1
+    $gradient-1: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95) 0.00%, rgba($color-grayscale-dark-9, 0.85) 20.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-1-text-color: $text-color-white;
+
+// GRADIENT-2
+    $gradient-2: linear-gradient(0deg, rgba($color-scgolfpanel-green-dark-10, 0.95) 0.00%, rgba($color-scgolfpanel-green-dark-2, 0.85) 50.00%, rgba($color-scgolfpanel-green-0, 0.60) 100.00%);
+    $gradient-2-text-color: $text-color-white;
+
+// GRADIENT-3
+    $gradient-3: linear-gradient(180deg, rgba($color-grayscale-dark-9, 0.70) 0.00%, rgba($color-grayscale-dark-9, 0.85) 50.00%, rgba($color-grayscale-dark-9, 0.95) 100.00%);
+    $gradient-3-text-color: $text-color-white;
+
+// GRADIENT-4
+    $gradient-4: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95) 0.00%, rgba($color-grayscale-dark-9, 0.85) 50.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-4-text-color: $text-color-white;
+
+// GRADIENT-5
+    $gradient-5: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95) 0.00%, rgba($color-grayscale-dark-9, 0.85) 50.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-5-text-color: $text-color-white;
+
+// GRADIENT-6
+    $gradient-6: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95) 0.00%, rgba($color-grayscale-dark-9, 0.85) 50.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-6-text-color: $text-color-white;
+
+// GRADIENT-7
+    $gradient-7: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.00%) 0.00%, rgba($color-grayscale-dark-9, 0.85) 50.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-7-text-color: $text-color-white;
+
+// GRADIENT-8
+    $gradient-8: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95%) 0.00%, rgba($color-grayscale-dark-9, 0.85) 50.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-8-text-color: $text-color-white;
