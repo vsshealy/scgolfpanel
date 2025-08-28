@@ -1,0 +1,43 @@
+/**
+ * sass/variables/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.08.27)
+ * @copyright 2025 (2025.08.27)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/global" as *;
+
+// BOOTSTRAP
+    $media-col-xs: "(max-width: 575.5px)";
+    $media-col-sm: "(min-width: 576px)";
+    $media-col-md: "(min-width: 768px)";
+    $media-col-lg: "(min-width: 992px)";
+    $media-col-xl: "(min-width: 1200px)";
+    $media-col-xxl: "(min-width: 1400px)";
+
+// CONTENT
+    $content-width-sm-px: $site-width-content - 1px;
+    $content-width-lg-px: $site-width-content;
+    $content-width-sm: "(max-width: #{$content-width-sm-px})";
+    $content-width-lg: "(min-width: #{$content-width-lg-px})";
+
+// BROWSERS
+    $browser-mozilla: "all and (min-moz-device-pixel-ratio: 0) and (min-resolution: 3e1dpcm)";
+    $browser-ie: "screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none)";
+    $browser-webkit: "-webkit-min-device-pixel-ratio: 0";
+
+// DEVICES
+    $device-phone: "(max-width: 576px)";
+    $device-tablet: "(min-width: 576px) and (max-width: 992px)";
+    $device-mobile: "(max-width: 991px)";
+    $device-desktop: "(min-width: 992px)";
+    $device-desktop-sm: "(min-width: 992px)";
+    $device-desktop-md: "(min-width: 1200px)";
+    $device-desktop-lg: "(min-width: 1400px)";
+    $device-desktop-xl: "(min-width: 1920px)";
+    $device-desktop-xxl: "(min-width: 3840px)";
+
+// DISPLAYS
+    $display-retina: "(-webkit-min-pixel-ratio: 2.00), (min-resolution: 192dpi)";

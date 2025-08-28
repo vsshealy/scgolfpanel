@@ -1,0 +1,21 @@
+/**
+ * sass/theme/links.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.08.27)
+ * @copyright 2025 (2025.08.27)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+
+// COLORS
+    $link-color: $color-scgolfpanel-green-0;
+    $link-hover-color: $color-scgolfpanel-green-dark-3;
+
+// HOVER ADJUSTMENTS
+    $link-hover-adjustment: 3.00;
+    $link-hover-adjustment-color: $color-adjustment-dark;

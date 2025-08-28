@@ -1,0 +1,13 @@
+/**
+ * sass/sections/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.08.27)
+ * @copyright 2025 (2025.08.27)
+**/
+
+// LOAD PARTIALS
+// FORWARD PARTIALS
+    @forward "header";
+    @forward "footer";
+    @forward "menus";

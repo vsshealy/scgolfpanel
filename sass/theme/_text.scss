@@ -1,0 +1,90 @@
+/**
+ * sass/theme/text.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.08.27)
+ * @copyright 2025 (2025.08.27)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "links" as *;
+    @use "shadows" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+
+// FONT STACKS
+    $font-sans: Roboto, Helvetica, Arial, sans-serif;
+    $font-serif: Merriweather, Georgia, serif;
+
+// FONT SIZES
+    $font-size-base: 1.00rem;
+    $font-size-xs: 16px;
+    $font-size-sm: 16px;
+    $font-size-md: 16px;
+    $font-size-lg: 18px;
+    $font-size-xl: 18px;
+    $font-size-xxl: 18px;
+
+// TEXT WIDTH
+    $text-width: 100ch;
+
+// COLORS
+    $text-color-normal: $color-grayscale-dark-6;
+    $text-color-alt: $color-scgolfpanel-brown-0;
+    $text-color-white: $color-grayscale-light-12;
+    $text-color-light: $color-grayscale-light-9;
+    $text-color-medium: $color-grayscale-0;
+    $text-color-dark: $color-grayscale-dark-9;
+    $text-color-black: $color-grayscale-dark-12;
+
+// LINE HEIGHTS
+    $line-height-overlap: 0.90;
+    $line-height-single: 1.00;
+    $line-height-condensed: 1.25;
+    $line-height-normal: 1.50;
+    $line-height-expanded: 1.75;
+    $line-height-double: 2.00;
+
+// LETTER SPACING
+    $letter-spacing-condensed: -1px;
+    $letter-spacing-normal: 0px;
+    $letter-spacing-expanded: 1px;
+
+// BODY TEXT
+    $body-text: $font-sans;
+    $body-text-size: $font-size-base;
+    $body-text-color: $text-color-normal;
+    $body-text-height: $line-height-normal;
+    $body-text-spacing: $letter-spacing-normal;
+    $body-text-margin: $margin-sm;
+
+// HEADING TEXT
+    $heading-text: $font-serif;
+    $heading-text-color: $text-color-dark;
+    $heading-text-size-h1: 2.50rem;
+    $heading-text-size-h2: 2.00rem;
+    $heading-text-size-h3: 1.75rem;
+    $heading-text-size-h4: 1.50rem;
+    $heading-text-size-h5: 1.25rem;
+    $heading-text-size-h6: 1.00rem;
+    $heading-text-style: none;
+    $heading-text-height: $line-height-condensed;
+    $heading-text-spacing: $letter-spacing-normal;
+    $heading-text-margin: $margin-md;
+    $heading-primary-text: $heading-text;
+    $heading-primary-text-color: $heading-text-color;
+    $heading-secondary-text: $body-text;
+    $heading-secondary-text-color: $body-text-color;
+
+// LINKS
+    $link-text-color: $link-color;
+    $link-hover-text-color: $link-hover-color;
+
+// ICONS
+    $icon-font: normal normal normal $font-size-base FontAwesome;
+    $icon-margin: $margin-xs;
+
+// SHADOWS
+    $text-shadow: $shadow-text;

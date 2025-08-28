@@ -1,0 +1,18 @@
+/**
+ * sass/theme/media.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.08.27)
+ * @copyright 2025 (2025.08.27)
+**/
+
+// LOAD PARTIALS
+    @use "../variables/index" as *;
+
+// MEDIA QUERIES
+    $media-xs: $media-col-xs;
+    $media-sm: $media-col-sm;
+    $media-md: $media-col-md;
+    $media-lg: $media-col-lg;
+    $media-xl: $media-col-xl;
+    $media-xxl: $media-col-xxl;
