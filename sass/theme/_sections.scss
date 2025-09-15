@@ -1,0 +1,26 @@
+/**
+ * sass/theme/sections.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.09.15)
+ * @copyright 2025 (2025.09.15)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "text" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+
+// BACKGROUNDS
+    $section-background: $color-grayscale-light-12;
+    $section-background-alt: $color-scgolfpanel-beige-light-10;
+
+// PADDINGS
+    $section-padding-xs: $padding-md;
+    $section-padding-sm: $padding-md;
+    $section-padding-md: $padding-lg;
+    $section-padding-lg: $padding-lg;
+    $section-padding-xl: $padding-lg;
+    $section-padding-xxl: $padding-lg;

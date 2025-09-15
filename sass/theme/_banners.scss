@@ -1,0 +1,19 @@
+/**
+ * sass/theme/banners.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.09.15)
+ * @copyright 2025 (2025.09.15)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+
+// BANNERS
+    $banner-padding: $padding-md;
+
+// BANNER-PAGE-TITLE
+    $banner-page-title-background: $color-scgolfpanel-brown-0;

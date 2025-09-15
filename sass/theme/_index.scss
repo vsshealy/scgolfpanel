@@ -1,0 +1,33 @@
+/**
+ * sass/theme/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.09.15)
+ * @copyright 2025 (2025.09.15)
+**/
+
+// THEME PATH
+    $theme-path: "/wp-content/themes/scgolfpanel";
+
+// LOAD PARTIALS
+// FORWARD PARTIALS
+    @forward "meta";
+    @forward "colors";
+    @forward "global";
+    @forward "media";
+    @forward "links";
+    @forward "shadows";
+    @forward "text";
+    @forward "borders";
+    @forward "buttons";
+    @forward "backgrounds";
+    @forward "gradients";
+    @forward "tables";
+    @forward "lists";
+    @forward "banners";
+    @forward "wrappers";
+    @forward "sections";
+    @forward "header";
+    @forward "footer";
+    @forward "heroes";
+    @forward "parts";

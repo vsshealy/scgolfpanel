@@ -1,0 +1,57 @@
+/**
+ * sass/variables/units.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.09.15)
+ * @copyright 2025 (2025.09.15)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/global" as *;
+
+// MARGINS
+    // MARGIN BASE
+        $margin-base: $unit-base;
+
+    // MARGINS
+        $margin-none: $margin-base * $unit-adjustment-none;
+        $margin-xxs: $margin-base * $unit-adjustment-xxs;
+        $margin-xs: $margin-base * $unit-adjustment-xs;
+        $margin-sm: $margin-base * $unit-adjustment-sm;
+        $margin-md: $margin-base * $unit-adjustment-md;
+        $margin-lg: $margin-base * $unit-adjustment-lg;
+        $margin-xl: $margin-base * $unit-adjustment-xl;
+        $margin-xxl: $margin-base * $unit-adjustment-xxl;
+
+// PADDINGS
+    // PADDING-BASE
+        $padding-base: $unit-base;
+        
+    // PADDINGS
+        $padding-none: $padding-base * $unit-adjustment-none;
+        $padding-xxs: $padding-base * $unit-adjustment-xxs;
+        $padding-xs: $padding-base * $unit-adjustment-xs;
+        $padding-sm: $padding-base * $unit-adjustment-sm;
+        $padding-md: $padding-base * $unit-adjustment-md;
+        $padding-lg: $padding-base * $unit-adjustment-lg;
+        $padding-xl: $padding-base * $unit-adjustment-xl;
+        $padding-xxl: $padding-base * $unit-adjustment-xxl;
+
+// GRIDS
+    // GRID-BASE
+        $grid-base: calc(100.00% / 12);
+
+    // GRIDS
+        $grid-0: $grid-base * 0.00;
+        $grid-1: $grid-base * 1.00;
+        $grid-2: $grid-base * 2.00;
+        $grid-3: $grid-base * 3.00;
+        $grid-4: $grid-base * 4.00;
+        $grid-5: $grid-base * 5.00;
+        $grid-6: $grid-base * 6.00;
+        $grid-7: $grid-base * 7.00;
+        $grid-8: $grid-base * 8.00;
+        $grid-9: $grid-base * 9.00;
+        $grid-10: $grid-base * 10.00;
+        $grid-11: $grid-base * 11.00;
+        $grid-12: $grid-base * 12.00;

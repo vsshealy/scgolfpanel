@@ -1,0 +1,15 @@
+/**
+ * sass/vendors/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.09.15)
+ * @copyright 2025 (2025.09.15)
+**/
+
+// LOAD PARTIALS
+// FORWARD PARTIALS
+    @forward "bootstrap";
+    @forward "bricks";
+    @forward "font-awesome";
+    @forward "formidable";
+    @forward "grid-builder";
