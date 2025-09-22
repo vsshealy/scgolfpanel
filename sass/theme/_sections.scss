@@ -9,18 +9,26 @@
 // LOAD PARTIALS
     @use "colors" as *;
     @use "text" as *;
+    @use "global" as *;
     @use "../variables/index" as *;
 
 // FORWARD PARTIALS
 
 // BACKGROUNDS
-    $section-background: $color-grayscale-light-12;
+    $section-background: $color-scgolfpanel-beige-light-12;
     $section-background-alt: $color-scgolfpanel-beige-light-10;
 
 // PADDINGS
-    $section-padding-xs: $padding-md;
-    $section-padding-sm: $padding-md;
+    $section-padding-xs: $padding-lg;
+    $section-padding-sm: $padding-lg;
     $section-padding-md: $padding-lg;
     $section-padding-lg: $padding-lg;
     $section-padding-xl: $padding-lg;
     $section-padding-xxl: $padding-lg;
+
+// SECTION HEADINGS
+    $section-heading-margin: $margin-md;
+
+// SECTION ACCENT
+    $section-accent-width: 33.33%;
+    $section-accent-color: $color-scgolfpanel-gold-0;

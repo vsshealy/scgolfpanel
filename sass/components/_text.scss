@@ -269,8 +269,8 @@
     #{$text-headings-h4} {
         // GLOBAL
             font-size: $heading-text-size-h4;
+            font-style: italic;
             font-weight: 300;
-            text-transform: uppercase;
 
         // MOBILE
             @media #{$media-xs} {} //.COL-XS

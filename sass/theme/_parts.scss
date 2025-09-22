@@ -9,7 +9,16 @@
 // LOAD PARTIALS
     @use "colors" as *;
     @use "text" as *;
+    @use "backgrounds" as *;
     @use "gradients" as *;
     @use "../variables/index" as *;
 
 // FORWARD PARTIALS
+
+// BANNER-MISSION
+    $banner-mission-background: $background-1-color;
+    $banner-mission-text-color: $background-1-text-color;
+
+// BANNER-SCGA
+    $banner-scga-background: $background-1-color;
+    $banner-scga-text-color: $background-1-text-color;

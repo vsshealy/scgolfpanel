@@ -13,3 +13,12 @@
     @use "../variables/index" as *;
 
 // FORWARD PARTIALS
+// FOOTER-PRIMARY
+    $footer-primary-overlay: $gradient-3;
+    $footer-primary-padding: $padding-md;
+    $footer-primary-text-color: $text-color-white;
+
+// FOOTER-SECONDARY
+    $footer-secondary-background: $color-grayscale-dark-12;
+    $footer-secondary-text-color: $text-color-white;
+    $footer-secondary-padding: $padding-sm;

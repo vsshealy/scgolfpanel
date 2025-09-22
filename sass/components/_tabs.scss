@@ -1,5 +1,5 @@
 /**
- * sass/parts/index.scss
+ * sass/components/tabs.scss
  * @package scgolfpanel
  * @author Scott Shealy
  * @version 1.0.0 (2025.09.15)
@@ -7,9 +7,9 @@
 **/
 
 // LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+    @use "../layouts/index" as *;
+
 // FORWARD PARTIALS
-    @forward "header";
-    @forward "footer";
-    @forward "menus";
-    @forward "banner-mission";
-    @forward "banner-scga";
+// STYLES

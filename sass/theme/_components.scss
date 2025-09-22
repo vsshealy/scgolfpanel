@@ -1,0 +1,21 @@
+/**
+ * sass/theme/components.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.09.15)
+ * @copyright 2025 (2025.09.15)
+**/
+
+// LOAD PARTIALS
+    @use "tables" as *;
+    @use "../variables/index" as *;
+
+// FORWARD PARTIALS
+// ACCORDIONS
+    $accordion-padding: $padding-sm;
+    $accordion-font-size: 1.25rem;
+    $accordion-row-odd-background: $color-scgolfpanel-beige-light-12;
+    $accordion-row-even-background: $color-scgolfpanel-beige-light-12;
+
+// CARDS
+// TABS

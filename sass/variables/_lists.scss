@@ -16,8 +16,8 @@
         $text-headings-h4: "h4, .h4";
         $text-headings-h5: "h5, .h5";
         $text-headings-h6: "h6, .h6";
-        $text-headings-primary: "#{$text-headings-h1}, #{$text-headings-h2}, #{$text-headings-h3}";
-        $text-headings-secondary: "#{$text-headings-h4}, #{$text-headings-h5}, #{$text-headings-h6}";
+        $text-headings-primary: "#{$text-headings-h1}, #{$text-headings-h2}, #{$text-headings-h3}, #{$text-headings-h4}";
+        $text-headings-secondary: "#{$text-headings-h5}, #{$text-headings-h6}";
         $text-headings-all: "#{$text-headings-h1}, #{$text-headings-h2}, #{$text-headings-h3}, #{$text-headings-h4}, #{$text-headings-h5}, #{$text-headings-h6}";
 
     // BODY
@@ -40,3 +40,10 @@
     $button-ghost: ".button-ghost";
     $button-mobile: ".button-mobile";
     $button-all: "#{$button-solid}, #{$button-alt}, #{$button-ghost}, #{$button-mobile}";
+
+// ACCORDIONS
+    $accordion-parent: ".brxe-accordion-nested";
+    $accordion-item: ".brxe-block.listening";
+
+// SECTIONS
+    $sections-all: ".section, .section-alt";

@@ -29,14 +29,18 @@
 
 // GUTTERS
     // ROWS
-        $gutter-row: 0.00rem;
+        $gutter-row: $unit-base;
         $gutter-row-vertical: $gutter-row;
         $gutter-row-horizontal: 0.00rem;
 
     // COLUMNS
         $gutter-columns: $unit-base;
-        $gutter-columns-vertical: $gutter-columns;
-        $gutter-columns-horizontal: $gutter-columns;
+        $gutter-columns-vertical: $gutter-columns * 0.50;
+        $gutter-columns-horizontal: $gutter-columns * 0.50;
 
 // SITE BACKGROUND COLOR
     $body-background-color: $color-grayscale-light-12;
+    $html-background-color: $color-scgolfpanel-beige-light-10;
+
+// IMAGE SIZES
+    $logo-scgolfpanel-width: 200px;

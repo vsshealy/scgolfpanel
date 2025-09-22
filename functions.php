@@ -67,4 +67,13 @@
         function wpse_set_document_title_separator( $sep ) {
             return '|';
         }
+
+    // DISABLE WPAUTOP
+        add_filter('tiny_mce_before_init', function($options) {
+            $options['wpautop'] = false;
+            return $options;
+        });
+
+        remove_filter('the_content', 'wpautop');
+        remove_filter('the_excerpt', 'wpautop');
 ?>

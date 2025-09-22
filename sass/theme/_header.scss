@@ -10,6 +10,24 @@
     @use "colors" as *;
     @use "text" as *;
     @use "gradients" as *;
+    @use "heroes" as *;
     @use "../variables/index" as *;
 
 // FORWARD PARTIALS
+
+// HEADER-HOME
+    $header-home-height-mobile: $hero-home-height-mobile;
+    $header-home-height-desktop: $hero-home-height-desktop;
+
+// HEADER-SUBPAGE
+    $header-subpage-height-mobile: $hero-subpage-height-mobile;
+    $header-subpage-height-desktop: $hero-subpage-height-desktop;
+
+// HEADER-PADDING
+    $header-padding: $hero-padding;
+
+// HEADER-TEXT
+    $header-text-color: $text-color-white;
+
+// HEADER-MOBILE
+    $header-mobile-background: $color-scgolfpanel-brown-0;

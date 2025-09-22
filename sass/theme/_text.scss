@@ -63,10 +63,10 @@
 // HEADING TEXT
     $heading-text: $font-serif;
     $heading-text-color: $text-color-dark;
-    $heading-text-size-h1: 2.50rem;
+    $heading-text-size-h1: 2.25rem;
     $heading-text-size-h2: 2.00rem;
-    $heading-text-size-h3: 1.75rem;
-    $heading-text-size-h4: 1.50rem;
+    $heading-text-size-h3: 1.50rem;
+    $heading-text-size-h4: 1.25rem;
     $heading-text-size-h5: 1.00rem;
     $heading-text-size-h6: 1.00rem;
     $heading-text-style: none;
@@ -81,6 +81,8 @@
 // LINKS
     $link-text-color: $link-color;
     $link-hover-text-color: $link-hover-color;
+    $link-text-color-alt: $color-scgolfpanel-green-light-12;
+    $link-hover-text-color-alt: $color-scgolfpanel-green-light-8;
 
 // ICONS
     $icon-font: normal normal normal $font-size-base FontAwesome;

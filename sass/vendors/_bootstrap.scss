@@ -14,7 +14,20 @@
 // FORWARD PARTIALS
 // STYLES
     .row {
-        // GLOBAL            
+        // GLOBAL
+            margin-top: $gutter-row-vertical;
+            margin-bottom: $gutter-row-vertical;
+            margin-left: $gutter-row-horizontal;
+            margin-right: $gutter-row-horizontal;
+
+            &:first-child {
+                margin-top: $margin-none;
+            } //:FIRST-CHILD
+
+            &:last-child {
+                margin-bottom: $margin-none;
+            } //:LAST-CHILD
+
         // MOBILE
             @media #{$media-xs} {} //.COL-XS
             @media #{$media-sm} {} //.COL-SM
@@ -29,6 +42,11 @@
 
         .columns {
             // GLOBAL
+                padding-top: $gutter-columns-vertical;
+                padding-bottom: $gutter-columns-vertical;
+                padding-left: $gutter-columns-horizontal;
+                padding-right: $gutter-columns-horizontal;
+
             // MOBILE
                 @media #{$media-xs} {} //.COL-XS
                 @media #{$media-sm} {} //.COL-SM
