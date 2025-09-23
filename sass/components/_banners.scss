@@ -134,11 +134,11 @@
                     .columns {
                         // GLOBAL
                             &:first-child {
-                                padding-top: $padding-none;
+                                margin-top: $margin-none;
                             } //:FIRST-CHILD
 
                             &:last-child {
-                                padding-bottom: $padding-none;
+                                margin-bottom: $margin-none;
                             } //:LAST-CHILD
 
                         // MOBILE

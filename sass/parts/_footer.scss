@@ -102,11 +102,11 @@
                 .columns {
                     // GLOBAL
                         &:first-child {
-                            padding-top: $padding-none;
+                            margin-top: $margin-none;
                         } //:FIRST-CHILD
 
                         &:last-child {
-                            padding-bottom: $padding-none;
+                            margin-bottom: $margin-none;
                         } //:LAST-CHILD
 
                     // MOBILE
@@ -165,13 +165,14 @@
 
         #footer-logo {
             // GLOBAL
-                padding-bottom: $section-heading-margin;
+                margin-top: $margin-none;
+                margin-bottom: $section-heading-margin;
 
             // MOBILE
                 @media #{$media-xs} {} //.COL-XS
                 @media #{$media-sm} {} //.COL-SM
                 @media #{$media-md} {
-                    padding-bottom: $padding-none;
+                    margin-bottom: $margin-none;
                 } //.COL-MD
                 @media #{$device-mobile} {} //.MOBILE
 
@@ -197,15 +198,15 @@
 
                 .columns {
                     // GLOBAL
-                        padding-top: $padding-none;
-                        padding-bottom: $padding-none;
+                        margin-top: $margin-none;
+                        margin-bottom: $margin-none;
 
                         &:first-child {
-                            padding-left: $padding-none;
+                            margin-left: $margin-none;
                         } //:FIRST-CHILD
 
                         &:last-child {
-                            padding-right: $padding-none;
+                            margin-right: $margin-none;
                         } //:LAST-CHILD
 
                     // MOBILE
@@ -461,11 +462,11 @@
                         justify-content: center;
 
                         &:first-child {
-                            padding-top: $padding-none;
+                            margin-top: $margin-none;
                         } //:FIRST-CHILD
 
                         &:last-child {
-                            padding-bottom: $padding-none;
+                            margin-bottom: $margin-none;
                         } //:LAST-CHILD
 
                     // MOBILE
@@ -478,8 +479,8 @@
                         @media #{$device-desktop} {} //.DESKTOP
                         @media #{$media-lg} {} //.COL-LG
                         @media #{$media-xl} {
-                            padding-top: $padding-none;
-                            padding-bottom: $padding-none;
+                            margin-top: $margin-none;
+                            margin-bottom: $margin-none;
                         } //.COL-XL
                         @media #{$media-xxl} {} //.COL-XXL
                 } //.COLUMNS

@@ -8,6 +8,8 @@
 
 // LOAD PARTIALS
     @use "tables" as *;
+    @use "borders" as *;
+    @use "buttons" as *;
     @use "../variables/index" as *;
 
 // FORWARD PARTIALS
@@ -18,4 +20,9 @@
     $accordion-row-even-background: $color-scgolfpanel-beige-light-12;
 
 // CARDS
+// FORMS
+    $form-input-border: $border-outline-width solid $color-scgolfpanel-beige-0;
+    $form-input-radius: $button-border-radius;
+    $form-input-padding: $padding-xs;
+
 // TABS

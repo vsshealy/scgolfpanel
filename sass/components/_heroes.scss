@@ -76,8 +76,13 @@
 
                 .columns {
                     // GLOBAL
-                        padding-top: $padding-none;
-                        padding-bottom: $padding-none;
+                        &:first-child {
+                            margin-top: $margin-none;
+                        } //:FIRST-CHILD
+
+                        &:last-child {
+                            margin-bottom: $margin-none;
+                        } //:LAST-CHILD
 
                     // MOBILE
                         @media #{$media-xs} {} //.COL-XS

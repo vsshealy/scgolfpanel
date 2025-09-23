@@ -42,8 +42,8 @@
 
         .columns {
             // GLOBAL
-                padding-top: $gutter-columns-vertical;
-                padding-bottom: $gutter-columns-vertical;
+                margin-top: $gutter-columns-vertical;
+                margin-bottom: $gutter-columns-vertical;
                 padding-left: $gutter-columns-horizontal;
                 padding-right: $gutter-columns-horizontal;
 

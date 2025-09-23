@@ -59,8 +59,8 @@
 
                 .columns {
                     // GLOBAL
-                        padding-top: $padding-none;
-                        padding-bottom: $padding-none;
+                        margin-top: $margin-none;
+                        margin-bottom: $margin-none;
 
                     // MOBILE
                         @media #{$media-xs} {} //.COL-XS

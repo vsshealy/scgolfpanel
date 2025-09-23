@@ -86,8 +86,8 @@
                 .columns {
                     // GLOBAL
                         height: 100.00%;
-                        padding-top: $padding-none;
-                        padding-bottom: $padding-none;
+                        margin-top: $margin-none;
+                        margin-bottom: $margin-none;
 
                     // MOBILE
                         @media #{$media-xs} {} //.COL-XS
@@ -233,7 +233,7 @@
                         // GLOBAL
                             width: auto;
                             display: flex;
-                            margin: $margin-none ($gutter-columns-horizontal * 2.00);
+                            margin: $margin-none ($gutter-columns-horizontal * 1.00);
 
                             &:first-child {
                                 margin-left: $margin-none;

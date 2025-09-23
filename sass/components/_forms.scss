@@ -7,9 +7,130 @@
 **/
 
 // LOAD PARTIALS
+    @use "text" as *;
     @use "../theme/index" as *;
     @use "../variables/index" as *;
     @use "../layouts/index" as *;
 
 // FORWARD PARTIALS
 // STYLES
+    #{$forms-parent} {
+        // GLOBAL
+            margin-top: $margin-md;
+            margin-bottom: $margin-md;
+
+            &:last-child {
+                margin-bottom: $margin-none;
+            } //:LAST-CHILD
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        fieldset {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            label {
+                // GLOBAL
+                    @extend .h6;
+                    margin-bottom: ($body-text-margin * 0.50);
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //LABEL
+
+            input {
+                // GLOBAL
+                    background-color: gray;
+                    max-width: 100.00%;
+                    border: $border-outline-width solid $color-scgolfpanel-beige-0;
+                    border-radius: $button-border-radius;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                &[type="text"], &[type="email"] {
+                    // GLOBAL
+                        @extend .p;
+                        max-width: 100.00%;
+                        margin: $margin-none;
+                        padding: $form-input-padding;
+                        border: $form-input-border;
+                        border-radius: $form-input-radius;
+                        line-height: $line-height-condensed;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //TEXT, EMAIL
+            } //INPUT
+
+            textarea {
+                // GLOBAL
+                    @extend .p;
+                    max-width: 100.00%;
+                    margin: $margin-none;
+                    padding: $form-input-padding;
+                    border: $form-input-border;
+                    border-radius: $form-input-radius;
+                    line-height: $line-height-condensed;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //TEXTAREA
+        } //FIELDSET
+    } //.FORMS-PARENT
