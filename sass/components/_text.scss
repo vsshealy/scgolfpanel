@@ -327,10 +327,11 @@
         // GLOBAL
             color: $link-text-color;
             text-decoration: none;
+            font-weight: $link-text-weight;
 
             &:hover {
                 color: $link-hover-text-color;
-                text-decoration: none;
+                text-decoration: underline;
             } //:HOVER
 
         // MOBILE

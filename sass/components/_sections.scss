@@ -92,6 +92,23 @@
             } //.ROW
         } //.WRAPPER-CONTENT
 
+        img {
+            // GLOBAL
+                border: $image-border;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //IMG
+
         #{$text-all} {
             // GLOBAL
                 &:first-child {
@@ -176,7 +193,11 @@
             #{$text-headings-all} {
                 // GLOBAL
                     margin-top: $margin-none;
-                    margin-bottom: $section-heading-margin !important;
+                    margin-bottom: $margin-none;
+
+                    &:last-child {
+                        margin-bottom: $section-heading-margin !important;
+                    } //:LAST-CHILD
 
                 // MOBILE
                     @media #{$media-xs} {} //.COL-XS
@@ -208,6 +229,23 @@
                     @media #{$media-lg} {} //.COL-LG
                     @media #{$media-xl} {} //.COL-XL
                     @media #{$media-xxl} {} //.COL-XXL
+
+                .section-accent {
+                    // GLOBAL
+                        @extend .flexbox-horizontal-left;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.SECTION-ACCENT
             } //.SECTION-HEADING-LEFT
 
             &-center {
@@ -227,6 +265,23 @@
                     @media #{$media-lg} {} //.COL-LG
                     @media #{$media-xl} {} //.COL-XL
                     @media #{$media-xxl} {} //.COL-XXL
+
+                .section-accent {
+                    // GLOBAL
+                        @extend .flexbox-horizontal-center;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.SECTION-ACCENT
             } //.SECTION-HEADING-CENTER
 
             &-right {
@@ -246,6 +301,23 @@
                     @media #{$media-lg} {} //.COL-LG
                     @media #{$media-xl} {} //.COL-XL
                     @media #{$media-xxl} {} //.COL-XXL
+
+                .section-accent {
+                    // GLOBAL
+                        @extend .flexbox-horizontal-right;
+                        
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.SECTION-ACCENT
             } //.SECTION-HEADING-RIGHT
         } //.SECTION-HEADING
 
@@ -345,7 +417,7 @@
 
         &-accent {
             // GLOBAL
-                margin-bottom: $margin-md;
+                margin-bottom: $margin-sm;
                 border: none;
 
             // MOBILE

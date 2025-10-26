@@ -73,3 +73,22 @@
         } //.IMAGE-RESPONSIVE
 
     } //.IMAGE
+
+    a img {
+        // GLOBAL
+            &:hover {
+                opacity: 0.80;
+            } //:HOVER
+
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //A IMG

@@ -16,12 +16,12 @@
 // FORWARD PARTIALS
 
 // HEADER-HOME
-    $header-home-height-mobile: $hero-home-height-mobile;
-    $header-home-height-desktop: $hero-home-height-desktop;
+    $header-home-height-mobile: $hero-primary-height-mobile;
+    $header-home-height-desktop: $hero-primary-height-desktop;
 
 // HEADER-SUBPAGE
-    $header-subpage-height-mobile: $hero-subpage-height-mobile;
-    $header-subpage-height-desktop: $hero-subpage-height-desktop;
+    $header-subpage-height-mobile: $hero-secondary-height-mobile;
+    $header-subpage-height-desktop: $hero-secondary-height-desktop;
 
 // HEADER-PADDING
     $header-padding: $hero-padding;

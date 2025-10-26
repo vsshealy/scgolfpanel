@@ -260,7 +260,7 @@
                 @media #{$media-xxl} {} //.COL-XXL
         } //.HERO-BUTTON
 
-        &-home {
+        &-primary {
             // GLOBAL
                 @extend .hero;
 
@@ -269,12 +269,12 @@
                 @media #{$media-sm} {} //.COL-SM
                 @media #{$media-md} {} //.COL-MD
                 @media #{$device-mobile} {
-                    height: $hero-home-height-mobile;
+                    height: $hero-primary-height-mobile;
                 } //.MOBILE
 
             // DESKTOP
                 @media #{$device-desktop} {
-                    height: $hero-home-height-desktop;
+                    height: $hero-primary-height-desktop;
                 } //.DESKTOP
                 @media #{$media-lg} {} //.COL-LG
                 @media #{$media-xl} {} //.COL-XL
@@ -324,9 +324,9 @@
                     } //.COLUMNS
                 } //.ROW
             } //.WRAPPER-CONTENT
-        } //.HERO-HOME
+        } //.HERO-SECONDARY
 
-        &-subpage {
+        &-secondary {
             // GLOBAL
                 @extend .hero;
 
@@ -335,16 +335,16 @@
                 @media #{$media-sm} {} //.COL-SM
                 @media #{$media-md} {} //.COL-MD
                 @media #{$device-mobile} {
-                    height: $hero-subpage-height-mobile;
+                    height: $hero-secondary-height-mobile;
                 } //.MOBILE
 
             // DESKTOP
                 @media #{$device-desktop} {
-                    height: $hero-subpage-height-desktop;
+                    height: $hero-secondary-height-desktop;
                 } //.DESKTOP
                 @media #{$media-lg} {} //.COL-LG
                 @media #{$media-xl} {} //.COL-XL
                 @media #{$media-xxl} {} //.COL-XXL
-        } //.HERO-SUBPAGE
+        } //.HERO-SECONDARY
 
     } //.HERO

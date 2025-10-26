@@ -165,6 +165,10 @@
                         max-width: $logo-scgolfpanel-width;
                         display: block;
 
+                        &:hover {
+                            opacity: 1.00;
+                        }
+
                     // MOBILE
                         @media #{$media-xs} {} //.COL-XS
                         @media #{$media-sm} {} //.COL-SM
@@ -612,18 +616,19 @@
         &-home {
             // GLOBAL
                 @extend #header;
+                height: auto;
 
             // MOBILE
                 @media #{$media-xs} {} //.COL-XS
                 @media #{$media-sm} {} //.COL-SM
                 @media #{$media-md} {} //.COL-MD
                 @media #{$device-mobile} {
-                    height: $header-home-height-mobile;
+                    max-height: $header-home-height-mobile;
                 } //.MOBILE
 
             // DESKTOP
                 @media #{$device-desktop} {
-                    height: $header-home-height-desktop;
+                    max-height: $header-home-height-desktop;
                 } //.DESKTOP
                 @media #{$media-lg} {} //.COL-LG
                 @media #{$media-xl} {} //.COL-XL

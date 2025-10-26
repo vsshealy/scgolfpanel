@@ -23,8 +23,13 @@
             justify-content: center;
             margin: $button-margin-vertical $button-margin-horizontal;
             padding: $button-padding-vertical $button-padding-horizontal;
+            font-weight: 400;
             text-wrap: balance;
             line-height: $line-height-condensed;
+
+            &:hover {
+                text-decoration: none;
+            } //:HOVER
 
         // MOBILE
             @media #{$media-xs} {
@@ -43,6 +48,7 @@
         span {
             // GLOBAL
                 width: auto;
+                color: inherit;
 
             // MOBILE
                 @media #{$media-xs} {} //.COL-XS

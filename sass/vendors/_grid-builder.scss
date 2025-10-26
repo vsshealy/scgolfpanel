@@ -13,3 +13,170 @@
 
 // FORWARD PARTIALS
 // STYLES
+    .wpgb {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        &-facet {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            fieldset {
+                // GLOBAL
+                    margin-bottom: $margin-none !important;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //FIELDSET
+        } //WPGB-FACET
+
+        &-button-facet {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            ul, ul.wpgb-inline-list {
+                // GLOBAL
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center !important;
+                    margin: $margin-none;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                li {
+                    // GLOBAL
+                        width: 100.00%;
+                        margin: $margin-xxs $margin-none;
+
+                        &:first-child {
+                            margin-top: $margin-none;
+                        } //:FIRST-CHILD
+
+                        &:last-child {
+                            margin-bottom: $margin-none;
+                        } //:LAST-CHILD
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {
+                            width: auto;
+                            margin: $margin-none $margin-xxs;
+                        } //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+
+                    .wpgb-button {
+                        // GLOBAL
+                            padding: ($button-padding-vertical) ($button-padding-horizontal * 0.50);
+                            background-color: transparent;
+                            border: $button-border-width solid $button-alt-text-color;
+                            border-radius: $button-border-radius;
+                            color: $button-alt-text-color;
+
+                            &:hover {
+                                border: $button-border-width solid $color-scgolfpanel-brown-dark-6 !important;
+                            } //:HOVER
+
+                            &[aria-pressed=true] {
+                                background-color: $button-solid-color;
+                                border: $button-border-width solid $button-solid-text-color;
+
+                                .wpgb-button-label {
+                                    color: $button-solid-text-color;
+                                } //WPGB-BUTTON-LABEL
+                            } //:ARIA-PRESSED-TRUE
+
+                        // MOBILE
+                            @media #{$media-xs} {} //.COL-XS
+                            @media #{$media-sm} {} //.COL-SM
+                            @media #{$media-md} {} //.COL-MD
+                            @media #{$device-mobile} {} //.MOBILE
+
+                        // DESKTOP
+                            @media #{$device-desktop} {} //.DESKTOP
+                            @media #{$media-lg} {
+                                padding: $button-padding-vertical $button-padding-horizontal;
+                            } //.COL-LG
+                            @media #{$media-xl} {} //.COL-XL
+                            @media #{$media-xxl} {} //.COL-XXL
+
+                        span.wpgb-button-label {
+                            // GLOBAL
+                                padding: $padding-none;
+                                font-size: inherit;
+                                line-height: $line-height-condensed;
+                                color: inherit;
+
+                            // MOBILE
+                                @media #{$media-xs} {} //.COL-XS
+                                @media #{$media-sm} {} //.COL-SM
+                                @media #{$media-md} {} //.COL-MD
+                                @media #{$device-mobile} {} //.MOBILE
+
+                            // DESKTOP
+                                @media #{$device-desktop} {} //.DESKTOP
+                                @media #{$media-lg} {} //.COL-LG
+                                @media #{$media-xl} {} //.COL-XL
+                                @media #{$media-xxl} {} //.COL-XXL
+                        } //.WPGB-BUTTON-LABEL
+                    } //.WPGB-BUTTON
+                } //LI
+            } //UL
+        } //.WPGB-BUTTON-FACET
+
+    } //.WPGB
