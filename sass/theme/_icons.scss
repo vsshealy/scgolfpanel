@@ -1,0 +1,15 @@
+/**
+ * sass/theme/icons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.12.01)
+ * @copyright 2025 (2025.12.01)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "global" as *;
+    @use "../variables/index" as *;
+
+// ICONS
+    $icon-margin: $margin-xxs;

@@ -1,0 +1,35 @@
+/**
+ * sass/variables/lists.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2025.12.01)
+ * @copyright 2025 (2025.12.01)
+**/
+
+// LOAD PARTIALS
+
+// TEXT
+    // HEADINGS
+        $text-headings-h1: "h1, .h1";
+        $text-headings-h2: "h2, .h2";
+        $text-headings-h3: "h3, .h3";
+        $text-headings-h4: "h4, .h4";
+        $text-headings-h5: "h5, .h5";
+        $text-headings-h6: "h6, .h6";
+        $text-headings-primary: "#{$text-headings-h1}, #{$text-headings-h2}, #{$text-headings-h3}, #{$text-headings-h4}";
+        $text-headings-secondary: "#{$text-headings-h5}, #{$text-headings-h6}";
+        $text-headings-all: "#{$text-headings-h1}, #{$text-headings-h2}, #{$text-headings-h3}, #{$text-headings-h4}, #{$text-headings-h5}, #{$text-headings-h6}";
+
+    // BODY
+        $text-body-p: "p, .p";
+        $text-body-lists: "ol, .ol, ul, .ul";
+        $text-body-li: "li, .li";
+        $text-body-span: "span, .span";
+        $text-body-all: "#{$text-body-p}, #{$text-body-li}, #{$text-body-span}";
+
+    // LINKS
+        $text-links: "a, .a";
+        $text-links-all: "#{$text-links}";
+
+    // TEXT-ALL
+        $text-all: "#{$text-headings-all}, #{$text-body-all}, #{$text-links-all}";
