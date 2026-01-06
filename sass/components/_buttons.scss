@@ -1,0 +1,183 @@
+/**
+ * sass/components/buttons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "text" as *;
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+    @use "../layouts/index" as *;
+
+// STYLES
+    .button {
+        // GLOBAL
+            width: auto;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: $button-margin-vertical $button-margin-horizontal;
+            padding: $button-padding-vertical $button-padding-horizontal;
+            font-weight: 400;
+            text-wrap: pretty;
+            line-height: $line-height-condensed;
+
+            &:hover {
+                text-decoration: none;
+            } //:HOVER
+            
+        // MOBILE
+            @media #{$media-xs} {
+                width: 100.00%;
+            } //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        &-primary {
+            // GLOBAL
+                @extend .button;
+                background-color: $button-primary-color;
+                border: $button-border-width solid $button-primary-text-color;
+                color: $button-primary-text-color;
+
+                &:hover {
+                    background-color: $button-primary-hover-color;
+                    border: $button-border-width solid $button-primary-hover-text-color;
+                    color: $button-primary-hover-text-color;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BUTTON-PRIMARY
+
+        &-secondary {
+            // GLOBAL
+                @extend .button;
+                background-color: $button-secondary-color;
+                border: $button-border-width solid $button-secondary-text-color;
+                color: $button-secondary-text-color;
+
+                &:hover {
+                    background-color: $button-secondary-hover-color;
+                    border: $button-border-width solid $button-secondary-hover-text-color;
+                    color: $button-secondary-hover-text-color;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BUTTON-SECONDARY
+
+        &-ghost {
+            // GLOBAL
+                @extend .button;
+                background-color: $button-ghost-color;
+                border: $button-border-width solid $button-ghost-text-color;
+                color: $button-ghost-text-color;
+
+                &:hover {
+                    background-color: $button-ghost-hover-color;
+                    border: $button-border-width solid $button-ghost-hover-text-color;
+                    color: $button-ghost-hover-text-color;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BUTTON-GHOST
+
+        &-mobile {
+            // GLOBAL
+                @extend .button;
+                background-color: $button-mobile-color;
+                border: $button-border-width solid $button-mobile-text-color;
+                color: $button-mobile-text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BUTTON-MOBILE
+
+        &-text {
+            // GLOBAL
+                color: $link-color;
+
+                &:hover {
+                    color: $link-hover-color;
+                } //:HOVER
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            i {
+                // GLOBAL
+                    margin-left: $icon-margin;
+                    
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //I
+        } //.BUTTON-TEXT
+
+    } //.BUTTON

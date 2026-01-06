@@ -1,0 +1,513 @@
+/**
+ * sass/layouts/devices.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// GLOBAL DISPLAY
+    .display {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        &-none {
+            // GLOBAL
+                display: none;
+                
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.DISPLAY-NONE
+
+        &-phone {
+            // GLOBAL
+            // MOBILE
+                @media #{$device-phone} {} //PHONE
+                @media #{$device-tablet} {} //TABLET
+                @media #{$device-mobile} {} //MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //DESKTOP
+                @media #{$device-desktop-sm} {} //DESKTOP-SM
+                @media #{$device-desktop-md} {} //DESKTOP-MD
+                @media #{$device-desktop-lg} {} //DESKTOP-LG
+                @media #{$device-desktop-xl} {} //DESKTOP-XL
+                @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+            &-show {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {
+                        display: inherit;
+                    } //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-PHONE-SHOW
+
+            &-hide {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {
+                        display: none !important;
+                    } //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-PHONE-HIDE
+        } //.DISPLAY-PHONE
+
+        &-tablet {
+            // GLOBAL
+            // MOBILE
+                @media #{$device-phone} {} //PHONE
+                @media #{$device-tablet} {} //TABLET
+                @media #{$device-mobile} {} //MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //DESKTOP
+                @media #{$device-desktop-sm} {} //DESKTOP-SM
+                @media #{$device-desktop-md} {} //DESKTOP-MD
+                @media #{$device-desktop-lg} {} //DESKTOP-LG
+                @media #{$device-desktop-xl} {} //DESKTOP-XL
+                @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+            &-show {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {
+                        display: inherit;
+                    } //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-TABLET-SHOW
+
+            &-hide {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {
+                        display: none !important;
+                    } //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-TABLET-HIDE
+        } //.DISPLAY-TABLET
+
+        &-mobile {
+            // GLOBAL
+            // MOBILE
+                @media #{$device-phone} {} //PHONE
+                @media #{$device-tablet} {} //TABLET
+                @media #{$device-mobile} {} //MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //DESKTOP
+                @media #{$device-desktop-sm} {} //DESKTOP-SM
+                @media #{$device-desktop-md} {} //DESKTOP-MD
+                @media #{$device-desktop-lg} {} //DESKTOP-LG
+                @media #{$device-desktop-xl} {} //DESKTOP-XL
+                @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+            &-show {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {
+                        display: inherit;
+                    } //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-MOBILE-SHOW
+
+            &-hide {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {
+                        display: none important;
+                    } //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-MOBILE-HIDE
+        } //.DISPLAY-MOBILE
+
+        &-desktop {
+            // GLOBAL
+            // MOBILE
+                @media #{$device-phone} {} //PHONE
+                @media #{$device-tablet} {} //TABLET
+                @media #{$device-mobile} {} //MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //DESKTOP
+                @media #{$device-desktop-sm} {} //DESKTOP-SM
+                @media #{$device-desktop-md} {} //DESKTOP-MD
+                @media #{$device-desktop-lg} {} //DESKTOP-LG
+                @media #{$device-desktop-xl} {} //DESKTOP-XL
+                @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+            &-show {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {
+                        display: inherit;
+                    } //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-DESKTOP-SHOW
+
+            &-hide {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {
+                        display: none !important;
+                    } //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+            } //.DISPLAY-DESKTOP-HIDE
+
+            &-sm {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+                &-show {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {
+                            display: inherit;
+                        } //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-SM-SHOW
+
+                &-hide {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {
+                            display: none !important;
+                        } //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-SM-HIDE
+            } //.DISPLAY-DESKTOP-SM
+
+            &-md {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+                &-show {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {
+                            display: inherit;
+                        } //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-MD-SHOW
+
+                &-hide {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {
+                            display: none !important;
+                        } //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-MD-HIDE
+            } //.DISPLAY-DESKTOP-MD
+
+            &-lg {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+                &-show {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {
+                            display: inherit;
+                        } //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-LG-SHOW
+
+                &-hide {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {
+                            display: none !important;
+                        } //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-LG-HIDE
+            } //.DISPLAY-DESKTOP-LG
+
+            &-xl {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+                &-show {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {
+                            display: inherit;
+                        } //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-XL-SHOW
+
+                &-hide {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {
+                            display: none !important;
+                        } //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-XL-HIDE
+            } //.DISPLAY-DESKTOP-XL
+
+            &-xxl {
+                // GLOBAL
+                // MOBILE
+                    @media #{$device-phone} {} //PHONE
+                    @media #{$device-tablet} {} //TABLET
+                    @media #{$device-mobile} {} //MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //DESKTOP
+                    @media #{$device-desktop-sm} {} //DESKTOP-SM
+                    @media #{$device-desktop-md} {} //DESKTOP-MD
+                    @media #{$device-desktop-lg} {} //DESKTOP-LG
+                    @media #{$device-desktop-xl} {} //DESKTOP-XL
+                    @media #{$device-desktop-xxl} {} //DESKTOP-XXL
+
+                &-show {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {
+                            display: inherit;
+                        } //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-XXL-SHOW
+
+                &-hide {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$device-phone} {} //PHONE
+                        @media #{$device-tablet} {} //TABLET
+                        @media #{$device-mobile} {} //MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //DESKTOP
+                        @media #{$device-desktop-sm} {} //DESKTOP-SM
+                        @media #{$device-desktop-md} {} //DESKTOP-MD
+                        @media #{$device-desktop-lg} {} //DESKTOP-LG
+                        @media #{$device-desktop-xl} {} //DESKTOP-XL
+                        @media #{$device-desktop-xxl} {
+                            display: none !important;
+                        } //DESKTOP-XXL
+                } //.DISPLAY-DESKTOP-XXL-HIDE 
+            } //.DISPLAY-DESKTOP-XXL
+        } //.DISPLAY-DESKTOP
+
+    } //.DISPLAY

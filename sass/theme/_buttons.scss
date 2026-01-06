@@ -1,0 +1,48 @@
+/**
+ * sass/theme/buttons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "text" as *;
+    @use "links" as *;
+    @use "borders" as *;
+    @use "../variables/index" as *;
+
+// BUTTON SETTINGS
+    $button-text: $body-text;
+    $button-text-size: $body-text-size;
+    $button-text-style: none;
+    $button-text-weight: 400;
+    $button-border-radius: 0.25rem;
+    $button-border-width: $border-outline-width;
+    $button-margin-vertical: $margin-md;
+    $button-margin-horizontal: $margin-none;
+    $button-padding-vertical: $padding-xs;
+    $button-padding-horizontal: $padding-md;
+
+// BUTTON-PRIMARY
+    $button-primary-color: $link-color;
+    $button-primary-text-color: $text-color-white;
+    $button-primary-hover-color: $link-hover-color;
+    $button-primary-hover-text-color: $text-color-white;
+
+// BUTTON-SECONDARY
+    $button-secondary-color: $color-grayscale-light-12;
+    $button-secondary-text-color: $link-color;
+    $button-secondary-hover-color: $link-hover-color;
+    $button-secondary-hover-text-color: $text-color-white;
+
+// BUTTON-GHOST
+    $button-ghost-color: transparent;
+    $button-ghost-text-color: $link-color;
+    $button-ghost-hover-color: $link-color;
+    $button-ghost-hover-text-color: $text-color-white;
+
+// BUTTON-MOBILE
+    $button-mobile-color: $button-primary-color;
+    $button-mobile-text-color: $button-primary-text-color;

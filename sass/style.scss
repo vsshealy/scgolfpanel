@@ -8,3 +8,8 @@
 
 // LOAD PARTIALS
     @use "theme/index" as *;
+    @use "variables/index" as *;
+    @use "layouts/index" as *;
+    @use "components/index" as *;
+    @use "vendors/index" as *;
+    @use "parts/index" as *;

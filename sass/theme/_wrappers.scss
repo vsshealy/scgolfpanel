@@ -1,0 +1,12 @@
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "text" as *;
+    @use "../variables/index" as *;
