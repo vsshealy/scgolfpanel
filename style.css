@@ -1,14 +1,9 @@
 /**
- * Theme Name: SC Golf Course Rankings Panel
- * Theme URI: https://github.com/vsshealy/scgolfpanel
- * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
- * Author: Scott Shealy
- * Author URI: https://www.scottshealy.com
- * Template: bricks
- * Version: 1.0.0
- * Text Domain: scgolfpanel
- * License: GNU General Public License v3 or Later
- * License URI: http://www.gnu.org/license/gpl-3.0.html
+ * sass/theme/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
 **/
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7O0VBQUEiLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBUaGVtZSBOYW1lOiBTQyBHb2xmIENvdXJzZSBSYW5raW5ncyBQYW5lbFxuICogVGhlbWUgVVJJOiBodHRwczovL2dpdGh1Yi5jb20vdnNzaGVhbHkvc2Nnb2xmcGFuZWxcbiAqIERlc2NyaXB0aW9uOiBBIGN1c3RvbSBXb3JkUHJlc3MgY2hpbGQgdGhlbWUgYnVpbHQgZm9yIHRoZSBTb3V0aCBDYXJvbGluYSBHb2xmIENvdXJzZSBSYW5raW5ncyBQYW5lbCB3ZWJzaXRlLlxuICogQXV0aG9yOiBTY290dCBTaGVhbHlcbiAqIEF1dGhvciBVUkk6IGh0dHBzOi8vd3d3LnNjb3R0c2hlYWx5LmNvbVxuICogVGVtcGxhdGU6IGJyaWNrc1xuICogVmVyc2lvbjogMS4wLjBcbiAqIFRleHQgRG9tYWluOiBzY2dvbGZwYW5lbFxuICogTGljZW5zZTogR05VIEdlbmVyYWwgUHVibGljIExpY2Vuc2UgdjMgb3IgTGF0ZXJcbiAqIExpY2Vuc2UgVVJJOiBodHRwOi8vd3d3LmdudS5vcmcvbGljZW5zZS9ncGwtMy4wLmh0bWxcbioqLyJdfQ== */
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztFQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogc2Fzcy90aGVtZS9pbmRleC5zY3NzXG4gKiBAcGFja2FnZSBzY2dvbGZwYW5lbFxuICogQGF1dGhvciBTY290dCBTaGVhbHlcbiAqIEB2ZXJzaW9uIDEuMC4wICgyMDI2LjAxLjAxKVxuICogQGNvcHlyaWdodCAyMDI2ICgyMDI2LjAxLjAxKVxuKiovXG5cbi8vIExPQUQgVEhFTUUgTUVUQVxuICAgIEB1c2UgXCJ0aGVtZS9tZXRhXCIgYXMgKjtcblxuLy8gTE9BRCBQQVJUSUFMUyJdfQ== */

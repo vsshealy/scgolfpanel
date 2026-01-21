@@ -1,12 +1,12 @@
 /**
- * Theme Name: SC Golf Course Rankings Panel
- * Theme URI: https://github.com/vsshealy/scgolfpanel
- * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
- * Author: Scott Shealy
- * Author URI: https://www.scottshealy.com
- * Template: bricks
- * Version: 1.0.0
- * Text Domain: scgolfpanel
- * License: GNU General Public License v3 or Later
- * License URI: http://www.gnu.org/license/gpl-3.0.html
+ * sass/theme/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
 **/
+
+// LOAD THEME META
+    @use "theme/meta" as *;
+
+// LOAD PARTIALS
