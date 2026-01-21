@@ -1,4 +1,17 @@
 /**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+
+/**
  * sass/theme/index.scss
  * @package scgolfpanel
  * @author Scott Shealy
@@ -6,4 +19,52 @@
  * @copyright 2026 (2026.01.01)
 **/
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInN0eWxlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztFQUFBIiwiZmlsZSI6InN0eWxlLmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogc2Fzcy90aGVtZS9pbmRleC5zY3NzXG4gKiBAcGFja2FnZSBzY2dvbGZwYW5lbFxuICogQGF1dGhvciBTY290dCBTaGVhbHlcbiAqIEB2ZXJzaW9uIDEuMC4wICgyMDI2LjAxLjAxKVxuICogQGNvcHlyaWdodCAyMDI2ICgyMDI2LjAxLjAxKVxuKiovXG5cbi8vIExPQUQgVEhFTUUgTUVUQVxuICAgIEB1c2UgXCJ0aGVtZS9tZXRhXCIgYXMgKjtcblxuLy8gTE9BRCBQQVJUSUFMUyJdfQ== */
+/**
+ * sass/variables/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+/**
+ * sass/layouts/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+/**
+ * sass/external/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+/**
+ * sass/parts/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+/**
+ * sass/theme/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInRoZW1lL21ldGEuc2NzcyIsInRoZW1lL19pbmRleC5zY3NzIiwidmFyaWFibGVzL19pbmRleC5zY3NzIiwibGF5b3V0cy9faW5kZXguc2NzcyIsImNvbXBvbmVudHMvX2luZGV4LnNjc3MiLCJleHRlcm5hbC9faW5kZXguc2NzcyIsInBhcnRzL19pbmRleC5zY3NzIiwic3R5bGUuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7Ozs7Ozs7RUFBQTtBQ0FBOzs7Ozs7RUFBQTtBQ0FBOzs7Ozs7RUFBQTtBQ0FBOzs7Ozs7RUFBQTtBQ0FBOzs7Ozs7RUFBQTtBQ0FBOzs7Ozs7RUFBQTtBQ0FBOzs7Ozs7RUFBQTtBQ0FBOzs7Ozs7RUFBQSIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoZW1lIE5hbWU6IFNDIEdvbGYgQ291cnNlIFJhbmtpbmdzIFBhbmVsXG4gKiBUaGVtZSBVUkk6IGh0dHBzOi8vZ2l0aHViLmNvbS92c3NoZWFseS9zY2dvbGZwYW5lbFxuICogRGVzY3JpcHRpb246IEEgY3VzdG9tIFdvcmRQcmVzcyBjaGlsZCB0aGVtZSBidWlsdCBmb3IgdGhlIFNvdXRoIENhcm9saW5hIEdvbGYgQ291cnNlIFJhbmtpbmdzIFBhbmVsIHdlYnNpdGUuXG4gKiBBdXRob3I6IFNjb3R0IFNoZWFseVxuICogQXV0aG9yIFVSSTogaHR0cHM6Ly93d3cuc2NvdHRzaGVhbHkuY29tXG4gKiBUZW1wbGF0ZTogYnJpY2tzXG4gKiBWZXJzaW9uOiAxLjAuMFxuICogVGV4dCBEb21haW46IHNjZ29sZnBhbmVsXG4gKiBMaWNlbnNlOiBHTlUgR2VuZXJhbCBQdWJsaWMgTGljZW5zZSB2MyBvciBMYXRlclxuICogTGljZW5zZSBVUkk6IGh0dHA6Ly93d3cuZ251Lm9yZy9saWNlbnNlL2dwbC0zLjAuaHRtbFxuKiovIiwiLyoqXG4gKiBzYXNzL3RoZW1lL2luZGV4LnNjc3NcbiAqIEBwYWNrYWdlIHNjZ29sZnBhbmVsXG4gKiBAYXV0aG9yIFNjb3R0IFNoZWFseVxuICogQHZlcnNpb24gMS4wLjAgKDIwMjYuMDEuMDEpXG4gKiBAY29weXJpZ2h0IDIwMjYgKDIwMjYuMDEuMDEpXG4qKi9cblxuLy8gRk9SV0FSRCBQQVJUSUFMUyIsIi8qKlxuICogc2Fzcy92YXJpYWJsZXMvaW5kZXguc2Nzc1xuICogQHBhY2thZ2Ugc2Nnb2xmcGFuZWxcbiAqIEBhdXRob3IgU2NvdHQgU2hlYWx5XG4gKiBAdmVyc2lvbiAxLjAuMCAoMjAyNi4wMS4wMSlcbiAqIEBjb3B5cmlnaHQgMjAyNiAoMjAyNi4wMS4wMSlcbioqL1xuXG4vLyBGT1JXQVJEIFBBUlRJQUxTIiwiLyoqXG4gKiBzYXNzL2xheW91dHMvaW5kZXguc2Nzc1xuICogQHBhY2thZ2Ugc2Nnb2xmcGFuZWxcbiAqIEBhdXRob3IgU2NvdHQgU2hlYWx5XG4gKiBAdmVyc2lvbiAxLjAuMCAoMjAyNi4wMS4wMSlcbiAqIEBjb3B5cmlnaHQgMjAyNiAoMjAyNi4wMS4wMSlcbioqL1xuXG4vLyBGT1JXQVJEIFBBUlRJQUxTIiwiLyoqXG4gKiBzYXNzL2NvbXBvbmVudHMvaW5kZXguc2Nzc1xuICogQHBhY2thZ2Ugc2Nnb2xmcGFuZWxcbiAqIEBhdXRob3IgU2NvdHQgU2hlYWx5XG4gKiBAdmVyc2lvbiAxLjAuMCAoMjAyNi4wMS4wMSlcbiAqIEBjb3B5cmlnaHQgMjAyNiAoMjAyNi4wMS4wMSlcbioqL1xuXG4vLyBGT1JXQVJEIFBBUlRJQUxTIiwiLyoqXG4gKiBzYXNzL2V4dGVybmFsL2luZGV4LnNjc3NcbiAqIEBwYWNrYWdlIHNjZ29sZnBhbmVsXG4gKiBAYXV0aG9yIFNjb3R0IFNoZWFseVxuICogQHZlcnNpb24gMS4wLjAgKDIwMjYuMDEuMDEpXG4gKiBAY29weXJpZ2h0IDIwMjYgKDIwMjYuMDEuMDEpXG4qKi9cblxuLy8gRk9SV0FSRCBQQVJUSUFMUyIsIi8qKlxuICogc2Fzcy9wYXJ0cy9pbmRleC5zY3NzXG4gKiBAcGFja2FnZSBzY2dvbGZwYW5lbFxuICogQGF1dGhvciBTY290dCBTaGVhbHlcbiAqIEB2ZXJzaW9uIDEuMC4wICgyMDI2LjAxLjAxKVxuICogQGNvcHlyaWdodCAyMDI2ICgyMDI2LjAxLjAxKVxuKiovXG5cbi8vIEZPUldBUkQgUEFSVElBTFMiLCIvKipcbiAqIHNhc3MvdGhlbWUvaW5kZXguc2Nzc1xuICogQHBhY2thZ2Ugc2Nnb2xmcGFuZWxcbiAqIEBhdXRob3IgU2NvdHQgU2hlYWx5XG4gKiBAdmVyc2lvbiAxLjAuMCAoMjAyNi4wMS4wMSlcbiAqIEBjb3B5cmlnaHQgMjAyNiAoMjAyNi4wMS4wMSlcbioqL1xuXG4vLyBMT0FEIFRIRU1FIE1FVEFcbiAgICBAdXNlIFwidGhlbWUvbWV0YVwiIGFzICo7XG5cbi8vIExPQUQgUEFSVElBTFNcbiAgICBAdXNlIFwidGhlbWUvaW5kZXhcIiBhcyAqO1xuICAgIEB1c2UgXCJ2YXJpYWJsZXMvaW5kZXhcIiBhcyAqO1xuICAgIEB1c2UgXCJsYXlvdXRzL2luZGV4XCIgYXMgKjtcbiAgICBAdXNlIFwiY29tcG9uZW50cy9pbmRleFwiIGFzICo7XG4gICAgQHVzZSBcImV4dGVybmFsL2luZGV4XCIgYXMgKjtcbiAgICBAdXNlIFwicGFydHMvaW5kZXhcIiBhcyAqOyJdfQ== */
