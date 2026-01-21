@@ -1,0 +1,20 @@
+{
+  "name": "scgolfpanel",
+  "version": "1.0.0",
+  "description": "A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website redesign project.",
+  "homepage": "https://github.com/vsshealy/scgolfpanel#readme",
+  "bugs": {
+    "url": "https://github.com/vsshealy/scgolfpanel/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vsshealy/scgolfpanel.git"
+  },
+  "license": "GPL-3.0",
+  "author": "Scott Shealy | scottshealy.com",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
