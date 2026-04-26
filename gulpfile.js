@@ -9,7 +9,7 @@
 // PLUGINS
     const
         gulp          = require('gulp'),
-        sass          = require('gulp-dart-sass'),
+        sass          = require('gulp-sass')(require('sass')),
         postcss       = require('gulp-postcss'),
         autoprefixer  = require('autoprefixer'),
         sortmq        = require('postcss-sort-media-queries'),
@@ -50,7 +50,7 @@
             .src(paths.sass.src, {allowEmpty: true})
             .pipe(plumber())
             .pipe(sourcemaps.init({loadMaps: true}))
-            .pipe(sass({outputStyle: 'expanded'}))
+            .pipe(sass.sync({outputStyle: 'expanded'}).on('error', sass.logError))
             .pipe(postcss([
                 autoprefixer({overrideBrowserslist: ['last 4 versions']}),
                 sortmq()
