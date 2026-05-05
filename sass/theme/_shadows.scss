@@ -1,0 +1,15 @@
+/**
+ * sass/theme/shadows.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "../variables/index" as *;
+
+// COLORS
+    $shadow-main: 0.00rem 0.00rem 0.50rem rgba($color-grayscale-dark-9, 0.10);
+    $shadow-text: 0.00rem 0.00rem 0.50rem rgba($color-grayscale-dark-9, 0.90);

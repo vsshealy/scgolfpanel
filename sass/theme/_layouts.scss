@@ -1,0 +1,23 @@
+/**
+ * sass/theme/layouts.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "site" as *;
+    @use "../variables/index" as *;
+
+// GUTTERS
+    // ROWS
+        $gutter-row: 0.00rem;
+        $gutter-row-vertical: $gutter-row * 1.00;
+        $gutter-row-horizontal: $gutter-row * 1.00;
+
+    // COLUMNS
+        $gutter-columns: $unit-base;
+        $gutter-columns-vertical: $gutter-columns * 1.00;
+        $gutter-columns-horizontal: $gutter-columns * 1.00;

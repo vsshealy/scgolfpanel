@@ -1,0 +1,32 @@
+/**
+ * sass/theme/breakpoint.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../variables/index" as *;
+
+// MEDIA QUERIES
+    $media-xs: $media-col-xs;
+    $media-sm: $media-col-sm;
+    $media-md: $media-col-md;
+    $media-lg: $media-col-lg;
+    $media-xl: $media-col-xl;
+    $media-xxl: $media-col-xxl;
+
+// MEDIA QUERIES
+    // GLOBAL
+    // MOBILE
+        @media #{$media-xs} {} //.COL-XS
+        @media #{$media-sm} {} //.COL-SM
+        @media #{$media-md} {} //.COL-MD
+        @media #{$device-mobile} {} //.MOBILE
+
+    // DESKTOP
+        @media #{$device-desktop} {} //.DESKTOP
+        @media #{$media-lg} {} //.COL-LG
+        @media #{$media-xl} {} //.COL-XL
+        @media #{$media-xxl} {} //.COL-XXL

@@ -10,4 +10,2472 @@
  * License: GNU General Public License v3 or Later
  * License URI: http://www.gnu.org/license/gpl-3.0.html
 **/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/_colors.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/site.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/variables/_colors.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+ * @compatibility Sass 1.70.0+, Gulp 5.0.0+
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/site.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/variables/units.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/variables/media.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2025 (2026.01.01)
+**/
+/**
+ * sass/variables/lists.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/variables/loops.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/variables/functions.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/variables/mixins.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2025 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/layouts.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/breakpoint.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/links.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/shadows.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/text.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/icons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/borders.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/buttons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/backgrounds.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/gradients.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/components.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/templates.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/header.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/footer.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/sections.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/theme/parts.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/layouts/site.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html {
+  background-color: rgb(246.3333333333, 245.6666666667, 237);
+}
+body {
+  min-height: 100vh;
+  margin: 0rem;
+  padding: 0rem;
+  overflow-x: hidden;
+  background-color: white;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/layouts/devices.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.display-none {
+  display: none;
+}
+
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/layouts/flexbox.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.flexbox-wrap-reverse, .flexbox-wrap-none, .flexbox-wrap, .flexbox-center-all, .flexbox-center, .flexbox, .flexbox-vertical-spacearound, .flexbox-vertical-spacebetween, .flexbox-vertical-stretch, .flexbox-vertical-baseline, .flexbox-vertical-center, .flexbox-vertical-bottom, .flexbox-vertical-top, .flexbox-vertical, .flexbox-column-reverse, .flexbox-column, .flexbox-horizontal-spacearound, .flexbox-horizontal-spacebetween, .flexbox-horizontal-center, .flexbox-horizontal-right, .flexbox-horizontal-left, .flexbox-horizontal, .flexbox-row-reverse, .flexbox-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.flexbox-horizontal-spacearound, .flexbox-horizontal-spacebetween, .flexbox-horizontal-center, .flexbox-horizontal-right, .flexbox-horizontal-left, .flexbox-horizontal, .flexbox-row-reverse, .flexbox-row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.flexbox-vertical-spacearound, .flexbox-vertical-spacebetween, .flexbox-vertical-stretch, .flexbox-vertical-baseline, .flexbox-vertical-center, .flexbox-vertical-bottom, .flexbox-vertical-top, .flexbox-vertical, .flexbox-column-reverse, .flexbox-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.flexbox-row-reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+.flexbox-column-reverse {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+}
+.flexbox-horizontal-left {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.flexbox-horizontal-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.flexbox-horizontal-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flexbox-horizontal-spacebetween {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.flexbox-horizontal-spacearound {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.flexbox-vertical-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.flexbox-vertical-bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.flexbox-vertical-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flexbox-vertical-baseline {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.flexbox-vertical-stretch {
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.flexbox-vertical-spacebetween {
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+.flexbox-vertical-spacearound {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+}
+.flexbox-center-all {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.flexbox-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.flexbox-wrap-none {
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.flexbox-wrap-reverse {
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/layouts/grids.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.grid-0 {
+  display: none;
+}
+.grid-1 {
+  width: 8.3333333333%;
+}
+.grid-2 {
+  width: 16.6666666667%;
+}
+.grid-3 {
+  width: 25%;
+}
+.grid-4 {
+  width: 33.3333333333%;
+}
+.grid-5 {
+  width: 41.6666666667%;
+}
+.grid-6 {
+  width: 50%;
+}
+.grid-7 {
+  width: 58.3333333333%;
+}
+.grid-8 {
+  width: 66.6666666667%;
+}
+.grid-9 {
+  width: 75%;
+}
+.grid-10 {
+  width: 83.3333333333%;
+}
+.grid-11 {
+  width: 91.6666666667%;
+}
+.grid-12 {
+  width: 100%;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/layouts/margins.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.margin-none {
+  margin: 0rem !important;
+}
+.margin-xxs {
+  margin: 0.25rem !important;
+}
+.margin-xs {
+  margin: 0.5rem !important;
+}
+.margin-sm {
+  margin: 1rem !important;
+}
+.margin-md {
+  margin: 2rem !important;
+}
+.margin-lg {
+  margin: 3rem !important;
+}
+.margin-xl {
+  margin: 4rem !important;
+}
+.margin-xxl {
+  margin: 5rem !important;
+}
+.margin-top-none {
+  margin-top: 0rem !important;
+}
+.margin-top-xxs {
+  margin-top: 0.25rem !important;
+}
+.margin-top-xs {
+  margin-top: 0.5rem !important;
+}
+.margin-top-sm {
+  margin-top: 1rem !important;
+}
+.margin-top-md {
+  margin-top: 2rem !important;
+}
+.margin-top-lg {
+  margin-top: 3rem !important;
+}
+.margin-top-xl {
+  margin-top: 4rem !important;
+}
+.margin-top-xxl {
+  margin-top: 5rem !important;
+}
+.margin-bottom-none {
+  margin-bottom: 0rem !important;
+}
+.margin-bottom-xxs {
+  margin-bottom: 0.25rem !important;
+}
+.margin-bottom-xs {
+  margin-bottom: 0.5rem !important;
+}
+.margin-bottom-sm {
+  margin-bottom: 1rem !important;
+}
+.margin-bottom-md {
+  margin-bottom: 2rem !important;
+}
+.margin-bottom-lg {
+  margin-bottom: 3rem !important;
+}
+.margin-bottom-xl {
+  margin-bottom: 4rem !important;
+}
+.margin-bottom-xxl {
+  margin-bottom: 5rem !important;
+}
+.margin-left-none {
+  margin-left: 0rem !important;
+}
+.margin-left-xxs {
+  margin-left: 0.25rem !important;
+}
+.margin-left-xs {
+  margin-left: 0.5rem !important;
+}
+.margin-left-sm {
+  margin-left: 1rem !important;
+}
+.margin-left-md {
+  margin-left: 2rem !important;
+}
+.margin-left-lg {
+  margin-left: 3rem !important;
+}
+.margin-left-xl {
+  margin-left: 4rem !important;
+}
+.margin-left-xxl {
+  margin-left: 5rem !important;
+}
+.margin-right-none {
+  margin-right: 0rem !important;
+}
+.margin-right-xxs {
+  margin-right: 0.25rem !important;
+}
+.margin-right-xs {
+  margin-right: 0.5rem !important;
+}
+.margin-right-sm {
+  margin-right: 1rem !important;
+}
+.margin-right-md {
+  margin-right: 2rem !important;
+}
+.margin-right-lg {
+  margin-right: 3rem !important;
+}
+.margin-right-xl {
+  margin-right: 4rem !important;
+}
+.margin-right-xxl {
+  margin-right: 5rem !important;
+}
+.margin-vertical-none {
+  margin-top: 0rem !important;
+  margin-bottom: 0rem !important;
+}
+.margin-vertical-xxs {
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.25rem !important;
+}
+.margin-vertical-xs {
+  margin-top: 0.5rem !important;
+  margin-bottom: 0.5rem !important;
+}
+.margin-vertical-sm {
+  margin-top: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+.margin-vertical-md {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+.margin-vertical-lg {
+  margin-top: 3rem !important;
+  margin-bottom: 3rem !important;
+}
+.margin-vertical-xl {
+  margin-top: 4rem !important;
+  margin-bottom: 4rem !important;
+}
+.margin-vertical-xxl {
+  margin-top: 5rem !important;
+  margin-bottom: 5rem !important;
+}
+.margin-horizontal-none {
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+.margin-horizontal-xxs {
+  margin-left: 0.25rem !important;
+  margin-right: 0.25rem !important;
+}
+.margin-horizontal-xs {
+  margin-left: 0.5rem !important;
+  margin-right: 0.5rem !important;
+}
+.margin-horizontal-sm {
+  margin-left: 1rem !important;
+  margin-right: 1rem !important;
+}
+.margin-horizontal-md {
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
+}
+.margin-horizontal-lg {
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+.margin-horizontal-xl {
+  margin-left: 4rem !important;
+  margin-right: 4rem !important;
+}
+.margin-horizontal-xxl {
+  margin-left: 5rem !important;
+  margin-right: 5rem !important;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/layouts/paddings.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.padding-none {
+  padding: 0rem !important;
+}
+.padding-xxs {
+  padding: 0.25rem !important;
+}
+.padding-xs {
+  padding: 0.5rem !important;
+}
+.padding-sm {
+  padding: 1rem !important;
+}
+.padding-md {
+  padding: 2rem !important;
+}
+.padding-lg {
+  padding: 3rem !important;
+}
+.padding-xl {
+  padding: 4rem !important;
+}
+.padding-xxl {
+  padding: 5rem !important;
+}
+.padding-top-none {
+  padding-top: 0rem !important;
+}
+.padding-top-xxs {
+  padding-top: 0.25rem !important;
+}
+.padding-top-xs {
+  padding-top: 0.5rem !important;
+}
+.padding-top-sm {
+  padding-top: 1rem !important;
+}
+.padding-top-md {
+  padding-top: 2rem !important;
+}
+.padding-top-lg {
+  padding-top: 3rem !important;
+}
+.padding-top-xl {
+  padding-top: 4rem !important;
+}
+.padding-top-xxl {
+  padding-top: 5rem !important;
+}
+.padding-bottom-none {
+  padding-bottom: 0rem !important;
+}
+.padding-bottom-xxs {
+  padding-bottom: 0.25rem !important;
+}
+.padding-bottom-xs {
+  padding-bottom: 0.5rem !important;
+}
+.padding-bottom-sm {
+  padding-bottom: 1rem !important;
+}
+.padding-bottom-md {
+  padding-bottom: 2rem !important;
+}
+.padding-bottom-lg {
+  padding-bottom: 3rem !important;
+}
+.padding-bottom-xl {
+  padding-bottom: 4rem !important;
+}
+.padding-bottom-xxl {
+  padding-bottom: 5rem !important;
+}
+.padding-left-none {
+  padding-left: 0rem !important;
+}
+.padding-left-xxs {
+  padding-left: 0.25rem !important;
+}
+.padding-left-xs {
+  padding-left: 0.5rem !important;
+}
+.padding-left-sm {
+  padding-left: 1rem !important;
+}
+.padding-left-md {
+  padding-left: 2rem !important;
+}
+.padding-left-lg {
+  padding-left: 3rem !important;
+}
+.padding-left-xl {
+  padding-left: 4rem !important;
+}
+.padding-left-xxl {
+  padding-left: 5rem !important;
+}
+.padding-right-none {
+  padding-right: 0rem !important;
+}
+.padding-right-xxs {
+  padding-right: 0.25rem !important;
+}
+.padding-right-xs {
+  padding-right: 0.5rem !important;
+}
+.padding-right-sm {
+  padding-right: 1rem !important;
+}
+.padding-right-md {
+  padding-right: 2rem !important;
+}
+.padding-right-lg {
+  padding-right: 3rem !important;
+}
+.padding-right-xl {
+  padding-right: 4rem !important;
+}
+.padding-right-xxl {
+  padding-right: 5rem !important;
+}
+.padding-vertical-none {
+  padding-top: 0rem !important;
+  padding-bottom: 0rem !important;
+}
+.padding-vertical-xxs {
+  padding-top: 0.25rem !important;
+  padding-bottom: 0.25rem !important;
+}
+.padding-vertical-xs {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.padding-vertical-sm {
+  padding-top: 1rem !important;
+  padding-bottom: 1rem !important;
+}
+.padding-vertical-md {
+  padding-top: 2rem !important;
+  padding-bottom: 2rem !important;
+}
+.padding-vertical-lg {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+.padding-vertical-xl {
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+.padding-vertical-xxl {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+.padding-horizontal-none {
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
+.padding-horizontal-xxs {
+  padding-left: 0.25rem !important;
+  padding-right: 0.25rem !important;
+}
+.padding-horizontal-xs {
+  padding-left: 0.5rem !important;
+  padding-right: 0.5rem !important;
+}
+.padding-horizontal-sm {
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+.padding-horizontal-md {
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+}
+.padding-horizontal-lg {
+  padding-left: 3rem !important;
+  padding-right: 3rem !important;
+}
+.padding-horizontal-xl {
+  padding-left: 4rem !important;
+  padding-right: 4rem !important;
+}
+.padding-horizontal-xxl {
+  padding-left: 5rem !important;
+  padding-right: 5rem !important;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/layouts/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.wrapper-none, .wrapper-content, .wrapper-page, .wrapper-full, .wrapper-full-screen, .wrapper {
+  margin: 0rem auto !important;
+}
+.wrapper-full, .wrapper-full-screen {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+}
+.wrapper-full-screen {
+  height: 100vh;
+  min-height: 100vh;
+  max-height: 100vh;
+}
+.wrapper-content {
+  width: 90% !important;
+  max-width: 1400px !important;
+  overflow: hidden;
+}
+.wrapper-text, .wrapper-text-body, .wrapper-text-heading {
+  width: 100%;
+}
+.wrapper-text-heading {
+  max-width: 33rem;
+}
+.wrapper-text-body {
+  max-width: 66ch;
+}
+.wrapper-none {
+  width: 100%;
+  padding: 0rem;
+}
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/links.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/shadows.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/text.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+body {
+  font-family: "Roboto Flex", Roboto, Helvetica, Arial, sans-serif;
+  color: #404040;
+  letter-spacing: 0px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+span, .span, li, .li, ol, .ol, ul, .ul, p, .p {
+  width: 100%;
+  max-width: 66ch;
+  font-family: "Roboto Flex", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-wrap: pretty;
+  color: #404040;
+}
+p, .p {
+  margin: 1rem 0rem;
+}
+ol, .ol, ul, .ul {
+  padding-left: 1rem;
+}
+li, .li {
+  margin: 0.5rem 0rem;
+}
+span, .span {
+  width: auto;
+  display: inline;
+}
+h5, .h5, h6, .h6, h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  width: 100%;
+  max-width: 33rem;
+  margin: 1rem 0rem 0.5rem 0rem;
+  line-height: 1.25;
+  letter-spacing: 0px;
+  text-transform: none;
+  text-wrap: balance;
+}
+h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
+  font-family: Merriweather, Georgia, serif;
+  font-weight: 300;
+  color: #202020;
+}
+h5, .h5, h6, .h6 {
+  font-family: "Roboto Flex", Roboto, Helvetica, Arial, sans-serif;
+  color: #404040;
+}
+h1, .h1 {
+  font-size: 2rem;
+}
+h2, .h2 {
+  font-size: 1.75rem;
+}
+h3, .h3 {
+  font-size: 1.5rem;
+}
+h4, .h4 {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 300;
+}
+h5, .h5 {
+  font-size: 1rem;
+  font-variation-settings: "wght" 700, "wdth" 75, "opsz" 14, "GRAD" 0;
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+h6, .h6 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+a, .a {
+  color: #046a38;
+  text-decoration: none;
+  font-weight: 700;
+}
+a:hover, .a:hover {
+  color: rgb(3, 79.5, 42);
+  text-decoration: underline;
+}
+.text-align-left {
+  text-align: left;
+}
+.text-align-center {
+  text-align: center;
+}
+.text-align-right {
+  text-align: right;
+}
+.text-align-justify {
+  text-align: justify;
+}
+.text-italic {
+  font-style: italic;
+}
+.text-weight-light {
+  font-weight: 300;
+}
+.text-weight-normal {
+  font-weight: 400;
+}
+.text-weight-bold {
+  font-weight: 700;
+}
+.text-lowercase {
+  text-transform: lowercase;
+}
+.text-uppercase {
+  text-transform: uppercase;
+}
+.text-capitalize {
+  text-transform: capitalize;
+}
+.text-underline {
+  text-decoration: underline;
+}
+.text-shadow {
+  text-shadow: 0rem 0rem 0.5rem rgba(32, 32, 32, 0.9);
+}
+.text-width-full {
+  width: 100% !important;
+}
+.text-wrap-balance {
+  text-wrap: balance;
+}
+.text-wrap-pretty {
+  text-wrap: pretty;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/icons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/borders.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/buttons.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.button, .button-mobile, .button-ghost, .button-alt, .button-solid {
+  width: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0rem;
+  padding: 0.5rem 2rem;
+  gap: 0;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: "Roboto Flex", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-wrap: pretty;
+  letter-spacing: 0px;
+  line-height: 1.25;
+}
+.button:hover, .button-mobile:hover, .button-ghost:hover, .button-alt:hover, .button-solid:hover {
+  text-decoration: none;
+}
+.button:focus, .button-mobile:focus, .button-ghost:focus, .button-alt:focus, .button-solid:focus {
+  outline: 2px solid #046a38;
+  outline-offset: 2px;
+}
+.button i, .button-mobile i, .button-ghost i, .button-alt i, .button-solid i {
+  width: auto;
+  margin-left: 1rem;
+  margin-right: 0rem;
+}
+.button-primary {
+  margin: 1rem 0.5rem 0rem 0rem;
+}
+.button-secondary {
+  margin: 1rem 0rem 0rem 0.5rem;
+}
+.button-solid {
+  background-color: #046a38;
+  border-color: white;
+  color: white !important;
+}
+.button-solid:hover {
+  background-color: rgb(3, 79.5, 42);
+  border-color: white;
+  color: white !important;
+}
+.button-alt {
+  background-color: white;
+  border-color: #046a38;
+  color: #046a38;
+}
+.button-alt:hover {
+  background-color: rgb(3, 79.5, 42);
+  border-color: white;
+  color: white;
+}
+.button-ghost {
+  background-color: transparent;
+  border-color: #046a38;
+  color: #046a38;
+}
+.button-ghost:hover {
+  background-color: #046a38;
+  border-color: white;
+  color: white !important;
+}
+.button-text {
+  position: relative;
+  padding: 0rem;
+  padding-right: 1.75rem;
+  letter-spacing: 0px;
+  color: #046a38;
+}
+.button-text:hover {
+  color: rgb(3, 79.5, 42);
+  text-decoration: underline;
+}
+.button-text i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0rem;
+  margin-right: 0rem;
+  text-decoration: none;
+}
+.button-text i:hover {
+  text-decoration: none;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/backgrounds.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.background-primary :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.background-primary .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.background-primary {
+  background-color: white;
+}
+.background-alt :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.background-alt .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.background-alt {
+  background-color: #f2f1e4;
+}
+.background-none :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.background-none .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.background-none {
+  background-color: transparent;
+}
+.background-white :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.background-white .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.background-white {
+  background-color: white;
+}
+.background-grayscale-light :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: #202020;
+}
+.background-grayscale-light .banner-eyebrow-accent .line {
+  border-color: #202020;
+}
+.background-grayscale-light {
+  background-color: rgb(223.25, 223.25, 223.25);
+}
+.background-grayscale-medium :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: #202020;
+}
+.background-grayscale-medium .banner-eyebrow-accent .line {
+  border-color: #202020;
+}
+.background-grayscale-medium {
+  background-color: #808080;
+}
+.background-grayscale-dark :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: rgb(223.25, 223.25, 223.25);
+}
+.background-grayscale-dark .banner-eyebrow-accent .line {
+  border-color: rgb(223.25, 223.25, 223.25);
+}
+.background-grayscale-dark {
+  background-color: #202020;
+}
+.background-black :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.background-black .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.background-black {
+  background-color: #231f20;
+}
+.background-brown :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.background-brown .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.background-brown {
+  background-color: #89764b;
+}
+.background-beige :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: rgb(50.75, 49.75, 36.75);
+}
+.background-beige .banner-eyebrow-accent .line {
+  border-color: rgb(50.75, 49.75, 36.75);
+}
+.background-beige {
+  background-color: #cbc793;
+}
+.background-green :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.background-green .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.background-green {
+  background-color: #046a38;
+}
+.background-indigo :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.background-indigo .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.background-indigo {
+  background-color: #041e42;
+}
+.background-gold :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: rgb(63.75, 45.5, 0);
+}
+.background-gold .banner-eyebrow-accent .line {
+  border-color: rgb(63.75, 45.5, 0);
+}
+.background-gold {
+  background-color: #ffb600;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/gradients.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.gradient-primary :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.gradient-primary .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.gradient-primary {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 32, 32, 0.95)), color-stop(25%, rgba(32, 32, 32, 0.8)), to(rgba(32, 32, 32, 0.5)));
+  background-image: linear-gradient(0deg, rgba(32, 32, 32, 0.95) 0%, rgba(32, 32, 32, 0.8) 25%, rgba(32, 32, 32, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-alt :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.gradient-alt .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.gradient-alt {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.95)), color-stop(25%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-none :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.gradient-none .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.gradient-none {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.15)), color-stop(25%, rgba(255, 255, 255, 0.1)), to(rgba(255, 255, 255, 0.05)));
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.1) 25%, rgba(255, 255, 255, 0.05) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-white :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.gradient-white .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.gradient-white {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.95)), color-stop(25%, rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.5)));
+  background-image: linear-gradient(0deg, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.8) 25%, rgba(255, 255, 255, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-grayscale-light :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: inherit;
+}
+.gradient-grayscale-light .banner-eyebrow-accent .line {
+  border-color: inherit;
+}
+.gradient-grayscale-light {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(223.25, 223.25, 223.25, 0.95)), color-stop(25%, rgba(223.25, 223.25, 223.25, 0.8)), to(rgba(223.25, 223.25, 223.25, 0.5)));
+  background-image: linear-gradient(0deg, rgba(223.25, 223.25, 223.25, 0.95) 0%, rgba(223.25, 223.25, 223.25, 0.8) 25%, rgba(223.25, 223.25, 223.25, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-grayscale-medium :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: black;
+}
+.gradient-grayscale-medium .banner-eyebrow-accent .line {
+  border-color: black;
+}
+.gradient-grayscale-medium {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(128, 128, 128, 0.95)), color-stop(25%, rgba(128, 128, 128, 0.8)), to(rgba(128, 128, 128, 0.5)));
+  background-image: linear-gradient(0deg, rgba(128, 128, 128, 0.95) 0%, rgba(128, 128, 128, 0.8) 25%, rgba(128, 128, 128, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-grayscale-dark :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.gradient-grayscale-dark .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.gradient-grayscale-dark {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(32, 32, 32, 0.95)), color-stop(25%, rgba(32, 32, 32, 0.8)), to(rgba(32, 32, 32, 0.5)));
+  background-image: linear-gradient(0deg, rgba(32, 32, 32, 0.95) 0%, rgba(32, 32, 32, 0.8) 25%, rgba(32, 32, 32, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-black :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.gradient-black .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.gradient-black {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(35, 31, 32, 0.95)), color-stop(25%, rgba(35, 31, 32, 0.8)), to(rgba(35, 31, 32, 0.5)));
+  background-image: linear-gradient(0deg, rgba(35, 31, 32, 0.95) 0%, rgba(35, 31, 32, 0.8) 25%, rgba(35, 31, 32, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-brown :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.gradient-brown .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.gradient-brown {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(34.25, 29.5, 18.75, 0.95)), color-stop(25%, rgba(137, 118, 75, 0.8)), to(rgba(225.5, 220.75, 210, 0.5)));
+  background-image: linear-gradient(0deg, rgba(34.25, 29.5, 18.75, 0.95) 0%, rgba(137, 118, 75, 0.8) 25%, rgba(225.5, 220.75, 210, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-beige :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: rgb(50.75, 49.75, 36.75);
+}
+.gradient-beige .banner-eyebrow-accent .line {
+  border-color: rgb(50.75, 49.75, 36.75);
+}
+.gradient-beige {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(50.75, 49.75, 36.75, 0.95)), color-stop(25%, rgba(203, 199, 147, 0.8)), to(rgba(242, 241, 228, 0.5)));
+  background-image: linear-gradient(0deg, rgba(50.75, 49.75, 36.75, 0.95) 0%, rgba(203, 199, 147, 0.8) 25%, rgba(242, 241, 228, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-green :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.gradient-green .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.gradient-green {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 26.5, 14, 0.95)), color-stop(25%, rgba(4, 106, 56, 0.8)), to(rgba(192.25, 217.75, 205.25, 0.5)));
+  background-image: linear-gradient(0deg, rgba(1, 26.5, 14, 0.95) 0%, rgba(4, 106, 56, 0.8) 25%, rgba(192.25, 217.75, 205.25, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-indigo :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: white;
+}
+.gradient-indigo .banner-eyebrow-accent .line {
+  border-color: white;
+}
+.gradient-indigo {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(1, 7.5, 16.5, 0.95)), color-stop(25%, rgba(4, 30, 66, 0.8)), to(rgba(192.25, 198.75, 207.75, 0.5)));
+  background-image: linear-gradient(0deg, rgba(1, 7.5, 16.5, 0.95) 0%, rgba(4, 30, 66, 0.8) 25%, rgba(192.25, 198.75, 207.75, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+.gradient-gold :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
+  color: rgb(63.75, 45.5, 0);
+}
+.gradient-gold .banner-eyebrow-accent .line {
+  border-color: rgb(63.75, 45.5, 0);
+}
+.gradient-gold {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(63.75, 45.5, 0, 0.95)), color-stop(25%, rgba(255, 182, 0, 0.8)), to(rgba(255, 236.75, 191.25, 0.5)));
+  background-image: linear-gradient(0deg, rgba(63.75, 45.5, 0, 0.95) 0%, rgba(255, 182, 0, 0.8) 25%, rgba(255, 236.75, 191.25, 0.5) 100%);
+  background-size: 100%;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/tables.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/lists.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.list-column-split-1 {
+  -webkit-columns: 1;
+     -moz-columns: 1;
+          columns: 1;
+}
+.list-column-split-2 {
+  -webkit-columns: 1;
+     -moz-columns: 1;
+          columns: 1;
+}
+.list-column-split-3 {
+  -webkit-columns: 1;
+     -moz-columns: 1;
+          columns: 1;
+}
+.list-column-split-4 {
+  -webkit-columns: 1;
+     -moz-columns: 1;
+          columns: 1;
+}
+.list-style-ordered {
+  list-style: decimal;
+}
+.list-style-unordered {
+  list-style: disc;
+}
+.list-style-none {
+  list-style: none;
+}
+.list-style-position-inside {
+  list-style-position: inside;
+}
+.list-style-position-outside {
+  list-style-position: outside;
+}
+.list-style-type-circle {
+  list-style-type: circle;
+}
+.list-style-type-decimal {
+  list-style-type: decimal;
+}
+.list-style-type-disc {
+  list-style-type: disc;
+}
+.list-style-type-square {
+  list-style-type: square;
+}
+.list-style-type-lowercase {
+  list-style-type: lower-alpha;
+}
+.list-style-type-uppercase {
+  list-style-type: upper-alpha;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/sections.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/blocks.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/banners.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/accordions.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/breadcrumbs.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/cards.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/forms.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/heroes.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/tabs.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/images.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.image-responsive {
+  height: 0rem;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.image-responsive img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/videos.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.video-responsive {
+  height: 0rem;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/vendors/bootstrap.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/vendors/bricks.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/vendors/fluent-community.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/vendors/font-awesome.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/vendors/formidable.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/vendors/grid-builder.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/parts/header.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/parts/footer.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme built for the South Carolina Golf Course Rankings Panel website.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/parts/pages.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+@media (min-width: 576px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (min-width: 576px) and (max-width: 992px) {
+  .display-tablet-show {
+    display: revert;
+  }
+  .display-tablet-hide {
+    display: none !important;
+  }
+}
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  .list-column-split-2 {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+  }
+  .list-column-split-3 {
+    -webkit-columns: 3;
+       -moz-columns: 3;
+            columns: 3;
+  }
+  .list-column-split-4 {
+    -webkit-columns: 2;
+       -moz-columns: 2;
+            columns: 2;
+  }
+}
+@media (min-width: 992px) {
+  .display-desktop-show {
+    display: revert;
+  }
+  .display-desktop-hide {
+    display: none !important;
+  }
+  .display-desktop-sm-show {
+    display: revert;
+  }
+  .display-desktop-sm-hide {
+    display: none !important;
+  }
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .display-desktop-md-show {
+    display: revert;
+  }
+  .display-desktop-md-hide {
+    display: none !important;
+  }
+  html {
+    font-size: 18px;
+  }
+  .list-column-split-4 {
+    -webkit-columns: 4;
+       -moz-columns: 4;
+            columns: 4;
+  }
+}
+@media (min-width: 1400px) {
+  .display-desktop-lg-show {
+    display: revert;
+  }
+  .display-desktop-lg-hide {
+    display: none !important;
+  }
+  html {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1920px) {
+  .display-desktop-xl-show {
+    display: revert;
+  }
+  .display-desktop-xl-hide {
+    display: none !important;
+  }
+}
+@media (min-width: 3840px) {
+  .display-desktop-xxl-show {
+    display: revert;
+  }
+  .display-desktop-xxl-hide {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .display-mobile-show {
+    display: revert;
+  }
+  .display-mobile-hide {
+    display: none !important;
+  }
+}
+@media (max-width: 576px) {
+  .display-phone-show {
+    display: revert;
+  }
+  .display-phone-hide {
+    display: none !important;
+  }
+}
+@media (max-width: 575.5px) {
+  html {
+    font-size: 16px;
+  }
+  .button, .button-mobile, .button-ghost, .button-alt, .button-solid {
+    width: 100%;
+  }
+  .button-primary {
+    margin: 0.5rem 0rem;
+  }
+  .button-secondary {
+    margin: 0.5rem 0rem;
+  }
+  .button-mobile {
+    background-color: #046a38;
+    border-color: white;
+    color: white !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */

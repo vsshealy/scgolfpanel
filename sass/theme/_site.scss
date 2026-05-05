@@ -1,0 +1,28 @@
+/**
+ * sass/theme/site.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "colors";
+    @use "../variables/colors" as *;
+    
+// BASE UNIT SIZE
+    $unit-base: 1.00rem;
+
+// GLOBAL SIZE ADJUSTMENTS
+    $unit-adjustment-none: 0.00;
+    $unit-adjustment-xxs: 0.25;
+    $unit-adjustment-xs: 0.50;
+    $unit-adjustment-sm: 1.00;
+    $unit-adjustment-md: 2.00;
+    $unit-adjustment-lg: 3.00;
+    $unit-adjustment-xl: 4.00;
+    $unit-adjustment-xxl: 5.00;
+
+// SITE BACKGROUND COLOR
+    $body-background-color: $color-grayscale-light-12;
+    $html-background-color: $color-scgolfpanel-beige-light-10;

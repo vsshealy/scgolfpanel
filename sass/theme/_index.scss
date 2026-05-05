@@ -1,0 +1,28 @@
+/**
+ * sass/components/index.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// FORWARD PARTIALS
+    @forward "colors";
+    @forward "site";
+    @forward "wrappers";
+    @forward "layouts";
+    @forward "breakpoints";
+    @forward "links";
+    @forward "shadows";
+    @forward "text";
+    @forward "icons";
+    @forward "borders";
+    @forward "buttons";
+    @forward "backgrounds";
+    @forward "gradients";
+    @forward "components";
+    @forward "templates";
+    @forward "header";
+    @forward "footer";
+    @forward "sections";
+    @forward "parts";

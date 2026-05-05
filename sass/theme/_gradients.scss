@@ -1,0 +1,64 @@
+/**
+ * sass/theme/gradients.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "colors" as *;
+    @use "text" as *;
+    @use "../variables/index" as *;
+
+// GRADIENT-PRIMARY
+    $gradient-primary-color: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95) 0.00%, rgba($color-grayscale-dark-9, 0.80) 25.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-primary-text-color: $text-color-white;
+
+// GRADIENT-ALT
+    $gradient-alt-color: linear-gradient(0deg, rgba($color-grayscale-light-12, 0.95) 0.00%, rgba($color-grayscale-light-12, 0.80) 25.00%, rgba($color-grayscale-light-12, 0.50) 100.00%);
+    $gradient-alt-text-color: inherit;
+
+// GRADIENT-NONE
+    $gradient-none-color: linear-gradient(0deg, rgba($color-grayscale-light-12, 0.15) 0.00%, rgba($color-grayscale-light-12, 0.10) 25.00%, rgba($color-grayscale-light-12, 0.05) 100.00%);
+    $gradient-none-text-color: inherit;
+
+// GRADIENT-WHITE
+    $gradient-white-color: linear-gradient(0deg, rgba($color-grayscale-light-12, 0.95) 0.00%, rgba($color-grayscale-light-12, 0.80) 25.00%, rgba($color-grayscale-light-12, 0.50) 100.00%);
+    $gradient-white-text-color: inherit;
+
+// GRADIENT-GRAYSCALE-LIGHT
+    $gradient-grayscale-light-color: linear-gradient(0deg, rgba($color-grayscale-light-9, 0.95) 0.00%, rgba($color-grayscale-light-9, 0.80) 25.00%, rgba($color-grayscale-light-9, 0.50) 100.00%);
+    $gradient-grayscale-light-text-color: inherit;
+
+// GRADIENT-GRAYSCALE-MEDIUM
+    $gradient-grayscale-medium-color: linear-gradient(0deg, rgba($color-grayscale-0, 0.95) 0.00%, rgba($color-grayscale-0, 0.80) 25.00%, rgba($color-grayscale-0, 0.50) 100.00%);
+    $gradient-grayscale-medium-text-color: $text-color-black;
+
+// GRADIENT-GRAYSCALE-DARK
+    $gradient-grayscale-dark-color: linear-gradient(0deg, rgba($color-grayscale-dark-9, 0.95) 0.00%, rgba($color-grayscale-dark-9, 0.80) 25.00%, rgba($color-grayscale-dark-9, 0.50) 100.00%);
+    $gradient-grayscale-dark-text-color: $text-color-white;
+
+// GRADIENT-BLACK
+    $gradient-black-color: linear-gradient(0deg, rgba($color-black-rich, 0.95) 0.00%, rgba($color-black-rich, 0.80) 25.00%, rgba($color-black-rich, 0.50) 100.00%);
+    $gradient-black-text-color: $text-color-white;
+
+// GRADIENT-BROWN
+    $gradient-brown-color: linear-gradient(0deg, rgba($color-scgolfpanel-brown-dark-9, 0.95) 0.00%, rgba($color-scgolfpanel-brown-0, 0.80) 25.00%, rgba($color-scgolfpanel-brown-light-9, 0.50) 100.00%);
+    $gradient-brown-text-color: $color-scgolfpanel-brown-light-12;
+
+// GRADIENT-BEIGE
+    $gradient-beige-color: linear-gradient(0deg, rgba($color-scgolfpanel-beige-dark-9, 0.95) 0.00%, rgba($color-scgolfpanel-beige-0, 0.80) 25.00%, rgba($color-scgolfpanel-beige-light-9, 0.50) 100.00%);
+    $gradient-beige-text-color: $color-scgolfpanel-beige-dark-9;
+
+// GRADIENT-GREEN
+    $gradient-green-color: linear-gradient(0deg, rgba($color-scgolfpanel-green-dark-9, 0.95) 0.00%, rgba($color-scgolfpanel-green-0, 0.80) 25.00%, rgba($color-scgolfpanel-green-light-9, 0.50) 100.00%);
+    $gradient-green-text-color: $color-scgolfpanel-green-light-12;
+
+// GRADIENT-INDIGO
+    $gradient-indigo-color: linear-gradient(0deg, rgba($color-scgolfpanel-indigo-dark-9, 0.95) 0.00%, rgba($color-scgolfpanel-indigo-0, 0.80) 25.00%, rgba($color-scgolfpanel-indigo-light-9, 0.50) 100.00%);
+    $gradient-indigo-text-color: $color-scgolfpanel-indigo-light-12;
+
+// GRADIENT-GOLD
+    $gradient-gold-color: linear-gradient(0deg, rgba($color-scgolfpanel-gold-dark-9, 0.95) 0.00%, rgba($color-scgolfpanel-gold-0, 0.80) 25.00%, rgba($color-scgolfpanel-gold-light-9, 0.50) 100.00%);
+    $gradient-gold-text-color: $color-scgolfpanel-gold-dark-9;

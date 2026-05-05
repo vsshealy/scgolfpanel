@@ -1,0 +1,15 @@
+/**
+ * sass/theme/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../variables/index" as *;
+
+// SITE WIDTH SETTINGS
+    $site-width-min: 90.00%;
+    $site-width-max: 100.00%;
+    $site-width-content: 1400px;

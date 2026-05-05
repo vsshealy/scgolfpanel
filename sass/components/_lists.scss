@@ -1,0 +1,208 @@
+/**
+ * sass/components/lists.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "sass:list";
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+    @use "../layouts/index" as *;
+
+// MAPS
+    // LIST-COLUMN
+        $list-column-splits: (
+            1: (1, null, null),
+            2: (1, 2, null),
+            3: (1, 3, null),
+            4: (1, 2, 4),
+        );
+
+    // LIST-STYLE
+        $list-style-type: (
+            "circle": circle,
+            "decimal": decimal,
+            "disc": disc,
+            "square": square,
+            "lowercase": lower-alpha,
+            "uppercase": upper-alpha,
+        );
+
+// LIST
+    .list {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        @each $num, $values in $list-column-splits {
+            &-column-split-#{$num} {
+                // GLOBAL
+                    columns: list.nth($values, 1);
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {
+                        columns: list.nth($values, 2);
+                    } //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {
+                        columns: list.nth($values, 3);
+                    } //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.LIST-COLUMN-SPLIT-NUM
+        } //.LIST-COLUMN LOOP
+
+        &-style {
+            // GLOBAL
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+            &-ordered {
+                // GLOBAL
+                    list-style: decimal;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.LIST-STYLE-ORDERED
+
+            &-unordered {
+                // GLOBAL
+                    list-style: disc;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.LIST-STYLE-UNORDERED
+
+            &-none {
+                // GLOBAL
+                    list-style: none;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.LIST-STYLE-NONE
+
+            &-position {
+                // GLOBAL
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                &-inside {
+                    // GLOBAL
+                        @extend .list-style-position;
+                        list-style-position: inside;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.LIST-STYLE-POSITION-INSIDE
+
+                &-outside {
+                    // GLOBAL
+                        @extend .list-style-position;
+                        list-style-position: outside;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.LIST-STYLE-POSITION-OUTSIDE
+            } //.LIST-STYLE-POSITION
+
+            @each $type, $value in $list-style-type {
+                &-type-#{$type} {
+                    // GLOBAL
+                        list-style-type: $value;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.LIST-STYLE-TYPE
+            } //.LIST-STYLE-TYPE LOOP
+        } //.LIST-STYLE
+
+    } //.LIST

@@ -1,0 +1,179 @@
+/**
+ * sass/layouts/paddings.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// MAPS
+    $padding-sizes: (
+        "none": $padding-none,
+        "xxs":  $padding-xxs,
+        "xs":   $padding-xs,
+        "sm":   $padding-sm,
+        "md":   $padding-md,
+        "lg":   $padding-lg,
+        "xl":   $padding-xl,
+        "xxl":  $padding-xxl,
+    );
+
+    $padding-directions: (
+        "top":    "padding-top",
+        "bottom": "padding-bottom",
+        "left":   "padding-left",
+        "right":  "padding-right",
+    );
+
+// STYLES
+    .padding {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        // ALL SIDES
+            @each $name, $value in $padding-sizes {
+                &-#{$name} {
+                    // GLOBAL
+                        padding: $value !important;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.PADDING-#{$name}
+            } //@EACH PADDING-SIZES (ALL)
+
+        // SINGLE DIRECTIONS
+            @each $dir, $prop in $padding-directions {
+                &-#{$dir} {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+
+                    @each $name, $value in $padding-sizes {
+                        &-#{$name} {
+                            // GLOBAL
+                                #{$prop}: $value !important;
+
+                            // MOBILE
+                                @media #{$media-xs} {} //.COL-XS
+                                @media #{$media-sm} {} //.COL-SM
+                                @media #{$media-md} {} //.COL-MD
+                                @media #{$device-mobile} {} //.MOBILE
+
+                            // DESKTOP
+                                @media #{$device-desktop} {} //.DESKTOP
+                                @media #{$media-lg} {} //.COL-LG
+                                @media #{$media-xl} {} //.COL-XL
+                                @media #{$media-xxl} {} //.COL-XXL
+                        } //.PADDING-#{$dir}-#{$name}
+                    } //@EACH PADDING-SIZES (#{$dir})
+
+                } //.PADDING-#{$dir}
+            } //@EACH PADDING-DIRECTIONS
+
+        // VERTICAL
+            &-vertical {
+                // GLOBAL
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                @each $name, $value in $padding-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            padding-top: $value !important;
+                            padding-bottom: $value !important;
+
+                        // MOBILE
+                            @media #{$media-xs} {} //.COL-XS
+                            @media #{$media-sm} {} //.COL-SM
+                            @media #{$media-md} {} //.COL-MD
+                            @media #{$device-mobile} {} //.MOBILE
+
+                        // DESKTOP
+                            @media #{$device-desktop} {} //.DESKTOP
+                            @media #{$media-lg} {} //.COL-LG
+                            @media #{$media-xl} {} //.COL-XL
+                            @media #{$media-xxl} {} //.COL-XXL
+                    } //.PADDING-VERTICAL-#{$name}
+                } //@EACH PADDING-SIZES (VERTICAL)
+
+            } //.PADDING-VERTICAL
+
+        // HORIZONTAL
+            &-horizontal {
+                // GLOBAL
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                @each $name, $value in $padding-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            padding-left: $value !important;
+                            padding-right: $value !important;
+
+                        // MOBILE
+                            @media #{$media-xs} {} //.COL-XS
+                            @media #{$media-sm} {} //.COL-SM
+                            @media #{$media-md} {} //.COL-MD
+                            @media #{$device-mobile} {} //.MOBILE
+
+                        // DESKTOP
+                            @media #{$device-desktop} {} //.DESKTOP
+                            @media #{$media-lg} {} //.COL-LG
+                            @media #{$media-xl} {} //.COL-XL
+                            @media #{$media-xxl} {} //.COL-XXL
+                    } //.PADDING-HORIZONTAL-#{$name}
+                } //@EACH PADDING-SIZES (HORIZONTAL)
+
+            } //.PADDING-HORIZONTAL
+
+    } //.PADDING
