@@ -30,6 +30,7 @@
     "gulp-terser": "^2.1.0",
     "path": "^0.12.7",
     "postcss-sort-media-queries": "^6.5.0",
+    "sass": "^1.99.0",
     "sharp": "^0.34.5",
     "through2": "^4.0.2"
   }
