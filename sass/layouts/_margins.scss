@@ -1,0 +1,179 @@
+/**
+ * sass/layouts/margins.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// MAPS
+    $margin-sizes: (
+        "none": $margin-none,
+        "xxs":  $margin-xxs,
+        "xs":   $margin-xs,
+        "sm":   $margin-sm,
+        "md":   $margin-md,
+        "lg":   $margin-lg,
+        "xl":   $margin-xl,
+        "xxl":  $margin-xxl,
+    );
+
+    $margin-directions: (
+        "top":    "margin-top",
+        "bottom": "margin-bottom",
+        "left":   "margin-left",
+        "right":  "margin-right",
+    );
+
+// STYLES
+    .margin {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        // ALL SIDES
+            @each $name, $value in $margin-sizes {
+                &-#{$name} {
+                    // GLOBAL
+                        margin: $value !important;
+
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //.MARGIN-#{$name}
+            } //@EACH MARGIN-SIZES (ALL)
+
+        // SINGLE DIRECTIONS
+            @each $dir, $prop in $margin-directions {
+                &-#{$dir} {
+                    // GLOBAL
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+
+                    @each $name, $value in $margin-sizes {
+                        &-#{$name} {
+                            // GLOBAL
+                                #{$prop}: $value !important;
+
+                            // MOBILE
+                                @media #{$media-xs} {} //.COL-XS
+                                @media #{$media-sm} {} //.COL-SM
+                                @media #{$media-md} {} //.COL-MD
+                                @media #{$device-mobile} {} //.MOBILE
+
+                            // DESKTOP
+                                @media #{$device-desktop} {} //.DESKTOP
+                                @media #{$media-lg} {} //.COL-LG
+                                @media #{$media-xl} {} //.COL-XL
+                                @media #{$media-xxl} {} //.COL-XXL
+                        } //.MARGIN-#{$dir}-#{$name}
+                    } //@EACH MARGIN-SIZES (#{$dir})
+
+                } //.MARGIN-#{$dir}
+            } //@EACH MARGIN-DIRECTIONS
+
+        // VERTICAL
+            &-vertical {
+                // GLOBAL
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                @each $name, $value in $margin-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            margin-top: $value !important;
+                            margin-bottom: $value !important;
+
+                        // MOBILE
+                            @media #{$media-xs} {} //.COL-XS
+                            @media #{$media-sm} {} //.COL-SM
+                            @media #{$media-md} {} //.COL-MD
+                            @media #{$device-mobile} {} //.MOBILE
+
+                        // DESKTOP
+                            @media #{$device-desktop} {} //.DESKTOP
+                            @media #{$media-lg} {} //.COL-LG
+                            @media #{$media-xl} {} //.COL-XL
+                            @media #{$media-xxl} {} //.COL-XXL
+                    } //.MARGIN-VERTICAL-#{$name}
+                } //@EACH MARGIN-SIZES (VERTICAL)
+
+            } //.MARGIN-VERTICAL
+
+        // HORIZONTAL
+            &-horizontal {
+                // GLOBAL
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+
+                @each $name, $value in $margin-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            margin-left: $value !important;
+                            margin-right: $value !important;
+
+                        // MOBILE
+                            @media #{$media-xs} {} //.COL-XS
+                            @media #{$media-sm} {} //.COL-SM
+                            @media #{$media-md} {} //.COL-MD
+                            @media #{$device-mobile} {} //.MOBILE
+
+                        // DESKTOP
+                            @media #{$device-desktop} {} //.DESKTOP
+                            @media #{$media-lg} {} //.COL-LG
+                            @media #{$media-xl} {} //.COL-XL
+                            @media #{$media-xxl} {} //.COL-XXL
+                    } //.MARGIN-HORIZONTAL-#{$name}
+                } //@EACH MARGIN-SIZES (HORIZONTAL)
+
+            } //.MARGIN-HORIZONTAL
+
+    } //.MARGIN

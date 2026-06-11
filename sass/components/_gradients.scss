@@ -1,0 +1,105 @@
+/**
+ * sass/components/gradients.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "sass:map";
+    @use "text" as *;
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+    @use "../layouts/index" as *;
+
+// GRADIENTS MAP
+    $gradient: (
+        "primary": (bg: $gradient-primary-color, text: $gradient-primary-text-color),
+        "alt": (bg: $gradient-alt-color, text: $gradient-alt-text-color),
+        "none": (bg: $gradient-none-color, text: $gradient-none-text-color),
+        "white": (bg: $gradient-white-color, text: $gradient-white-text-color),
+        "grayscale-light": (bg: $gradient-grayscale-light-color, text: $gradient-grayscale-light-text-color),
+        "grayscale-medium": (bg: $gradient-grayscale-medium-color, text: $gradient-grayscale-medium-text-color),
+        "grayscale-dark": (bg: $gradient-grayscale-dark-color, text: $gradient-grayscale-dark-text-color),
+        "black": (bg: $gradient-black-color, text: $gradient-black-text-color),
+        "brown": (bg: $gradient-brown-color, text: $gradient-brown-text-color),
+        "beige": (bg: $gradient-beige-color, text: $gradient-beige-text-color),
+        "green": (bg: $gradient-green-color, text: $gradient-green-text-color),
+        "indigo": (bg: $gradient-indigo-color, text: $gradient-indigo-text-color),
+        "gold": (bg: $gradient-gold-color, text: $gradient-gold-text-color),
+    );
+
+// GRADIENTS NESTED STYLES MIXIN
+    @mixin gradient-nested-styles($text-color) {
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        :is(#{$text-all}) {
+            // GLOBAL
+                color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-ALL
+
+        .banner-eyebrow-accent .line {
+            // GLOBAL
+                border-color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BANNER-EYEBROW-ACCENT
+    } //GRADIENT-MIXIN
+
+// GRADIENTS LOOP
+    @each $name, $colors in $gradient {
+        .gradient-#{$name} {
+            // GLOBAL
+                @include gradient-nested-styles(map.get($colors, text));
+                background-image: map.get($colors, bg);
+                background-size: 100.00%;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-attachment: scroll;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.GRADIENT-$NAME
+    } //GRADIENTS-LOOP

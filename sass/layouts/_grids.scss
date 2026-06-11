@@ -1,0 +1,98 @@
+/**
+ * sass/layouts/grids.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// MAPS
+    $grid-widths: (
+        1:  $grid-1,
+        2:  $grid-2,
+        3:  $grid-3,
+        4:  $grid-4,
+        5:  $grid-5,
+        6:  $grid-6,
+        7:  $grid-7,
+        8:  $grid-8,
+        9:  $grid-9,
+        10: $grid-10,
+        11: $grid-11,
+        12: $grid-12,
+    );
+
+// PLACEHOLDERS
+    %grid {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+    } //%GRID
+
+// STYLES
+    .grid {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        &-0 {
+            // GLOBAL
+                @extend %grid;
+                display: none;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.GRID-0
+
+        @each $i, $width in $grid-widths {
+            &-#{$i} {
+                // GLOBAL
+                    @extend %grid;
+                    width: $width;
+
+                // MOBILE
+                    @media #{$media-xs} {} //.COL-XS
+                    @media #{$media-sm} {} //.COL-SM
+                    @media #{$media-md} {} //.COL-MD
+                    @media #{$device-mobile} {} //.MOBILE
+
+                // DESKTOP
+                    @media #{$device-desktop} {} //.DESKTOP
+                    @media #{$media-lg} {} //.COL-LG
+                    @media #{$media-xl} {} //.COL-XL
+                    @media #{$media-xxl} {} //.COL-XXL
+            } //.GRID-#{$i}
+        } //@EACH GRID-WIDTHS
+
+    } //.GRID

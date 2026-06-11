@@ -1,0 +1,101 @@
+/**
+ * sass/components/backgrounds.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "sass:map";
+    @use "text" as *;
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+    @use "../layouts/index" as *;
+
+// BACKGROUNDS MAP
+    $background: (
+        "primary": (bg: $background-primary-color, text: $background-primary-text-color),
+        "alt": (bg: $background-alt-color, text: $background-alt-text-color),
+        "none": (bg: $background-none-color, text: $background-none-text-color),
+        "white": (bg: $background-white-color, text: $background-white-text-color),
+        "grayscale-light": (bg: $background-grayscale-light-color, text: $background-grayscale-light-text-color),
+        "grayscale-medium": (bg: $background-grayscale-medium-color, text: $background-grayscale-medium-text-color),
+        "grayscale-dark": (bg: $background-grayscale-dark-color, text: $background-grayscale-dark-text-color),
+        "black": (bg: $background-black-color, text: $background-black-text-color),
+        "brown": (bg: $background-brown-color, text: $background-brown-text-color),
+        "beige": (bg: $background-beige-color, text: $background-beige-text-color),
+        "green": (bg: $background-green-color, text: $background-green-text-color),
+        "indigo": (bg: $background-indigo-color, text: $background-indigo-text-color),
+        "gold": (bg: $background-gold-color, text: $background-gold-text-color),
+    );
+
+// BACKGROUNDS NESTED STYLES MIXIN
+    @mixin background-nested-styles($text-color) {
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        :is(#{$text-all}) {
+            // GLOBAL
+                color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-ALL
+
+        .banner-eyebrow-accent .line {
+            // GLOBAL
+                border-color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BANNER-EYEBROW-ACCENT
+    } //BACKGROUND-MIXIN
+
+// BACKGROUNDS LOOP
+    @each $name, $colors in $background {
+        .background-#{$name} {
+            // GLOBAL
+                @include background-nested-styles(map.get($colors, text));
+                background-color: map.get($colors, bg);
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BACKGROUND-$NAME
+    } //BACKGROUNDS LOOP

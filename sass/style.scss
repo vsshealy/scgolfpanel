@@ -10,3 +10,12 @@
  * License: GNU General Public License v3 or Later
  * License URI: http://www.gnu.org/license/gpl-3.0.html
 **/
+
+// LOAD PARTIALS
+    @use "theme/index" as *;
+    @use "variables/index" as *;
+    @use "layouts/index" as *;
+    @use "components/index" as *;
+    @use "external/index" as *;
+    @use "templates/index" as *;
+    @use "parts/index" as *;

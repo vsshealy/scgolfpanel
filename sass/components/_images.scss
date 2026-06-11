@@ -1,0 +1,73 @@
+/**
+ * sass/components/images.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+    @use "../layouts/index" as *;
+
+// STYLES
+    .image {
+        // GLOBAL
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        &-responsive {
+            // GLOBAL
+                @extend .image;
+                height: 0.00rem;
+                position: relative;
+                padding-top: 30px;
+                padding-bottom: 56.25%;
+                overflow: hidden;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+
+                img {
+                    // GLOBAL
+                        height: 100.00%;
+                        width: 100.00%;
+                        position: absolute;
+                        top: 0.00%;
+                        left: 0.00%;
+                        
+                    // MOBILE
+                        @media #{$media-xs} {} //.COL-XS
+                        @media #{$media-sm} {} //.COL-SM
+                        @media #{$media-md} {} //.COL-MD
+                        @media #{$device-mobile} {} //.MOBILE
+
+                    // DESKTOP
+                        @media #{$device-desktop} {} //.DESKTOP
+                        @media #{$media-lg} {} //.COL-LG
+                        @media #{$media-xl} {} //.COL-XL
+                        @media #{$media-xxl} {} //.COL-XXL
+                } //IMG
+
+        } //.IMAGE-RESPONSIVE
+
+    } //.IMAGE
