@@ -89,6 +89,13 @@
 
         add_action('init', 'register_menus');
 
+    // CLEAN UP <HEAD> — REMOVE UNUSED WORDPRESS DEFAULT TAGS
+        remove_action( 'wp_head', 'rsd_link' );                  // Really Simple Discovery — used by Windows Live Writer, effectively obsolete
+        remove_action( 'wp_head', 'wlwmanifest_link' );           // Windows Live Writer manifest — same, obsolete
+        remove_action( 'wp_head', 'wp_shortlink_wp_head' );       // Shortlink tag — only useful if you're actually using WP's short URLs
+        remove_action( 'wp_head', 'rest_output_link_wp_head' );   // REST API discovery link — safe to remove from <head> without disabling the REST API itself
+        remove_action( 'wp_head', 'wp_generator' );               // WordPress version number meta tag
+
     // CHANGE TITLE TAG SEPARATOR
         add_filter( 'document_title_separator', 'wpse_set_document_title_separator' );
         function wpse_set_document_title_separator( $sep ) {
@@ -261,7 +268,7 @@
         add_action( 'manage_media_custom_column',     'populate_media_file_size_column', 10, 2 );
         add_filter( 'manage_upload_sortable_columns', 'make_media_file_size_column_sortable' );
 
-    // LOAD GOOGLE ANALYTICS
+    // LOAD GOOGLE ANALYTICS — DELAYED UNTIL USER INTERACTION
         function enqueue_google_analytics() {
 
             // Bail out early if the current user is an Administrator or Editor.
@@ -271,17 +278,46 @@
 
             $ga_measurement_id = 'G-2002CJ5PXF';
             ?>
-            <!-- Google tag (gtag.js) -->
-            <script async src="https://www.googletagmanager.com/gtag/js?id=<?php echo esc_attr( $ga_measurement_id ); ?>"></script>
             <script>
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', '<?php echo esc_js( $ga_measurement_id ); ?>');
+            (function() {
+                var gaLoaded = false;
+                var gaId = '<?php echo esc_js( $ga_measurement_id ); ?>';
+
+                function loadGoogleAnalytics() {
+                    if ( gaLoaded ) return;
+                    gaLoaded = true;
+
+                    var script = document.createElement('script');
+                    script.async = true;
+                    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + gaId;
+                    document.head.appendChild(script);
+
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){ dataLayer.push(arguments); }
+                    window.gtag = gtag;
+                    gtag('js', new Date());
+                    gtag('config', gaId);
+
+                    // Clean up listeners once loaded
+                    ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'].forEach(function(evt) {
+                        window.removeEventListener(evt, loadGoogleAnalytics, { passive: true });
+                    });
+                    clearTimeout(gaTimeout);
+                }
+
+                // Load on first real interaction
+                ['scroll', 'mousemove', 'touchstart', 'click', 'keydown'].forEach(function(evt) {
+                    window.addEventListener(evt, loadGoogleAnalytics, { passive: true });
+                });
+
+                // Fallback: load anyway after 3.5s even with no interaction,
+                // so short/passive visits still get counted.
+                var gaTimeout = setTimeout(loadGoogleAnalytics, 3500);
+            })();
             </script>
             <?php
         }
-        
+
         add_action( 'wp_head', 'enqueue_google_analytics' );
 
 ?>
