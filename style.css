@@ -25,6 +25,41 @@
  * @copyright 2026 (2026.01.01)
 **/
 /**
+ * sass/variables/fonts.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+@font-face {
+  font-family: "Merriweather";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("assets/fonts/merriweather/merriweather-vf.woff2") format("woff2-variations"), url("assets/fonts/merriweather/merriweather-vf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Merriweather";
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("assets/fonts/merriweather/merriweather-vf-italic.woff2") format("woff2-variations"), url("assets/fonts/merriweather/merriweather-vf-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/roboto/roboto-vf.woff2") format("woff2-variations"), url("assets/fonts/roboto/roboto-vf.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("assets/fonts/roboto/roboto-vf-italic.woff2") format("woff2-variations"), url("assets/fonts/roboto/roboto-vf-italic.woff2") format("woff2");
+}
+/**
  * sass/layouts/index.scss
  * @package scgolfpanel
  * @author Scott Shealy
