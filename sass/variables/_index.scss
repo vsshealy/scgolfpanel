@@ -7,4 +7,11 @@
 **/
 
 // FORWARD PARTIALS
+    @forward "colors";
+    @forward "units";
+    @forward "media";
+    @forward "lists";
     @forward "fonts";
+    @forward "functions";
+    @forward "loops";
+    @forward "mixins";
