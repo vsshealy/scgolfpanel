@@ -1,0 +1,110 @@
+/**
+ * sass/base/gradients.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "sass:map";
+    @use "text" as *;
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// GRADIENTS MAP
+    $gradient: (
+        "primary": (bg: $gradient-primary-color, text: $gradient-primary-text-color),
+        "alt": (bg: $gradient-alt-color, text: $gradient-alt-text-color),
+        "none": (bg: $gradient-none-color, text: $gradient-none-text-color),
+        "white": (bg: $gradient-white-color, text: $gradient-white-text-color),
+        "grayscale-light": (bg: $gradient-grayscale-light-color, text: $gradient-grayscale-light-text-color),
+        "grayscale-medium": (bg: $gradient-grayscale-medium-color, text: $gradient-grayscale-medium-text-color),
+        "grayscale-dark": (bg: $gradient-grayscale-dark-color, text: $gradient-grayscale-dark-text-color),
+        "black": (bg: $gradient-black-color, text: $gradient-black-text-color),
+        "brown-light": (bg: $gradient-brown-light-color, text: $gradient-brown-light-text-color),
+        "brown-medium": (bg: $gradient-brown-medium-color, text: $gradient-brown-medium-text-color),
+        "brown-dark": (bg: $gradient-brown-dark-color, text: $gradient-brown-dark-text-color),
+        "beige-light": (bg: $gradient-beige-light-color, text: $gradient-beige-light-text-color),
+        "beige-medium": (bg: $gradient-beige-medium-color, text: $gradient-beige-medium-text-color),
+        "beige-dark": (bg: $gradient-beige-dark-color, text: $gradient-beige-dark-text-color),
+        "green-light": (bg: $gradient-green-light-color, text: $gradient-green-light-text-color),
+        "green-medium": (bg: $gradient-green-medium-color, text: $gradient-green-medium-text-color),
+        "green-dark": (bg: $gradient-green-dark-color, text: $gradient-green-dark-text-color),
+        "indigo-light": (bg: $gradient-indigo-light-color, text: $gradient-indigo-light-text-color),
+        "indigo-medium": (bg: $gradient-indigo-medium-color, text: $gradient-indigo-medium-text-color),
+        "indigo-dark": (bg: $gradient-indigo-dark-color, text: $gradient-indigo-dark-text-color),
+        "gold-light": (bg: $gradient-gold-light-color, text: $gradient-gold-light-text-color),
+        "gold-medium": (bg: $gradient-gold-medium-color, text: $gradient-gold-medium-text-color),
+        "gold-dark": (bg: $gradient-gold-dark-color, text: $gradient-gold-dark-text-color)
+    );
+
+// GRADIENT NESTED STYLES MIXIN
+    @mixin gradient-nested-styles($text-color) {
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        :is(#{$text-all}) {
+            // GLOBAL
+                color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-ALL
+
+        .banner-eyebrow-accent .line {
+            // GLOBAL
+                border-color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BANNER-EYEBROW-ACCENT
+    } //GRADIENT-MIXIN
+
+// GRADIENTS LOOP
+    @each $name, $colors in $gradient {
+        .gradient-#{$name} {
+            // GLOBAL
+                @include gradient-nested-styles(map.get($colors, text));
+                background: map.get($colors, bg);
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.GRADIENT-$NAME
+    } //GRADIENTS LOOP

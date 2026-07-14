@@ -1,0 +1,110 @@
+/**
+ * sass/base/backgrounds.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "sass:map";
+    @use "text" as *;
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// BACKGROUNDS MAP
+    $background: (
+        "primary": (bg: $background-primary-color, text: $background-primary-text-color),
+        "alt": (bg: $background-alt-color, text: $background-alt-text-color),
+        "none": (bg: $background-none-color, text: $background-none-text-color),
+        "white": (bg: $background-white-color, text: $background-white-text-color),
+        "grayscale-light": (bg: $background-grayscale-light-color, text: $background-grayscale-light-text-color),
+        "grayscale-medium": (bg: $background-grayscale-medium-color, text: $background-grayscale-medium-text-color),
+        "grayscale-dark": (bg: $background-grayscale-dark-color, text: $background-grayscale-dark-text-color),
+        "black": (bg: $background-black-color, text: $background-black-text-color),
+        "brown-light": (bg: $background-brown-light-color, text: $background-brown-light-text-color),
+        "brown-medium": (bg: $background-brown-medium-color, text: $background-brown-medium-text-color),
+        "brown-dark": (bg: $background-brown-dark-color, text: $background-brown-dark-text-color),
+        "beige-light": (bg: $background-beige-light-color, text: $background-beige-light-text-color),
+        "beige-medium": (bg: $background-beige-medium-color, text: $background-beige-medium-text-color),
+        "beige-dark": (bg: $background-beige-dark-color, text: $background-beige-dark-text-color),
+        "green-light": (bg: $background-green-light-color, text: $background-green-light-text-color),
+        "green-medium": (bg: $background-green-medium-color, text: $background-green-medium-text-color),
+        "green-dark": (bg: $background-green-dark-color, text: $background-green-dark-text-color),
+        "indigo-light": (bg: $background-indigo-light-color, text: $background-indigo-light-text-color),
+        "indigo-medium": (bg: $background-indigo-medium-color, text: $background-indigo-medium-text-color),
+        "indigo-dark": (bg: $background-indigo-dark-color, text: $background-indigo-dark-text-color),
+        "gold-light": (bg: $background-gold-light-color, text: $background-gold-light-text-color),
+        "gold-medium": (bg: $background-gold-medium-color, text: $background-gold-medium-text-color),
+        "gold-dark": (bg: $background-gold-dark-color, text: $background-gold-dark-text-color)
+    );
+
+// BACKGROUNDS NESTED STYLES MIXIN
+    @mixin background-nested-styles($text-color) {
+        // MOBILE
+            @media #{$media-xs} {} //.COL-XS
+            @media #{$media-sm} {} //.COL-SM
+            @media #{$media-md} {} //.COL-MD
+            @media #{$device-mobile} {} //.MOBILE
+
+        // DESKTOP
+            @media #{$device-desktop} {} //.DESKTOP
+            @media #{$media-lg} {} //.COL-LG
+            @media #{$media-xl} {} //.COL-XL
+            @media #{$media-xxl} {} //.COL-XXL
+
+        :is(#{$text-all}) {
+            // GLOBAL
+                color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //TEXT-ALL
+
+        .banner-eyebrow-accent .line {
+            // GLOBAL
+                border-color: $text-color;
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BANNER-EYEBROW-ACCENT
+    } //BACKGROUND-MIXIN
+
+// BACKGROUNDS LOOP
+    @each $name, $colors in $background {
+        .background-#{$name} {
+            // GLOBAL
+                @include background-nested-styles(map.get($colors, text));
+                background-color: map.get($colors, bg);
+
+            // MOBILE
+                @media #{$media-xs} {} //.COL-XS
+                @media #{$media-sm} {} //.COL-SM
+                @media #{$media-md} {} //.COL-MD
+                @media #{$device-mobile} {} //.MOBILE
+
+            // DESKTOP
+                @media #{$device-desktop} {} //.DESKTOP
+                @media #{$media-lg} {} //.COL-LG
+                @media #{$media-xl} {} //.COL-XL
+                @media #{$media-xxl} {} //.COL-XXL
+        } //.BACKGROUND-$NAME
+    } //BACKGROUNDS LOOP

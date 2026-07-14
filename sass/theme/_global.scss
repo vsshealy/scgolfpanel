@@ -29,3 +29,37 @@
         $gutter-columns: $unit-base;
         $gutter-columns-vertical: $gutter-columns * 1.00;
         $gutter-columns-horizontal: $gutter-columns * 1.00;
+
+// BORDERS
+    // -WIDTHS
+        $border-width: 0.20rem;
+        $border-outline-width: 1px;
+
+    // -RADIUS
+        $border-radius: 0.00rem;
+
+    // -COLORS
+        $border-color: $color-grayscale-light-12;
+        $border-alt-color: $color-scgolfpanel-brown-0;
+        $border-accent-color: $color-scgolfpanel-gold-0;
+
+    // SETTINGS
+        $border-section: $border-width solid $border-color;
+        $border-outline: $border-outline-width solid $border-color;
+        $border-image: $border-outline-width solid $border-alt-color;
+
+// ICONS
+    $icon-margin: $margin-xs;
+
+// LINKS
+    // COLORS
+        $link-color: $color-scgolfpanel-green-0;
+        $link-hover-color: $color-scgolfpanel-green-dark-3;
+
+    // HOVER ADJUSTMENTS
+        $link-hover-adjustment: 3.00;
+        $link-hover-adjustment-color: $color-adjustment-dark;
+
+// SHADOWS
+    $shadow-main: 0.00rem 0.00rem 0.50rem rgba($color-grayscale-dark-9, 0.10);
+    $shadow-text: 0.00rem 0.00rem 0.50rem rgba($color-grayscale-dark-9, 0.90);
