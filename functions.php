@@ -320,4 +320,92 @@
 
         add_action( 'wp_head', 'enqueue_google_analytics' );
 
+    // COURSE INVITATIONS APP — CUSTOM ROLES
+        // Registers Panel Member and Regional Director roles for the tee-time
+        // invitation workflow. Removal of unused default roles (Subscriber,
+        // Contributor, Editor) is intentionally deferred — to be added later
+        // once these new roles are confirmed working and Fluent Community's
+        // user-creation behavior has been tested against them.
+
+        function course_invitations_register_roles() {
+
+            // Panel Member — view-only access site-wide; their real work
+            // happens through custom REST endpoints (submitting/viewing their
+            // own invitation requests), not through wp-admin editing capabilities.
+            add_role(
+                'panel_member',
+                'Panel Member',
+                array(
+                    'read' => true,
+                )
+            );
+
+            // Regional Director — editor-like content capabilities. Their
+            // actual invitation workflow actions (claim/decline/confirm) are
+            // enforced separately through custom REST permission checks, not
+            // through these native WP capabilities.
+            add_role(
+                'regional_director',
+                'Regional Director',
+                array(
+                    'read'                   => true,
+                    'edit_posts'             => true,
+                    'edit_published_posts'   => true,
+                    'edit_others_posts'      => true,
+                    'publish_posts'          => true,
+                    'delete_posts'           => true,
+                    'delete_published_posts' => true,
+                    'upload_files'           => true,
+                )
+            );
+        }
+
+        add_action( 'after_switch_theme', 'course_invitations_register_roles' );
+
+    // HIDE NATIVE "WEBSITE" FIELD ON ADD/EDIT USER SCREENS
+        function scgolfpanel_hide_user_website_field() {
+            $screen = get_current_screen();
+
+            if ( in_array( $screen->id, array( 'user', 'profile', 'user-edit' ), true ) ) {
+                ?>
+                <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    var urlField = document.getElementById('url');
+                    if (urlField) {
+                        var row = urlField.closest('tr');
+                        if (row) {
+                            row.style.display = 'none';
+                        }
+                    }
+                });
+                </script>
+                <?php
+            }
+        }
+        
+        add_action( 'admin_footer', 'scgolfpanel_hide_user_website_field' );
+
+    // ADD REGION COLUMN TO USERS LIST TABLE
+        function scgolfpanel_add_region_user_column( $columns ) {
+            $columns['member-region'] = __( 'Region', 'scgolfpanel' );
+            return $columns;
+        }
+        add_filter( 'manage_users_columns', 'scgolfpanel_add_region_user_column' );
+
+        function scgolfpanel_show_region_user_column( $value, $column_name, $user_id ) {
+            if ( 'member-region' === $column_name ) {
+                $region = get_field( 'member-region', 'user_' . $user_id );
+
+                if ( $region ) {
+                    // If Return Format is Object, $region is a WP_Term — use its name.
+                    // If Return Format is Value, $region is already the term ID/slug.
+                    $value = is_object( $region ) ? $region->name : $region;
+                } else {
+                    $value = '—';
+                }
+            }
+            return $value;
+        }
+        
+        add_filter( 'manage_users_custom_column', 'scgolfpanel_show_region_user_column', 10, 3 );
 ?>
