@@ -72,6 +72,19 @@
         );
     }
 
+    function exportsForSource(filepath) {
+        const dirname = renameDirectorySegment(
+            path.dirname(filepath),
+            paths.images.editsDir,
+            paths.images.exportsDir
+        );
+        const name = path.basename(filepath, path.extname(filepath));
+
+        return imageFormats.map(format =>
+            path.join(dirname, `${name}-[0-9]*x[0-9]*.${format}`)
+        );
+    }
+
     function familiesForFile(filePath) {
         const rel = path.relative(imagesRootAbs, path.resolve(filePath));
         const top = rel.split(path.sep)[0];
@@ -110,6 +123,14 @@
         avif: {quality: 70}
     };
 
+    const watchImageSettings = {
+        ignoreInitial: true,
+        awaitWriteFinish: {
+            stabilityThreshold: 2000,
+            pollInterval: 100
+        }
+    };
+
 // TASK | CSS
     function compileCSS() {
         return gulp
@@ -141,9 +162,9 @@
     }
 
 // TASK | IMAGES
-    function resizeImages() {
+    function resizeImagesFor(src) {
         return gulp
-            .src(paths.images.src, {
+            .src(src, {
                 allowEmpty: true,
                 encoding: false,
                 base: paths.images.root
@@ -201,9 +222,9 @@
             .pipe(gulp.dest(paths.images.root));
     }
 
-    function compressImages() {
+    function compressImagesFor(src) {
         return gulp
-            .src(exportsGlob(), {
+            .src(src, {
                 allowEmpty: true,
                 encoding: false,
                 base: paths.images.root
@@ -243,9 +264,9 @@
             .pipe(gulp.dest(paths.images.root));
     }
 
-    function copySVGs() {
+    function copySVGsFor(src) {
         return gulp
-            .src(paths.images.svg, {
+            .src(src, {
                 allowEmpty: true,
                 base: paths.images.root
             })
@@ -258,6 +279,18 @@
                 );
             }))
             .pipe(gulp.dest(paths.images.root));
+    }
+
+    function resizeImages() {
+        return resizeImagesFor(paths.images.src);
+    }
+
+    function compressImages() {
+        return compressImagesFor(exportsGlob());
+    }
+
+    function copySVGs() {
+        return copySVGsFor(paths.images.svg);
     }
 
 // TASK | ONE-OFF ART-DIRECTED CROPS
@@ -309,12 +342,62 @@
     const processImages = gulp.series(resizeImages, compressImages);
 
 // TASK | WATCHFILES
+    const imageQueue = [];
+    let imageQueueBusy = false;
+
+    function queueImage(filepath) {
+        if (imageQueue.indexOf(filepath) === -1) {
+            imageQueue.push(filepath);
+        }
+
+        runImageQueue();
+    }
+
+    function runImageQueue() {
+        if (imageQueueBusy || !imageQueue.length) {
+            return;
+        }
+
+        imageQueueBusy = true;
+
+        processImage(imageQueue.shift(), () => {
+            imageQueueBusy = false;
+            runImageQueue();
+        });
+    }
+
+    function processImage(filepath, done) {
+        const label    = path.basename(filepath);
+        const resize   = () => resizeImagesFor(filepath);
+        const compress = () => compressImagesFor(exportsForSource(filepath));
+
+        resize.displayName   = `resize:${label}`;
+        compress.displayName = `compress:${label}`;
+
+        gulp.series(resize, compress)(done);
+    }
+
+    function processSVG(filepath) {
+        const copy = () => copySVGsFor(filepath);
+
+        copy.displayName = `copy:${path.basename(filepath)}`;
+
+        gulp.series(copy)(() => {});
+    }
+
     function watchFiles() {
         gulp.watch(paths.sass.dir, compileCSS);
         gulp.watch(paths.js.dir, compileJS);
-        gulp.watch(paths.images.src, processImages);
-        gulp.watch(paths.images.svg, copySVGs);
-        gulp.watch(exportsGlob(), compressImages);
+
+        gulp
+            .watch(paths.images.src, watchImageSettings)
+            .on('add', queueImage)
+            .on('change', queueImage);
+
+        gulp
+            .watch(paths.images.svg, watchImageSettings)
+            .on('add', processSVG)
+            .on('change', processSVG);
     }
 
 // EXECUTE TASKS
