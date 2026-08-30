@@ -1,0 +1,70 @@
+/**
+ * sass/base/grids.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.29)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// MAPS
+    $grid-widths: (
+        1:  $grid-1,
+        2:  $grid-2,
+        3:  $grid-3,
+        4:  $grid-4,
+        5:  $grid-5,
+        6:  $grid-6,
+        7:  $grid-7,
+        8:  $grid-8,
+        9:  $grid-9,
+        10: $grid-10,
+        11: $grid-11,
+        12: $grid-12,
+    );
+
+// PLACEHOLDERS
+    %grid {
+        // GLOBAL
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //%GRID
+
+// STYLES
+    .grid {
+        // GLOBAL
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        &-0 {
+            // GLOBAL
+                @extend %grid;
+                display: none;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.GRID-0
+
+        @each $i, $width in $grid-widths {
+            &-#{$i} {
+                // GLOBAL
+                    @extend %grid;
+                    width: $width;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.GRID-#{$i}
+        } //@EACH GRID-WIDTHS
+
+    } //.GRID

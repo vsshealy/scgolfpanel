@@ -1,0 +1,305 @@
+/**
+ * sass/base/flexbox.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.29)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// PLACEHOLDERS
+    %flexbox {
+        // GLOBAL
+            display: flex;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //%FLEXBOX
+
+    %flexbox-horizontal {
+        // GLOBAL
+            @extend %flexbox;
+            flex-direction: row;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //%FLEXBOX-HORIZONTAL
+
+    %flexbox-vertical {
+        // GLOBAL
+            @extend %flexbox;
+            flex-direction: column;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //%FLEXBOX-VERTICAL
+
+// STYLES
+    .flexbox {
+        // GLOBAL
+            @extend %flexbox;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        &-row {
+            // GLOBAL
+                @extend %flexbox-horizontal;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-reverse {
+                // GLOBAL
+                    @extend %flexbox-horizontal;
+                    flex-direction: row-reverse;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-ROW-REVERSE
+        } //.FLEXBOX-ROW
+
+        &-column {
+            // GLOBAL
+                @extend %flexbox-vertical;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-reverse {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    flex-direction: column-reverse;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-COLUMN-REVERSE
+        } //.FLEXBOX-COLUMN
+
+        &-horizontal {
+            // GLOBAL
+                @extend %flexbox-horizontal;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-left {
+                // GLOBAL
+                    @extend %flexbox-horizontal;
+                    justify-content: flex-start;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-HORIZONTAL-LEFT
+
+            &-right {
+                // GLOBAL
+                    @extend %flexbox-horizontal;
+                    justify-content: flex-end;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-HORIZONTAL-RIGHT
+
+            &-center {
+                // GLOBAL
+                    @extend %flexbox-horizontal;
+                    justify-content: center;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-HORIZONTAL-CENTER
+
+            &-spacebetween {
+                // GLOBAL
+                    @extend %flexbox-horizontal;
+                    justify-content: space-between;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-HORIZONTAL-SPACEBETWEEN
+
+            &-spacearound {
+                // GLOBAL
+                    @extend %flexbox-horizontal;
+                    justify-content: space-around;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-HORIZONTAL-SPACEAROUND
+        } //.FLEXBOX-HORIZONTAL
+
+        &-vertical {
+            // GLOBAL
+                @extend %flexbox-vertical;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-top {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    align-items: flex-start;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-VERTICAL-TOP
+
+            &-bottom {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    align-items: flex-end;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-VERTICAL-BOTTOM
+
+            &-center {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    align-items: center;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-VERTICAL-CENTER
+
+            &-baseline {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    align-items: baseline;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-VERTICAL-BASELINE
+
+            &-stretch {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    align-items: stretch;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-VERTICAL-STRETCH
+
+            &-spacebetween {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    align-content: space-between;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-VERTICAL-SPACEBETWEEN
+
+            &-spacearound {
+                // GLOBAL
+                    @extend %flexbox-vertical;
+                    align-content: space-around;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-VERTICAL-SPACEAROUND
+        } //.FLEXBOX-VERTICAL
+
+        &-center {
+            // GLOBAL
+                @extend %flexbox;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-all {
+                // GLOBAL
+                    @extend %flexbox;
+                    align-items: center;
+                    justify-content: center;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-CENTER-ALL
+        } //.FLEXBOX-CENTER
+
+        &-wrap {
+            // GLOBAL
+                @extend %flexbox;
+                flex-wrap: wrap;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-none {
+                // GLOBAL
+                    @extend %flexbox;
+                    flex-wrap: nowrap;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-WRAP-NONE
+
+            &-reverse {
+                // GLOBAL
+                    @extend %flexbox;
+                    flex-wrap: wrap-reverse;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.FLEXBOX-WRAP-REVERSE
+        } //.FLEXBOX-WRAP
+
+    } //.FLEXBOX

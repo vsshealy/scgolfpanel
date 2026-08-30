@@ -1,0 +1,46 @@
+/**
+ * sass/base/site.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.29)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// STYLES
+    * {
+        // GLOBAL
+            box-sizing: border-box;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //*
+
+    html {
+        // GLOBAL
+            background-color: $html-background-color;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //HTML
+
+    body {
+        // GLOBAL
+            min-height: 100.00vh;
+            margin: $margin-none;
+            padding: $padding-none;
+            overflow-x: hidden;
+            background-color: $body-background-color;
+            
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //BODY

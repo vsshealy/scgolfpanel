@@ -1,0 +1,115 @@
+/**
+ * sass/base/devices.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.29)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// GLOBAL DISPLAY
+    .display {
+        // GLOBAL
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        &-none {
+            // GLOBAL
+                display: none;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.DISPLAY-NONE
+
+        &-phone {
+            // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+
+            &-show {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {
+                        display: revert;
+                    } //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.DISPLAY-PHONE-SHOW
+
+            &-hide {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {
+                        display: none !important;
+                    } //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.DISPLAY-PHONE-HIDE
+        } //.DISPLAY-PHONE
+
+        &-tablet {
+            // GLOBAL
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-show {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {
+                        display: revert;
+                    } //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.DISPLAY-TABLET-SHOW
+
+            &-hide {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {
+                        display: none !important;
+                    } //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.DISPLAY-TABLET-HIDE
+        } //.DISPLAY-TABLET
+
+        &-desktop {
+            // GLOBAL
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-show {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {
+                        display: revert;
+                    } //.DESKTOP
+            } //.DISPLAY-DESKTOP-SHOW
+
+            &-hide {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {
+                        display: none !important;
+                    } //.DESKTOP
+            } //.DISPLAY-DESKTOP-HIDE
+        } //.DISPLAY-DESKTOP
+
+    } //.DISPLAY

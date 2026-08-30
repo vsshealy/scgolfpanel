@@ -1,0 +1,104 @@
+/**
+ * sass/base/wrappers.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.29)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// PLACEHOLDERS
+    %wrapper {
+        // GLOBAL
+            margin: 0.00rem auto !important;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+    } //%WRAPPER
+
+// STYLES
+    .wrapper {
+        // GLOBAL
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        &-full {
+            // GLOBAL
+                @extend %wrapper;
+                width: 100.00%;
+                min-width: 100.00%;
+                max-width: 100.00%;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            &-screen {
+                // GLOBAL
+                    @extend .wrapper-full;
+                    height: 100.00vh;
+                    min-height: 100.00vh;
+                    max-height: 100.00vh;
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //.WRAPPER-FULL-SCREEN
+        } //.WRAPPER-FULL
+
+        &-page {
+            // GLOBAL
+                @extend .wrapper;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.WRAPPER-PAGE
+
+        &-content {
+            // GLOBAL
+                @extend %wrapper;
+                width: $site-width-min !important;
+                max-width: $site-width-content !important;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.WRAPPER-CONTENT
+
+        &-text {
+            // GLOBAL
+                @extend .wrapper;
+                width: 100.00%;
+                max-width: $body-text-width;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.WRAPPER-TEXT
+
+        &-none {
+            // GLOBAL
+                @extend %wrapper;
+                width: 100.00%;
+                padding: $padding-none;
+                
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.WRAPPER-NONE
+
+    } //.WRAPPER

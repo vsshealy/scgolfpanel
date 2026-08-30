@@ -1,0 +1,22 @@
+/**
+ * sass/theme/breakpoint.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.28)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../variables/index" as *;
+
+// MEDIA QUERIES
+    $media-phone: $media-col-xs;
+    $media-tablet: $media-col-sm;
+    $media-desktop: $media-col-xl;
+
+// MEDIA QUERIES
+    // GLOBAL
+    // DEVICES
+        @media #{$media-phone} {} //.PHONE
+        @media #{$media-tablet} {} //.TABLET
+        @media #{$media-desktop} {} //.DESKTOP

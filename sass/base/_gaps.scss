@@ -1,0 +1,90 @@
+/**
+ * sass/base/gaps.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.30)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// MAPS
+    $gap-sizes: (
+        "none": $gap-none,
+        "xxs":  $gap-xxs,
+        "xs":   $gap-xs,
+        "sm":   $gap-sm,
+        "md":   $gap-md,
+        "lg":   $gap-lg,
+        "xl":   $gap-xl,
+        "xxl":  $gap-xxl,
+    );
+
+// STYLES
+    .gap {
+        // GLOBAL
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        // BOTH AXES
+            @each $name, $value in $gap-sizes {
+                &-#{$name} {
+                    // GLOBAL
+                        gap: $value !important;
+
+                    // DEVICES
+                        @media #{$media-phone} {} //.PHONE
+                        @media #{$media-tablet} {} //.TABLET
+                        @media #{$media-desktop} {} //.DESKTOP
+                } //.GAP-#{$name}
+            } //@EACH GAP-SIZES (ALL)
+
+        // VERTICAL
+            &-vertical {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+
+                @each $name, $value in $gap-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            row-gap: $value !important;
+
+                        // DEVICES
+                            @media #{$media-phone} {} //.PHONE
+                            @media #{$media-tablet} {} //.TABLET
+                            @media #{$media-desktop} {} //.DESKTOP
+                    } //.GAP-VERTICAL-#{$name}
+                } //@EACH GAP-SIZES (VERTICAL)
+
+            } //.GAP-VERTICAL
+
+        // HORIZONTAL
+            &-horizontal {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+
+                @each $name, $value in $gap-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            column-gap: $value !important;
+
+                        // DEVICES
+                            @media #{$media-phone} {} //.PHONE
+                            @media #{$media-tablet} {} //.TABLET
+                            @media #{$media-desktop} {} //.DESKTOP
+                    } //.GAP-HORIZONTAL-#{$name}
+                } //@EACH GAP-SIZES (HORIZONTAL)
+
+            } //.GAP-HORIZONTAL
+
+    } //.GAP

@@ -1,0 +1,123 @@
+/**
+ * sass/base/margins.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.29)
+ * @copyright 2026 (2026.01.01)
+**/
+
+// LOAD PARTIALS
+    @use "../theme/index" as *;
+    @use "../variables/index" as *;
+
+// MAPS
+    $margin-sizes: (
+        "none": $margin-none,
+        "xxs":  $margin-xxs,
+        "xs":   $margin-xs,
+        "sm":   $margin-sm,
+        "md":   $margin-md,
+        "lg":   $margin-lg,
+        "xl":   $margin-xl,
+        "xxl":  $margin-xxl,
+    );
+
+    $margin-directions: (
+        "top":    "margin-top",
+        "bottom": "margin-bottom",
+        "left":   "margin-left",
+        "right":  "margin-right",
+    );
+
+// STYLES
+    .margin {
+        // GLOBAL
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        // ALL SIDES
+            @each $name, $value in $margin-sizes {
+                &-#{$name} {
+                    // GLOBAL
+                        margin: $value !important;
+
+                    // DEVICES
+                        @media #{$media-phone} {} //.PHONE
+                        @media #{$media-tablet} {} //.TABLET
+                        @media #{$media-desktop} {} //.DESKTOP
+                } //.MARGIN-#{$name}
+            } //@EACH MARGIN-SIZES (ALL)
+
+        // SINGLE DIRECTIONS
+            @each $dir, $prop in $margin-directions {
+                &-#{$dir} {
+                    // GLOBAL
+                    // DEVICES
+                        @media #{$media-phone} {} //.PHONE
+                        @media #{$media-tablet} {} //.TABLET
+                        @media #{$media-desktop} {} //.DESKTOP
+
+                    @each $name, $value in $margin-sizes {
+                        &-#{$name} {
+                            // GLOBAL
+                                #{$prop}: $value !important;
+
+                            // DEVICES
+                                @media #{$media-phone} {} //.PHONE
+                                @media #{$media-tablet} {} //.TABLET
+                                @media #{$media-desktop} {} //.DESKTOP
+                        } //.MARGIN-#{$dir}-#{$name}
+                    } //@EACH MARGIN-SIZES (#{$dir})
+
+                } //.MARGIN-#{$dir}
+            } //@EACH MARGIN-DIRECTIONS
+
+        // VERTICAL
+            &-vertical {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+
+                @each $name, $value in $margin-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            margin-top: $value !important;
+                            margin-bottom: $value !important;
+
+                        // DEVICES
+                            @media #{$media-phone} {} //.PHONE
+                            @media #{$media-tablet} {} //.TABLET
+                            @media #{$media-desktop} {} //.DESKTOP
+                    } //.MARGIN-VERTICAL-#{$name}
+                } //@EACH MARGIN-SIZES (VERTICAL)
+
+            } //.MARGIN-VERTICAL
+
+        // HORIZONTAL
+            &-horizontal {
+                // GLOBAL
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+
+                @each $name, $value in $margin-sizes {
+                    &-#{$name} {
+                        // GLOBAL
+                            margin-left: $value !important;
+                            margin-right: $value !important;
+
+                        // DEVICES
+                            @media #{$media-phone} {} //.PHONE
+                            @media #{$media-tablet} {} //.TABLET
+                            @media #{$media-desktop} {} //.DESKTOP
+                    } //.MARGIN-HORIZONTAL-#{$name}
+                } //@EACH MARGIN-SIZES (HORIZONTAL)
+
+            } //.MARGIN-HORIZONTAL
+
+    } //.MARGIN
