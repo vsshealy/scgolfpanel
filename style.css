@@ -1996,6 +1996,24 @@ a:hover, .a:hover {
  * @version 1.0.0 (2026.08.30)
  * @copyright 2026 (2026.01.01)
 **/
+.row {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.row:first-child {
+  margin-top: 0rem;
+}
+.row:last-child {
+  margin-bottom: 0rem;
+}
+.row .columns {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 /**
  * Theme Name: SC Golf Course Rankings Panel
  * Theme URI: https://github.com/vsshealy/scgolfpanel
