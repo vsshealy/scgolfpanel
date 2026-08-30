@@ -1841,6 +1841,39 @@ a:hover, .a:hover {
  * License URI: http://www.gnu.org/license/gpl-3.0.html
 **/
 /**
+ * sass/components/images.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.08.30)
+ * @copyright 2026 (2026.01.01)
+**/
+.image-responsive {
+  height: 0rem;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.image-responsive img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme developed for the South Carolina Golf Course Rankings Panel website redesign.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
  * sass/components/lists.scss
  * @package scgolfpanel
  * @author Scott Shealy
@@ -1904,6 +1937,39 @@ a:hover, .a:hover {
  * @version 1.0.0 (2026.08.30)
  * @copyright 2026 (2026.01.01)
 **/
+/**
+ * Theme Name: SC Golf Course Rankings Panel
+ * Theme URI: https://github.com/vsshealy/scgolfpanel
+ * Description: A custom WordPress child theme developed for the South Carolina Golf Course Rankings Panel website redesign.
+ * Author: Scott Shealy
+ * Author URI: https://www.scottshealy.com
+ * Template: bricks
+ * Version: 1.0.0
+ * Text Domain: scgolfpanel
+ * License: GNU General Public License v3 or Later
+ * License URI: http://www.gnu.org/license/gpl-3.0.html
+**/
+/**
+ * sass/components/videos.scss
+ * @package scgolfpanel
+ * @author Scott Shealy
+ * @version 1.0.0 (2026.01.01)
+ * @copyright 2026 (2026.01.01)
+**/
+.video-responsive {
+  height: 0rem;
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+.video-responsive iframe, .video-responsive object, .video-responsive embed {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
 /**
  * sass/external/index.scss
  * @package scgolfpanel
