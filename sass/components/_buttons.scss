@@ -2,7 +2,7 @@
  * sass/components/buttons.scss
  * @package scgolfpanel
  * @author Scott Shealy
- * @version 1.0.0 (2026.08.30)
+ * @version 1.0.0 (2026.01.01)
  * @copyright 2026 (2026.01.01)
 **/
 
@@ -11,4 +11,197 @@
     @use "../variables/index" as *;
     @use "../base/index" as *;
 
-// STYLES
+// LISTS
+    $button-all: ".button-solid, .button-alt, .button-ghost, .button-mobile";
+    
+// PLACEHOLDER
+    %button {
+        // GLOBAL
+            width: auto;
+            display: inline-flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            margin: $button-margin-vertical $button-margin-horizontal;
+            padding: $button-padding-vertical $button-padding-horizontal;
+            gap: $icon-margin;
+            border-radius: $button-border-radius;
+            cursor: pointer;
+            font-family: $body-text;
+            font-size: $button-text-size;
+            font-weight: $button-text-weight;
+            text-wrap: pretty;
+            letter-spacing: $letter-spacing-normal;
+            line-height: $line-height-condensed;
+
+            &:focus {
+                outline: ($button-border-width * 2.00) solid $link-color;
+                online-offset: $button-border-width * 2.00;
+            } //:FOCUS
+
+            &:hover {
+                text-decoration: none;
+            } //:HOVER
+
+        // DEVICES
+            @media #{$media-phone} {
+                width: 100.00%;
+            } //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        i {
+            // GLOBAL
+                width: auto;
+                margin-left: $margin-none;
+                margin-right: $margin-none;
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //I
+    } //.BUTTON
+
+// BUTTONS
+    .button {
+        // GLOBAL
+            @extend .button;
+
+        // DEVICES
+            @media #{$media-phone} {} //.PHONE
+            @media #{$media-tablet} {} //.TABLET
+            @media #{$media-desktop} {} //.DESKTOP
+
+        &-primary {
+            // GLOBAL
+                margin: $button-margin-vertical ($gutter-columns-horizontal * 0.50) $margin-none $margin-none;
+
+            // DEVICES
+                @media #{$media-phone} {
+                    margin: ($button-margin-vertical * 0.50) $margin-none;
+                } //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.BUTTON-PRIMARY
+
+        &-secondary {
+            // GLOBAL
+                margin: $button-margin-vertical $margin-none $margin-none ($gutter-columns-horizontal);
+
+            // DEVICES
+                @media #{$media-phone} {
+                    margin: ($button-margin-vertical * 0.50) $margin-none;
+                } //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.BUTTON-SECONDARY
+
+        &-solid {
+            // GLOBAL
+                @extend .button;
+                background-color: $button-solid-color;
+                border-color: $button-solid-text-color;
+                color: $button-solid-text-color !important;
+
+                &:hover {
+                    background-color: $button-solid-hover-color;
+                    border-color: $button-solid-hover-text-color;
+                    color: $button-solid-hover-text-color !important;
+                } //:HOVER
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.BUTTON-SOLID
+
+        &-alt {
+            // GLOBAL
+                @extend .button;
+                background-color: $button-alt-color;
+                border-color: $button-alt-text-color;
+                color: $button-alt-text-color !important;
+
+                &:hover {
+                    background-color: $button-alt-hover-color;
+                    border-color: $button-alt-hover-text-color;
+                    color: $button-alt-hover-text-color !important;
+                } //:HOVER
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.BUTTON-ALT
+
+        &-ghost {
+            // GLOBAL
+                @extend .button;
+                background-color: $button-ghost-color;
+                border-color: $button-ghost-text-color;
+                color: $button-ghost-text-color !important;
+
+                &:hover {
+                    background-color: $button-ghost-hover-color;
+                    border-color: $button-ghost-hover-text-color;
+                    color: $button-ghost-hover-text-color !important;
+                } //:HOVER
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.BUTTON-GHOST
+
+        &-mobile {
+            // GLOBAL
+            // DEVICES
+                @media #{$media-phone} {
+                    background-color: $button-mobile-color;
+                    border-color: $button-mobile-text-color;
+                    color: $button-mobile-text-color !important;
+                } //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+        } //.BUTTON-MOBILE
+
+        &-text {
+            // GLOBAL
+                position: relative;
+                padding: $padding-none;
+                letter-spacing: $letter-spacing-normal;
+                color: $button-text-link-color;
+                font-weight: $button-text-link-weight;
+
+                &:hover {
+                    color: $button-text-link-hover-color;
+                    text-decoration: underline;
+                } //:HOVER
+
+            // DEVICES
+                @media #{$media-phone} {} //.PHONE
+                @media #{$media-tablet} {} //.TABLET
+                @media #{$media-desktop} {} //.DESKTOP
+
+            i {
+                // GLOBAL
+                    position: absolute;
+                    top: 50.00%;
+                    transform: translateY(-50.00%);
+                    right: 0.00rem;
+                    margin-right: $margin-none;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                    } //:HOVER
+
+                // DEVICES
+                    @media #{$media-phone} {} //.PHONE
+                    @media #{$media-tablet} {} //.TABLET
+                    @media #{$media-desktop} {} //.DESKTOP
+            } //I
+        } //.BUTTON-TEXT
+
+    } //.BUTTON

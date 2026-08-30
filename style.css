@@ -1708,9 +1708,69 @@ a:hover, .a:hover {
  * sass/components/buttons.scss
  * @package scgolfpanel
  * @author Scott Shealy
- * @version 1.0.0 (2026.08.30)
+ * @version 1.0.0 (2026.01.01)
  * @copyright 2026 (2026.01.01)
 **/
+.button-primary {
+  margin: 1rem 0.5rem 0rem 0rem;
+}
+.button-secondary {
+  margin: 1rem 0rem 0rem 1rem;
+}
+.button-solid {
+  background-color: #046a38;
+  border-color: white;
+  color: white !important;
+}
+.button-solid:hover {
+  background-color: rgb(1.1764705882%, 31.1764705882%, 16.4705882353%);
+  border-color: white;
+  color: white !important;
+}
+.button-alt {
+  background-color: white;
+  border-color: #046a38;
+  color: #046a38 !important;
+}
+.button-alt:hover {
+  background-color: rgb(1.1764705882%, 31.1764705882%, 16.4705882353%);
+  border-color: white;
+  color: white !important;
+}
+.button-ghost {
+  background-color: transparent;
+  border-color: #046a38;
+  color: #046a38 !important;
+}
+.button-ghost:hover {
+  background-color: #046a38;
+  border-color: white;
+  color: white !important;
+}
+.button-text {
+  position: relative;
+  padding: 0rem;
+  letter-spacing: 0px;
+  color: #046a38;
+  font-weight: 700;
+}
+.button-text:hover {
+  color: rgb(1.1764705882%, 31.1764705882%, 16.4705882353%);
+  text-decoration: underline;
+}
+.button-text i {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0rem;
+  margin-right: 0rem;
+  text-decoration: none;
+}
+.button-text i:hover {
+  text-decoration: none;
+}
 /**
  * Theme Name: SC Golf Course Rankings Panel
  * Theme URI: https://github.com/vsshealy/scgolfpanel
@@ -1979,5 +2039,16 @@ a:hover, .a:hover {
   }
   html {
     font-size: 14px;
+  }
+  .button-primary {
+    margin: 0.5rem 0rem;
+  }
+  .button-secondary {
+    margin: 0.5rem 0rem;
+  }
+  .button-mobile {
+    background-color: #046a38;
+    border-color: white;
+    color: white !important;
   }
 }
