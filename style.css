@@ -1739,7 +1739,7 @@ a:hover, .a:hover {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
-  text-transform: normal;
+  text-transform: none;
   text-wrap: pretty;
   letter-spacing: 0;
   line-height: 1.25;
