@@ -22,10 +22,8 @@
         &-responsive {
             // GLOBAL
                 @extend .video;
-                height: 0.00rem;
                 position: relative;
-                padding-top: 30px;
-                padding-bottom: 56.25%;
+                aspect-ratio: 16 / 9;
                 overflow: hidden;
 
             // DEVICES

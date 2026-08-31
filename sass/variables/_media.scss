@@ -9,7 +9,7 @@
 // LOAD PARTIALS
 
 // BOOTSTRAP
-    $media-col-xs: "(max-width: 575.5px)";
+    $media-col-xs: "(width < 576px)";
     $media-col-sm: "(min-width: 576px)";
     $media-col-md: "(min-width: 768px)";
     $media-col-lg: "(min-width: 992px)";
@@ -33,4 +33,4 @@
     $device-desktop-xxl: "(min-width: 3840px)";
 
 // DISPLAYS
-    $display-retina: "(-webkit-min-pixel-ratio: 2.00), (min-resolution: 192dpi)";
+    $display-retina: "(-webkit-min-device-pixel-ratio: 2.00), (min-resolution: 192dpi)";

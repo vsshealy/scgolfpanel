@@ -14,10 +14,11 @@
 // STYLES
     .row {
         // GLOBAL
+            --bs-gutter-x: #{$gutter-columns-horizontal * 2.00};
+            --bs-gutter-y: 0;
+            row-gap: $gutter-columns-vertical;
             margin-top: $gutter-row-vertical;
             margin-bottom: $gutter-row-vertical;
-            margin-left: $gutter-row-horizontal;
-            margin-right: $gutter-row-horizontal;
 
             &:first-child {
                 margin-top: $margin-none;
@@ -34,11 +35,6 @@
 
         .columns {
             // GLOBAL
-                margin-top: $gutter-columns-vertical;
-                margin-bottom: $gutter-columns-vertical;
-                padding-left: $gutter-columns-horizontal;
-                padding-right: $gutter-columns-horizontal;
-                
             // DEVICES
                 @media #{$media-phone} {} //.PHONE
                 @media #{$media-tablet} {} //.TABLET

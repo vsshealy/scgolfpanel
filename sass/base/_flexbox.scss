@@ -171,7 +171,7 @@
 
             &-top {
                 // GLOBAL
-                    @extend %flexbox-vertical;
+                    @extend %flexbox;
                     align-items: flex-start;
 
                 // DEVICES
@@ -182,7 +182,7 @@
 
             &-bottom {
                 // GLOBAL
-                    @extend %flexbox-vertical;
+                    @extend %flexbox;
                     align-items: flex-end;
 
                 // DEVICES
@@ -193,7 +193,7 @@
 
             &-center {
                 // GLOBAL
-                    @extend %flexbox-vertical;
+                    @extend %flexbox;
                     align-items: center;
 
                 // DEVICES
@@ -204,7 +204,7 @@
 
             &-baseline {
                 // GLOBAL
-                    @extend %flexbox-vertical;
+                    @extend %flexbox;
                     align-items: baseline;
 
                 // DEVICES
@@ -215,7 +215,7 @@
 
             &-stretch {
                 // GLOBAL
-                    @extend %flexbox-vertical;
+                    @extend %flexbox;
                     align-items: stretch;
 
                 // DEVICES
@@ -226,7 +226,7 @@
 
             &-spacebetween {
                 // GLOBAL
-                    @extend %flexbox-vertical;
+                    @extend %flexbox;
                     align-content: space-between;
 
                 // DEVICES
@@ -237,7 +237,7 @@
 
             &-spacearound {
                 // GLOBAL
-                    @extend %flexbox-vertical;
+                    @extend %flexbox;
                     align-content: space-around;
 
                 // DEVICES

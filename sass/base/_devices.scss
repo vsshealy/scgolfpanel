@@ -39,7 +39,7 @@
                 // GLOBAL
                 // DEVICES
                     @media #{$media-phone} {
-                        display: revert;
+                        display: revert !important;
                     } //.PHONE
                     @media #{$media-tablet} {} //.TABLET
                     @media #{$media-desktop} {} //.DESKTOP
@@ -68,7 +68,7 @@
                 // DEVICES
                     @media #{$media-phone} {} //.PHONE
                     @media #{$media-tablet} {
-                        display: revert;
+                        display: revert !important;
                     } //.TABLET
                     @media #{$media-desktop} {} //.DESKTOP
             } //.DISPLAY-TABLET-SHOW
@@ -97,7 +97,7 @@
                     @media #{$media-phone} {} //.PHONE
                     @media #{$media-tablet} {} //.TABLET
                     @media #{$media-desktop} {
-                        display: revert;
+                        display: revert !important;
                     } //.DESKTOP
             } //.DISPLAY-DESKTOP-SHOW
 

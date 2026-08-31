@@ -113,29 +113,33 @@
   font-family: "Merriweather";
   font-style: normal;
   font-weight: 300 900;
+  font-stretch: 87% 112%;
   font-display: swap;
-  src: url("assets/fonts/merriweather/merriweather-vf.woff2") format("woff2-variations"), url("assets/fonts/merriweather/merriweather-vf.woff2") format("woff2");
+  src: url("assets/fonts/merriweather/merriweather-vf.woff2") format("woff2");
 }
 @font-face {
   font-family: "Merriweather";
   font-style: italic;
   font-weight: 300 900;
+  font-stretch: 87% 112%;
   font-display: swap;
-  src: url("assets/fonts/merriweather/merriweather-vf-italic.woff2") format("woff2-variations"), url("assets/fonts/merriweather/merriweather-vf-italic.woff2") format("woff2");
+  src: url("assets/fonts/merriweather/merriweather-vf-italic.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 100 900;
+  font-stretch: 75% 100%;
   font-display: swap;
-  src: url("assets/fonts/roboto/roboto-vf.woff2") format("woff2-variations"), url("assets/fonts/roboto/roboto-vf.woff2") format("woff2");
+  src: url("assets/fonts/roboto/roboto-vf.woff2") format("woff2");
 }
 @font-face {
   font-family: "Roboto";
   font-style: italic;
   font-weight: 100 900;
+  font-stretch: 75% 100%;
   font-display: swap;
-  src: url("assets/fonts/roboto/roboto-vf-italic.woff2") format("woff2-variations"), url("assets/fonts/roboto/roboto-vf-italic.woff2") format("woff2");
+  src: url("assets/fonts/roboto/roboto-vf-italic.woff2") format("woff2");
 }
 /**
  * sass/variables/functions.scss
@@ -408,7 +412,7 @@ body {
  * @version 1.0.0 (2026.08.29)
  * @copyright 2026 (2026.01.01)
 **/
-.flexbox-wrap-reverse, .flexbox-wrap-none, .flexbox-wrap, .flexbox-center-all, .flexbox-center, .flexbox, .flexbox-vertical-spacearound, .flexbox-vertical-spacebetween, .flexbox-vertical-stretch, .flexbox-vertical-baseline, .flexbox-vertical-center, .flexbox-vertical-bottom, .flexbox-vertical-top, .flexbox-vertical, .flexbox-column-reverse, .flexbox-column, .flexbox-horizontal-spacearound, .flexbox-horizontal-spacebetween, .flexbox-horizontal-center, .flexbox-horizontal-right, .flexbox-horizontal-left, .flexbox-horizontal, .flexbox-row-reverse, .flexbox-row {
+.flexbox-wrap-reverse, .flexbox-wrap-none, .flexbox-wrap, .flexbox-center-all, .flexbox-center, .flexbox-vertical-spacearound, .flexbox-vertical-spacebetween, .flexbox-vertical-stretch, .flexbox-vertical-baseline, .flexbox-vertical-center, .flexbox-vertical-bottom, .flexbox-vertical-top, .flexbox, .flexbox-vertical, .flexbox-column-reverse, .flexbox-column, .flexbox-horizontal-spacearound, .flexbox-horizontal-spacebetween, .flexbox-horizontal-center, .flexbox-horizontal-right, .flexbox-horizontal-left, .flexbox-horizontal, .flexbox-row-reverse, .flexbox-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -419,7 +423,7 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
 }
-.flexbox-vertical-spacearound, .flexbox-vertical-spacebetween, .flexbox-vertical-stretch, .flexbox-vertical-baseline, .flexbox-vertical-center, .flexbox-vertical-bottom, .flexbox-vertical-top, .flexbox-vertical, .flexbox-column-reverse, .flexbox-column {
+.flexbox-vertical, .flexbox-column-reverse, .flexbox-column {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1108,7 +1112,7 @@ body {
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   color: #404040;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -1119,7 +1123,7 @@ span, .span, li, .li, ol, .ol, ul, .ul, p, .p {
   font-family: Roboto, Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-wrap: pretty;
   color: #404040;
 }
@@ -1141,7 +1145,7 @@ h5, .h5, h6, .h6, h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   max-width: 42rem;
   margin: 2rem 0rem 1rem 0rem;
   line-height: 1.25;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   text-transform: none;
   text-wrap: balance;
 }
@@ -1173,9 +1177,9 @@ h4, .h4 {
 }
 h5, .h5 {
   font-size: 1rem;
-  font-variation-settings: "wght" 700, "wdth" 75, "opsz" 14, "GRAD" 0;
-  letter-spacing: -0.01em;
   font-weight: 700;
+  font-stretch: 75%;
+  letter-spacing: -0.01em;
   text-transform: uppercase;
 }
 h6, .h6 {
@@ -1289,7 +1293,7 @@ a:hover, .a:hover {
   background-color: rgb(87.5490196078%, 87.5490196078%, 87.5490196078%);
 }
 .background-grayscale-medium :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
-  color: #202020;
+  color: rgb(8.3660130719%, 8.3660130719%, 8.3660130719%);
 }
 .background-grayscale-medium {
   background-color: #808080;
@@ -1313,7 +1317,7 @@ a:hover, .a:hover {
   background-color: rgb(88.431372549%, 86.568627451%, 82.3529411765%);
 }
 .background-brown-medium :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
-  color: white;
+  color: black;
 }
 .background-brown-medium {
   background-color: #89764b;
@@ -1459,7 +1463,7 @@ a:hover, .a:hover {
   background: linear-gradient(0deg, rgba(87.5490196078%, 87.5490196078%, 87.5490196078%, 0.95) 0%, rgba(87.5490196078%, 87.5490196078%, 87.5490196078%, 0.8) 25%, rgba(87.5490196078%, 87.5490196078%, 87.5490196078%, 0.5) 100%);
 }
 .gradient-grayscale-medium :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
-  color: white;
+  color: rgb(8.3660130719%, 8.3660130719%, 8.3660130719%);
 }
 .gradient-grayscale-medium {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(128, 128, 128, 0.95)), color-stop(25%, rgba(128, 128, 128, 0.8)), to(rgba(128, 128, 128, 0.5)));
@@ -1487,7 +1491,7 @@ a:hover, .a:hover {
   background: linear-gradient(0deg, rgba(88.431372549%, 86.568627451%, 82.3529411765%, 0.95) 0%, rgba(88.431372549%, 86.568627451%, 82.3529411765%, 0.8) 25%, rgba(88.431372549%, 86.568627451%, 82.3529411765%, 0.5) 100%);
 }
 .gradient-brown-medium :is(h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .p, li, .li, span, .span, a, .a, i, .i) {
-  color: white;
+  color: black;
 }
 .gradient-brown-medium {
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(137, 118, 75, 0.95)), color-stop(25%, rgba(137, 118, 75, 0.8)), to(rgba(137, 118, 75, 0.5)));
@@ -1711,6 +1715,47 @@ a:hover, .a:hover {
  * @version 1.0.0 (2026.01.01)
  * @copyright 2026 (2026.01.01)
 **/
+.button, .button-ghost, .button-alt, .button-solid {
+  width: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1rem 0rem;
+  padding: 0.25rem 2rem;
+  gap: 0.5rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-transform: normal;
+  text-wrap: pretty;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+.button:focus, .button-ghost:focus, .button-alt:focus, .button-solid:focus {
+  outline: 2px solid #046a38;
+  outline-offset: 2px;
+}
+.button:hover, .button-ghost:hover, .button-alt:hover, .button-solid:hover {
+  text-decoration: none;
+}
+.button i, .button-ghost i, .button-alt i, .button-solid i {
+  width: auto;
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
 .button-primary {
   margin: 1rem 0.5rem 0rem 0rem;
 }
@@ -1720,37 +1765,37 @@ a:hover, .a:hover {
 .button-solid {
   background-color: #046a38;
   border-color: white;
-  color: white !important;
+  color: white;
 }
 .button-solid:hover {
   background-color: rgb(1.1764705882%, 31.1764705882%, 16.4705882353%);
   border-color: white;
-  color: white !important;
+  color: white;
 }
 .button-alt {
   background-color: white;
   border-color: #046a38;
-  color: #046a38 !important;
+  color: #046a38;
 }
 .button-alt:hover {
   background-color: rgb(1.1764705882%, 31.1764705882%, 16.4705882353%);
   border-color: white;
-  color: white !important;
+  color: white;
 }
 .button-ghost {
   background-color: transparent;
   border-color: #046a38;
-  color: #046a38 !important;
+  color: #046a38;
 }
 .button-ghost:hover {
   background-color: #046a38;
   border-color: white;
-  color: white !important;
+  color: white;
 }
 .button-text {
   position: relative;
   padding: 0rem;
-  letter-spacing: 0px;
+  letter-spacing: 0;
   color: #046a38;
   font-weight: 700;
 }
@@ -1848,10 +1893,8 @@ a:hover, .a:hover {
  * @copyright 2026 (2026.01.01)
 **/
 .image-responsive {
-  height: 0rem;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 56.25%;
+  aspect-ratio: 16/9;
   overflow: hidden;
 }
 .image-responsive img {
@@ -1860,6 +1903,8 @@ a:hover, .a:hover {
   position: absolute;
   top: 0%;
   left: 0%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /**
  * Theme Name: SC Golf Course Rankings Panel
@@ -1957,10 +2002,8 @@ a:hover, .a:hover {
  * @copyright 2026 (2026.01.01)
 **/
 .video-responsive {
-  height: 0rem;
   position: relative;
-  padding-top: 30px;
-  padding-bottom: 56.25%;
+  aspect-ratio: 16/9;
   overflow: hidden;
 }
 .video-responsive iframe, .video-responsive object, .video-responsive embed {
@@ -1997,22 +2040,17 @@ a:hover, .a:hover {
  * @copyright 2026 (2026.01.01)
 **/
 .row {
+  --bs-gutter-x: 2rem;
+  --bs-gutter-y: 0;
+  row-gap: 1rem;
   margin-top: 0rem;
   margin-bottom: 0rem;
-  margin-left: 0rem;
-  margin-right: 0rem;
 }
 .row:first-child {
   margin-top: 0rem;
 }
 .row:last-child {
   margin-bottom: 0rem;
-}
-.row .columns {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
 }
 /**
  * Theme Name: SC Golf Course Rankings Panel
@@ -2092,20 +2130,9 @@ a:hover, .a:hover {
  * @version 1.0.0 (2026.08.28)
  * @copyright 2026 (2026.01.01)
 **/
-@media (min-width: 576px) {
-  .display-tablet-show {
-    display: revert;
-  }
-  .display-tablet-hide {
-    display: none !important;
-  }
-  html {
-    font-size: 16px;
-  }
-}
 @media (min-width: 1200px) {
   .display-desktop-show {
-    display: revert;
+    display: revert !important;
   }
   .display-desktop-hide {
     display: none !important;
@@ -2114,15 +2141,29 @@ a:hover, .a:hover {
     font-size: 18px;
   }
 }
-@media (max-width: 575.5px) {
+@media (min-width: 576px) and (width < 1200px) {
+  .display-tablet-show {
+    display: revert !important;
+  }
+  .display-tablet-hide {
+    display: none !important;
+  }
+  html {
+    font-size: 16px;
+  }
+}
+@media (width < 576px) {
   .display-phone-show {
-    display: revert;
+    display: revert !important;
   }
   .display-phone-hide {
     display: none !important;
   }
   html {
     font-size: 14px;
+  }
+  .button, .button-ghost, .button-alt, .button-solid {
+    width: 100%;
   }
   .button-primary {
     margin: 0.5rem 0rem;
@@ -2133,6 +2174,6 @@ a:hover, .a:hover {
   .button-mobile {
     background-color: #046a38;
     border-color: white;
-    color: white !important;
+    color: white;
   }
 }

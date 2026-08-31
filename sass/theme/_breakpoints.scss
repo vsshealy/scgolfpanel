@@ -11,7 +11,7 @@
 
 // MEDIA QUERIES
     $media-phone: $media-col-xs;
-    $media-tablet: $media-col-sm;
+    $media-tablet: "#{$media-col-sm} and (width < 1200px)";
     $media-desktop: $media-col-xl;
 
 // MEDIA QUERIES

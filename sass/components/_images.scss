@@ -22,10 +22,8 @@
         &-responsive {
             // GLOBAL
                 @extend .image;
-                height: 0.00rem;
                 position: relative;
-                padding-top: 30px;
-                padding-bottom: 56.25%;
+                aspect-ratio: 16 / 9;
                 overflow: hidden;
 
             // DEVICES
@@ -40,6 +38,7 @@
                         position: absolute;
                         top: 0.00%;
                         left: 0.00%;
+                        object-fit: cover;
                         
                     // DEVICES
                         @media #{$media-phone} {} //.PHONE

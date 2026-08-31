@@ -25,18 +25,20 @@
             margin: $button-margin-vertical $button-margin-horizontal;
             padding: $button-padding-vertical $button-padding-horizontal;
             gap: $icon-margin;
+            border: $button-border-width solid transparent;
             border-radius: $button-border-radius;
             cursor: pointer;
             font-family: $body-text;
             font-size: $button-text-size;
             font-weight: $button-text-weight;
+            text-transform: $button-text-style;
             text-wrap: pretty;
             letter-spacing: $letter-spacing-normal;
             line-height: $line-height-condensed;
 
             &:focus {
                 outline: ($button-border-width * 2.00) solid $link-color;
-                online-offset: $button-border-width * 2.00;
+                outline-offset: $button-border-width * 2.00;
             } //:FOCUS
 
             &:hover {
@@ -66,7 +68,7 @@
 // BUTTONS
     .button {
         // GLOBAL
-            @extend .button;
+            @extend %button;
 
         // DEVICES
             @media #{$media-phone} {} //.PHONE
@@ -102,12 +104,12 @@
                 @extend .button;
                 background-color: $button-solid-color;
                 border-color: $button-solid-text-color;
-                color: $button-solid-text-color !important;
+                color: $button-solid-text-color;
 
                 &:hover {
                     background-color: $button-solid-hover-color;
                     border-color: $button-solid-hover-text-color;
-                    color: $button-solid-hover-text-color !important;
+                    color: $button-solid-hover-text-color;
                 } //:HOVER
 
             // DEVICES
@@ -121,12 +123,12 @@
                 @extend .button;
                 background-color: $button-alt-color;
                 border-color: $button-alt-text-color;
-                color: $button-alt-text-color !important;
+                color: $button-alt-text-color;
 
                 &:hover {
                     background-color: $button-alt-hover-color;
                     border-color: $button-alt-hover-text-color;
-                    color: $button-alt-hover-text-color !important;
+                    color: $button-alt-hover-text-color;
                 } //:HOVER
 
             // DEVICES
@@ -140,12 +142,12 @@
                 @extend .button;
                 background-color: $button-ghost-color;
                 border-color: $button-ghost-text-color;
-                color: $button-ghost-text-color !important;
+                color: $button-ghost-text-color;
 
                 &:hover {
                     background-color: $button-ghost-hover-color;
                     border-color: $button-ghost-hover-text-color;
-                    color: $button-ghost-hover-text-color !important;
+                    color: $button-ghost-hover-text-color;
                 } //:HOVER
 
             // DEVICES
@@ -160,7 +162,7 @@
                 @media #{$media-phone} {
                     background-color: $button-mobile-color;
                     border-color: $button-mobile-text-color;
-                    color: $button-mobile-text-color !important;
+                    color: $button-mobile-text-color;
                 } //.PHONE
                 @media #{$media-tablet} {} //.TABLET
                 @media #{$media-desktop} {} //.DESKTOP

@@ -42,9 +42,9 @@
     $line-height-double: 2.00;
 
 // LETTER SPACING
-    $letter-spacing-condensed: -1px;
-    $letter-spacing-normal: 0px;
-    $letter-spacing-expanded: 1px;
+    $letter-spacing-condensed: -0.0625em;
+    $letter-spacing-normal: 0;
+    $letter-spacing-expanded: 0.0625em;
 
 // BODY TEXT
     $body-text: $font-sans;
@@ -73,6 +73,8 @@
     $heading-primary-text-color: $heading-text-color;
     $heading-secondary-text: $body-text;
     $heading-secondary-text-color: $body-text-color;
+    $heading-secondary-text-weight: 700;
+    $heading-secondary-text-width: 75%;
 
 // LINKS
     $link-text-color: $link-color;
